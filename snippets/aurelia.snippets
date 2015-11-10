@@ -1,0 +1,26 @@
+# Class Export
+snippet ecls
+	export class ${1} {
+
+		constructor() {
+
+		}
+	}
+
+# Configuration function
+snippet econf
+	export function configure(${1}) {
+		${0}
+	}
+
+# Startup configuration
+snippet aucf
+	export function configure(aurelia) {
+		aurelia.use
+			.standardConfiguration()
+			.developmentLogging()
+			.plugin();
+
+		aurelia.start("${0}", document.body);
+
+	}

@@ -133,3 +133,5 @@ let g:nodejs_complete_config = {
 
 " automatically open and close the popup menu / preview window
 au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
+
+"ActivateAddons vim-snippets snipmate

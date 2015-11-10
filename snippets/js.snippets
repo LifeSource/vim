@@ -1,0 +1,57 @@
+# ---------------------------------------------
+# JavaScript ES5
+# ---------------------------------------------
+
+# Object, Constants and Variable  Creation
+snippet vobj
+	var ${1} = {
+		${0}
+	};
+
+snippet vlet
+	let ${1} = ${0};
+
+snippet vconst
+	const ${1} = ${0};
+
+# Conditional
+snippet ief
+	if (${1}) {
+		${2}
+	} else if (${3}) {
+		${4}
+	} else {
+		${0}
+	}
+
+# Functions, IIFE
+snippet	f;
+	function (${1}) {
+
+
+	});
+
+snippet fn
+	function () {
+		${0}
+	}
+
+snippet iife
+	(function () {
+		"use strict";
+		${0}
+	})();
+
+# ---------------------------------------------
+# JavaScript ES6
+# ---------------------------------------------
+snippet cls
+	class ${1} {
+
+		constructor() {
+
+		}
+	}
+
+snippet ->
+	(${1}) => ${0}

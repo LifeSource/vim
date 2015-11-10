@@ -1,0 +1,16 @@
+# Controller
+snippet actrl
+	(function () {
+		"use strict";
+
+		angular
+			.module("$1")
+			.controller("$2", $2);
+
+		$2.inject = ["$3"];
+
+		function ${2:Controller} (${3}) {
+			${0}
+		}
+
+	})();
