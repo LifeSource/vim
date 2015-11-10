@@ -1,3 +1,10 @@
+# Import
+snippet aimp
+	import {${1}} from "${2}";${0}
+
+snippet ainj
+	@inject(${1})${0}
+
 # Class Export
 snippet ecls
 	export class ${1} {
@@ -21,6 +28,37 @@ snippet aucf
 			.developmentLogging()
 			.plugin();
 
-		aurelia.start("${0}", document.body);
+		aurelia.start().then(a => a.setRoot());
 
+	}
+
+# Http Client Setup
+snippet ahttp
+	import {inject} from "aurelia-framework";
+	import {HttpClient} from "aurelia-http-client";
+
+	@inject(HttpClient)
+	export class ${1} {
+
+		constructor(httpClient) {
+			this.http = httpClient;
+		}
+	}
+
+# Application Routing
+snippet aurt
+	export class App {
+		configureRouter(config, router) {
+			this.router = router;
+
+			config.map([
+				{
+					route: ["", "home"],
+					name: "home",
+					title: "Home",
+					moduleId: "${1}",
+					nav: ${2}
+				}
+			]);
+		}
 	}
