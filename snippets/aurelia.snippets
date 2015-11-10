@@ -5,6 +5,12 @@ snippet aimp
 snippet ainj
 	@inject(${1})${0}
 
+snippet aclt
+	import {HttpClient} from "aurelia-http-client";	
+
+snippet aij
+	import {inject} from "aurelia-framework";
+
 # Class Export
 snippet ecls
 	export class ${1} {
@@ -28,8 +34,7 @@ snippet aucf
 			.developmentLogging()
 			.plugin();
 
-		aurelia.start().then(a => a.setRoot());
-
+		aurelia.start().then(a => a.setRoot(${0}));
 	}
 
 # Http Client Setup
