@@ -16,3 +16,7 @@ Create Symlinks:
     ln -s ~/.vim/snippets/gulp.snippets ~/.vim/bundle/snippets/snippets/gulp.snippets    
     ln -s ~/.vim/snippets/js.snippets ~/.vim/bundle/snippets/snippets/js.snippets    
     ln -s ~/.vim/snippets/node.snippets ~/.vim/bundle/snippets/snippets/node.snippets    
+
+Terminal Colour Scheme
+
+    I am using my custom terminal colouring scheme mostly hand crafted.
