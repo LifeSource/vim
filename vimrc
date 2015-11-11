@@ -88,8 +88,9 @@ let g:syntastic_javascript_checkers = ["jshint"]
 " ignore the directories and files with the following extensions
 set wildignore+=*/node_modules/*,/*bower_components/*,/*jspm_packages/*,*/lib/*,*/vendor/*,*/dist/**,*.so,*.swp,*.zip,*~
 
-"au FileType javascript call JavaScriptFold()
 set runtimepath^=~/vim/bundle/ctrlp.vim
+
+let g:ctrlp_working_path_mode = "ra"
 
 " NERDTree related settings
 " ------------------------------------------------------------------------
