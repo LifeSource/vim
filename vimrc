@@ -136,3 +136,4 @@ let g:nodejs_complete_config = {
 au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
 
 "ActivateAddons vim-snippets snipmate
+let g:vim_json_syntax_conceal = 0

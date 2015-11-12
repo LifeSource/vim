@@ -85,9 +85,6 @@
 [submodule "bundle/easymotion"]
 	path = bundle/easymotion
 	url = https://github.com/easymotion/vim-easymotion.git
-[submodule "bundle/css-color"]
-	path = bundle/css-color
-	url = https://github.com/skammer/vim-css-color.git
 [submodule "bundle/coloresque"]
 	path = bundle/coloresque
 	url = https://github.com/gorodinskiy/vim-coloresque.git
