@@ -23,11 +23,10 @@ snippet exd
 	app.listen(config.port);
 	
 # require
-snippet nreq
-	var $1 = require("${1}");{0}
+snippet req
+	var $1 = require("${1}");${0}
 
 # Middle Functions and Callbacks
-
 snippet mfn
 	function (req, res, next) {
 		${0}
