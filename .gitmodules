@@ -88,3 +88,6 @@
 [submodule "bundle/coloresque"]
 	path = bundle/coloresque
 	url = https://github.com/gorodinskiy/vim-coloresque.git
+[submodule "bundle/gitgutter"]
+	path = bundle/gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git
