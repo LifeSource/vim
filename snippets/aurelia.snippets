@@ -1,31 +1,30 @@
 # Import
 snippet aimp
-	import {${1}} from "${2}";${0}
-
+	import {${1}} from "${2}";
+	${0}
 snippet ainj
 	@inject(${1})${0}
-
 snippet aclt
 	import {HttpClient} from "aurelia-http-client";	
-
+	${0}
 snippet aij
 	import {inject} from "aurelia-framework";
-
+	${0}	
 # Class Export
 snippet ecls
 	export class ${1} {
 
 		constructor() {
-
+			${2}
 		}
+		
+		${0}
 	}
-
 # Configuration function
 snippet econf
 	export function configure(${1}) {
 		${0}
 	}
-
 # Startup configuration
 snippet aucfg
 	export function configure(aurelia) {
@@ -36,11 +35,10 @@ snippet aucf
 		aurelia.use
 			.standardConfiguration()
 			.developmentLogging()
-			.plugin();
+			.plugin(${1});
 
 		aurelia.start().then(a => a.setRoot(${0}));
 	}
-
 # Http Client Setup
 snippet ahttp
 	import {inject} from "aurelia-framework";
@@ -52,12 +50,14 @@ snippet ahttp
 		constructor(httpClient) {
 			this.http = httpClient;
 		}
-	}
 
+		${0}
+	}
 # Application Routing
 snippet aurt
 	export class App {
 		configureRouter(config, router) {
+
 			this.router = router;
 
 			config.map([
@@ -66,7 +66,7 @@ snippet aurt
 					name: "home",
 					title: "Home",
 					moduleId: "${1}",
-					nav: ${2}
+					nav: ${2:true}
 				}
 			]);
 		}

@@ -15,10 +15,10 @@ set showmode
 set showmatch
 set tabstop=4
 set noswapfile
-set softtabstop=4
+"set softtabstop=4
 set shiftwidth=4
 set expandtab
-set smarttab
+"set smarttab
 set modeline
 set nohidden
 set autoindent

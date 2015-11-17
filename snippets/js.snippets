@@ -63,3 +63,12 @@ snippet cls
 # Arrow Function
 snippet ->
 	(${1}) => ${0}
+# promise
+snippet prm
+	return ${1}
+		.then(${2} => ${3});${0}
+snippet prm{
+	return ${1}
+		.then(${2} => {
+			${3}
+		});${0}
