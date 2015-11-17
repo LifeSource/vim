@@ -49,9 +49,6 @@
 [submodule "bundle/javascript-lib"]
 	path = bundle/javascript-lib
 	url = https://github.com/crusoexia/vim-javascript-lib.git
-[submodule "bundle/autocomplpop"]
-	path = bundle/autocomplpop
-	url = https://github.com/othree/vim-autocomplpop.git
 [submodule "bundle/javascript"]
 	path = bundle/javascript
 	url = https://github.com/pangloss/vim-javascript.git
@@ -91,3 +88,6 @@
 [submodule "bundle/gitgutter"]
 	path = bundle/gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
+[submodule "bundle/supertab"]
+	path = bundle/supertab
+	url = https://github.com/ervandew/supertab.git

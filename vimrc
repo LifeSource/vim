@@ -150,3 +150,13 @@ let g:nodejs_complete_config = {
 
 " automatically open and close the popup menu / preview window
 au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
+
+
+" make YCM compatible with UltiSnips (using supertab)
+ let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+ let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+ let g:SuperTabDefaultCompletionType = '<C-n>'
+ 
+" better key bindings for UltiSnipsExpandTrigger
+ let g:snipMateVisual= "<tab>"
+ let g:snipMateNextOrTrigger= "<tab>"
