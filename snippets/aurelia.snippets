@@ -1,15 +1,17 @@
-# Import
+# Imports
 snippet aimp
 	import {${1}} from "${2}";
 	${0}
 snippet ainj
 	@inject(${1})${0}
-snippet aclt
+snippet imphttp 
 	import {HttpClient} from "aurelia-http-client";	
 	${0}
-snippet aij
+snippet impinject
 	import {inject} from "aurelia-framework";
 	${0}	
+snippet improuter
+	import {Router} from "aurelia-router";
 # Class Export
 snippet ecls
 	export class ${1} {

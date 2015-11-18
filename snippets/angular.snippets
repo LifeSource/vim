@@ -1,7 +1,6 @@
 # Module
 snippet amod
 	angular.module("${1}", []);${0} 
-
 # Controller
 snippet actrl
 	(function () {
@@ -19,8 +18,6 @@ snippet actrl
 		}
 
 	})();
-
-
 # Service
 snippet aserv
 	(function () {
@@ -32,7 +29,7 @@ snippet aserv
 
 		$2.inject = ["$3"];
 
-		function ${2} (${3}) {
+		function ${2}(${3}) {
 			var service = {
 				${0}
 			};
@@ -41,7 +38,6 @@ snippet aserv
 		}
 
 	})();
-
 # Directive 
 snippet adir
 	(function () {
@@ -53,7 +49,7 @@ snippet adir
 
 		$2.inject = ["$3"];
 
-		function ${2} (${3}) {
+		function ${2}(${3}) {
 
 			var directive = {
 				${0}
@@ -63,4 +59,26 @@ snippet adir
 		}
 
 	})();
+# Angular Router
+snippet ngrouter
+	(function () {
+		"use strict";
 
+		angular
+			.module("${1}")
+			.config($2);
+
+		$2.inject = ["$stateProvider", "$urlRouterProvider"];
+
+		function ${2:}($stateProvider, $urlRouterProvider) {
+			$stateProvider
+				.state("${3}", {
+					url: "/${4}",
+					templateUrl: "${5}",
+					controller: "${6}",
+					controllerAs: "${7}"
+				});
+
+			$routerProvider.otherwise("/");
+		}
+	})();
