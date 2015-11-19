@@ -4,10 +4,14 @@ filetype plugin indent on
 let g:molokai_original = 1
 let g:rehash256 = 1
 colorscheme lifesource
+"set background=dark
+highlight Normal ctermbg=NONE 
+highlight nonText ctermbg=NONE
 
 " ------------------------------------------------------------------------
 " Standard settings
 " ------------------------------------------------------------------------
+
 set nocompatible
 set number
 set showcmd
@@ -15,10 +19,10 @@ set showmode
 set showmatch
 set tabstop=4
 set noswapfile
-"set softtabstop=4
+set softtabstop=4
 set shiftwidth=4
 set expandtab
-"set smarttab
+set smarttab
 set modeline
 set nohidden
 set autoindent
@@ -29,7 +33,6 @@ set ignorecase
 set incsearch
 set hlsearch
 set laststatus=2
-set mouse=a
 if has("mouse")
 	set mouse=a
 endif
@@ -72,8 +75,9 @@ map ,]] yss]
 map ,>> yss>
 map , yss
 
-nmap <c-k><c-c> \cc
-nmap <c-k><c-u> \cu
+" Commenting
+map <c-k><c-c> \cc
+map <c-k><c-u> \cu
 
 
 " ------------------------------------------------------------------------
@@ -137,15 +141,39 @@ autocmd BufNewFile,BufReadPost *.styl set filetype=stylus
 " ------------------------------------------------------------------------
 " Airline Configuration
 " ------------------------------------------------------------------------
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
 
 if !exists('g:airline_symbols')
 	let g:airline_symbols = {}
 endif
 
 let g:airline_detect_modified=1
-"let g:airline_powerline_fonts=1
+
+" unicode symbols
+let g:airline_left_sep = '»'
+let g:airline_left_sep = '▶'
+let g:airline_right_sep = '«'
+let g:airline_right_sep = '◀'
+let g:airline_symbols.linenr = '␊'
+let g:airline_symbols.linenr = '␤'
+let g:airline_symbols.linenr = '¶'
 let g:airline_symbols.branch = '⎇'
-"let g:airline_left_sep = '▶'
+let g:airline_symbols.paste = 'ρ'
+let g:airline_symbols.paste = 'Þ'
+let g:airline_symbols.paste = '∥'
+let g:airline_symbols.whitespace = 'Ξ'
+
+"airline symbol
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
+let g:airline_symbols.branch = ''
+let g:airline_symbols.readonly = ''
+let g:airline_symbols.linenr = ''
+
+
 let g:airline_theme="dark"
 
 let g:nodejs_complete_config = {
@@ -155,12 +183,5 @@ let g:nodejs_complete_config = {
 " automatically open and close the popup menu / preview window
 au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
 
-
-" make YCM compatible with UltiSnips (using supertab)
- let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
- let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
- let g:SuperTabDefaultCompletionType = '<C-n>'
- 
-" better key bindings for UltiSnipsExpandTrigger
- let g:snipMateVisual= "<tab>"
- let g:snipMateNextOrTrigger= "<tab>"
+let g:gitgutter_realtime = 0
+let g:gitgutter_eager = 0
