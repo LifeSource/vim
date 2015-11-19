@@ -12,6 +12,8 @@ snippet impinject
 	${0}	
 snippet improuter
 	import {Router} from "aurelia-router";
+snippet impval
+	import {Validation} from "aurelia-validation";
 # Class Export
 snippet ecls
 	export class ${1} {
@@ -37,6 +39,7 @@ snippet aucf
 		aurelia.use
 			.standardConfiguration()
 			.developmentLogging()
+			//.plugin("aurelia-validation")
 			.plugin(${1});
 
 		aurelia.start().then(a => a.setRoot(${0}));

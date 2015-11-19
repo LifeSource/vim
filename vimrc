@@ -19,7 +19,7 @@ set showmode
 set showmatch
 set tabstop=4
 set noswapfile
-set softtabstop=4
+"set softtabstop=4
 set shiftwidth=4
 set expandtab
 set smarttab
@@ -27,12 +27,13 @@ set modeline
 set nohidden
 set autoindent
 set smartindent
-"set foldmethod=indent
 set copyindent
 set ignorecase
 set incsearch
 set hlsearch
 set laststatus=2
+"set foldmethod=indent
+
 if has("mouse")
 	set mouse=a
 endif
@@ -141,7 +142,7 @@ autocmd BufNewFile,BufReadPost *.styl set filetype=stylus
 " ------------------------------------------------------------------------
 " Airline Configuration
 " ------------------------------------------------------------------------
-let g:airline#extensions#tabline#enabled = 1
+"let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 
 if !exists('g:airline_symbols')
