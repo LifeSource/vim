@@ -43,9 +43,6 @@
 [submodule "bundle/jshint"]
 	path = bundle/jshint
 	url = https://github.com/wookiehangover/jshint.vim.git
-[submodule "bundle/ctrlp"]
-	path = bundle/ctrlp
-    url = https://github.com/ctrlpvim/ctrlp.vim.git
 [submodule "bundle/javascript-lib"]
 	path = bundle/javascript-lib
 	url = https://github.com/crusoexia/vim-javascript-lib.git
@@ -94,3 +91,6 @@
 [submodule "bundle/devicons"]
 	path = bundle/devicons
 	url = https://github.com/ryanoasis/vim-devicons
+[submodule "bundle/ctrlp"]
+	path = bundle/ctrlp
+	url = https://github.com/ctrlpvim/ctrlp.vim.git
