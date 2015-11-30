@@ -118,6 +118,7 @@ let g:vim_json_syntax_conceal = 0
 set wildignore+=*/node_modules/*,/*bower_components/*,/*jspm_packages/*,*/lib/*,*/vendor/*,*/dist/**,*.so,*.swp,*.zip,*~
 set runtimepath^=~/vim/bundle/ctrlp.vim
 let g:ctrlp_working_path_mode = "ra"
+let g:ctrlp_show_hidden = 1
 
 " ------------------------------------------------------------------------
 " NERDTree related settings
@@ -139,10 +140,16 @@ noremap <C-f> :Autoformat<CR>
 " stylus css pre-processor
 autocmd BufNewFile,BufReadPost *.styl set filetype=stylus
 
+" Nerd-fonts
+let g:webdevicons_enable = 1
+let g:webdevicons_enable_nerdtree = 1
+let g:webdevicons_enable_airline_tabline = 1
+
 " ------------------------------------------------------------------------
 " Airline Configuration
 " ------------------------------------------------------------------------
 "let g:airline#extensions#tabline#enabled = 1
+set encoding=utf8
 let g:airline_powerline_fonts = 1
 
 if !exists('g:airline_symbols')
@@ -174,7 +181,6 @@ let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
 
-
 let g:airline_theme="dark"
 
 let g:nodejs_complete_config = {
@@ -186,3 +192,4 @@ au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
 
 let g:gitgutter_realtime = 0
 let g:gitgutter_eager = 0
+

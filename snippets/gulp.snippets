@@ -25,11 +25,15 @@ snippet glcf
 			images = client + "images/",
 			server = src + "server/",
 			build = root + "build/",
+			report = root + "report/",
 			temp = root + "temp/",
+			specRunnerFile = "specs.html",
 			nodeModules = root + "node_modules/",
 			jspmPackages = root + "jspm_packages/",
 			bowerComponents = root + "bower_components/",
-			ignore = [nodeModules, bowerComponents];
+			ignore = [nodeModules, bowerComponents],
+			wirede = require("wiredep"),
+			bowerFiles = wiredep({ devDependencies: true})["js"];
 
 		var config = {
 			// Environment
@@ -92,7 +96,18 @@ snippet glcf
 				"./bower.json"
 			],
 			// Browser Sync
-			browserReloadDelay: 1000
+			browserReloadDelay: 1000,
+			// Spec Runner and HTML
+			specRunner: client + specRunnerFile,
+			specRunnerFile: specRunnerFile;
+			/*
+			 * Client side testing.
+			 */
+			testLibraries: [
+
+			],
+			specs: [client + "**/*.spec.js"],
+			serverIntergrationSpecs: [client + "/tests/server-integration/**/*.spec.js"]
 		};
 
 		config.getWiredepDefaultOptions = function () {
@@ -105,7 +120,40 @@ snippet glcf
 			return options;
 		};
 
+		/**
+	     * karma settings
+	     */
+	    config.karma = getKarmaOptions();
+
 		return config;
+
+	    ////////////////
+
+	    function getKarmaOptions() {
+	        var options = {
+	            files: [].concat(
+	                bowerFiles,
+	                config.specHelpers,
+	                clientApp + '**/*.module.js',
+	                clientApp + '**/*.js',
+	                temp + config.templateCache.file,
+	                config.serverIntegrationSpecs
+	            ),
+	            exclude: [],
+	            coverage: {
+	                dir: report + 'coverage',
+	                reporters: [
+	                    // reporters not supporting the `file` property
+	                    {type: 'html', subdir: 'report-html'},
+	                    {type: 'lcov', subdir: 'report-lcov'},
+	                    {type: 'text-summary'} //, subdir: '.', file: 'text-summary.txt'}
+	                ]
+	            },
+	            preprocessors: {}
+	        };
+	        options.preprocessors[clientApp + '**/!(*.spec)+(.js)'] = ['coverage'];
+	        return options;
+	    }
 	};
 
 
@@ -211,6 +259,27 @@ snippet gulpd
 			.pipe($.inject(gulp.src(config.css + "**/*.css")))
 			.pipe(gulp.dest(config.client));
 	});
+
+	/**
+	 * Run specs once and exit
+	 * To start servers and run midway specs as well:
+	 *    gulp test --startServers
+	 * @return {Stream}
+	 */
+	gulp.task('test', ['lint', 'templatecache'], function(done) {
+	    startTests(true /*singleRun*/ , done);
+	});
+
+	/**
+	 * Run specs and wait.
+	 * Watch for file changes and re-run tests on each change
+	 * To start servers and run midway specs as well:
+	 *    gulp autotest --startServers
+	 */
+	gulp.task('autotest', function(done) {
+	    startTests(false /*singleRun*/ , done);
+	});
+
 
 	gulp.task("optimize", ["inject", "fonts", "images"], function () {
 		log("*** Optimizing the javascripts, css and html");
@@ -351,6 +420,47 @@ snippet gulpd
 		};
 
 		browserSync(options);
+	}
+
+	function startTests(singleRun, done) {
+	    var child;
+	    var excludeFiles = [];
+	    var fork = require('child_process').fork;
+	    var karma = require('karma').server;
+	    var serverSpecs = config.serverIntegrationSpecs;
+
+	    if (args.startServers) {
+	        log('Starting servers');
+	        var savedEnv = process.env;
+	        savedEnv.NODE_ENV = 'dev';
+	        savedEnv.PORT = 8888;
+	        child = fork(config.nodeServer);
+	    } else {
+	        if (serverSpecs && serverSpecs.length) {
+	            excludeFiles = serverSpecs;
+	        }
+	    }
+
+	    karma.start({
+	        configFile: __dirname + '/karma.conf.js',
+	        exclude: excludeFiles,
+	        singleRun: !!singleRun
+	    }, karmaCompleted);
+
+	    ////////////////
+
+	    function karmaCompleted(karmaResult) {
+	        log('Karma completed');
+	        if (child) {
+	            log('shutting down the child process');
+	            child.kill();
+	        }
+	        if (karmaResult === 1) {
+	            done('karma: tests failed with code ' + karmaResult);
+	        } else {
+	            done();
+	        }
+	    }
 	}
 
 	function clean(path, done) {

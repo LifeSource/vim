@@ -1,9 +1,10 @@
 # Node Module Export
+snippet mex
+	module.exports = ${1}
 snippet mde
 	module.exports = function (${1}) {
 		${0}
 	};
-
 # Express Default
 snippet exd
 	var express = require("express"),
@@ -24,8 +25,7 @@ snippet exd
 	
 # require
 snippet req
-	var ${1:module} = require("$1")${0}
-
+	var $1 = require("${1:}")${0}
 # Middle Functions and Callbacks
 snippet mfn
 	function (req, res, next) {
