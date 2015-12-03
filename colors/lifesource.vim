@@ -147,8 +147,7 @@ if &t_Co > 255
    hi Boolean         ctermfg=135
    hi Character       ctermfg=144
    hi Number          ctermfg=135
-   "hi String          ctermfg=144
-   hi String          ctermfg=228
+   hi String          ctermfg=228                              guifg=#ffff87
    hi Conditional     ctermfg=161               cterm=bold
    hi Constant        ctermfg=135               cterm=bold
    hi Cursor          ctermfg=16  ctermbg=253
@@ -161,20 +160,19 @@ if &t_Co > 255
    hi DiffDelete      ctermfg=162 ctermbg=53
    hi DiffText                    ctermbg=102 cterm=bold
 
-   hi Directory       ctermfg=118               cterm=bold
+   hi Directory       ctermfg=228               cterm=bold      guifg=#ffff87
    hi Error           ctermfg=219 ctermbg=89
    hi ErrorMsg        ctermfg=199 ctermbg=16    cterm=bold
    hi Exception       ctermfg=118               cterm=bold
    hi Float           ctermfg=135
    hi FoldColumn      ctermfg=67  ctermbg=16
    hi Folded          ctermfg=67  ctermbg=16
-   hi Function        ctermfg=45
-   "hi Function        ctermfg=118
+   hi Function        ctermfg=45                                guifg=#00d7ff
    hi Identifier      ctermfg=208               cterm=none
    hi Ignore          ctermfg=244 ctermbg=232
    hi IncSearch       ctermfg=193 ctermbg=16
 
-   hi keyword         ctermfg=161               cterm=bold
+   hi keyword         ctermfg=161               cterm=bold      guifg=#d7005f
    hi Label           ctermfg=229               cterm=none
    hi Macro           ctermfg=193
    hi SpecialKey      ctermfg=81
@@ -235,20 +233,18 @@ if &t_Co > 255
    hi SpecialKey      ctermfg=59
 
    if exists("g:rehash256") && g:rehash256 == 1
-       hi Normal       ctermfg=252 ctermbg=234 guifg=#d0d0d0
-       hi CursorLine               ctermbg=236   cterm=none
-       hi CursorLineNr ctermfg=208               cterm=none
+       hi Normal       ctermfg=252 ctermbg=234                      guifg=#d0d0d0
+       hi CursorLine               ctermbg=236      cterm=none
+       hi CursorLineNr ctermfg=208                  cterm=none
 
-       hi Boolean         ctermfg=141
-       hi Character       ctermfg=222
-       hi Number          ctermfg=141   guifg=#af87ff
-       hi String          ctermfg=228   guifg=#ffffaf
-"       hi String          ctermfg=11
-"       hi String          ctermfg=222
-       hi Conditional     ctermfg=26			    cterm=bold
+       hi Boolean         ctermfg=141                               guifg=#af87ff
+       hi Character       ctermfg=222                               guifg=#ffdf87
+       hi Number          ctermfg=141                               guifg=#af87ff
+       hi String          ctermfg=228                               guifg=#ffffaf
+       hi Conditional     ctermfg=26			    cterm=bold      guifg=#005fd7
        hi Constant        ctermfg=141               cterm=bold
 
-       hi DiffDelete      ctermfg=125 ctermbg=233
+       hi DiffDelete      ctermfg=125   ctermbg=233
 
        hi Directory       ctermfg=26			    cterm=bold      guifg=#005fd7
        hi Error           ctermfg=88    ctermbg=233                 guifg=#870000
@@ -258,7 +254,7 @@ if &t_Co > 255
        hi Identifier      ctermfg=26                                guifg=#005fdf
 
        hi Label				ctermfg=26                              guifg=#005fd7
-       hi Keyword			ctermfg=37              cterm=bold      guifg=#00afaf
+       hi Keyword			ctermfg=26              cterm=bold      guifg=#005fd7
        hi Operator			ctermfg=125                             guifg=#af0000
        hi PreCondit			ctermfg=154             cterm=bold
        hi Repeat			ctermfg=197             cterm=bold
@@ -274,38 +270,41 @@ if &t_Co > 255
        hi LineNr			ctermfg=255             ctermbg=235     guifg=#ffffff 
        hi NonText			ctermfg=239
        hi SpecialKey		ctermfg=239
-       "hi Special			ctermfg=4
-       "hi Special			ctermfg=11
-       "hi Special			ctermfg=208
-       hi PreProc			ctermfg=4
-       "hi PreProc			ctermfg=114
+       hi Special           ctermfg=26              cterm=bold      guifg=##005fd7
+       hi PreProc			ctermfg=26              cterm=bold      guifg=##005fd7
 
     " ---------------------------------------
     " Javascript specific configuration
     " ---------------------------------------
 
 	   hi jsOperator                    ctermfg=10      guifg=#00ff00
-	   hi jsModules                     ctermfg=37      guifg=#00afaf
+	   hi javaScriptReserved            ctermfg=166     guifg=#d75f00
+	   hi jsModules                     ctermfg=92      guifg=#8700d7
 	   hi jsFuncArgs                    ctermfg=214     guifg=#ffaf00
-	   hi jsStorageClass                ctermfg=4       guifg=#000080
-	   hi jsFuncArgCommas               ctermfg=2       guifg=#800000
+	   hi jsFuncCall                    ctermfg=113     guifg=#87ff5f
+	   hi jsFuncName                    ctermfg=113     guifg=#87ff5f
+	   hi jsFunction                    ctermfg=33      guifg=#005fd7
+	   hi jsFuncArgCommas               ctermfg=124     guifg=#af0000
+	   hi jsStorageClass                ctermfg=33      guifg=#005fd7
+	   hi jsModuleWords                 ctermfg=129     guifg=#af00ff
+	   hi jsClass                       ctermfg=202     guifg=#ff5f00
 	   hi jsCommentTodo                 ctermfg=228     guifg=#ffff87
 	   hi jsLineComment                 ctermfg=114     guifg=#87d787
 	   hi jsComment                     ctermfg=114     guifg=#87d787
-	   hi jsObjectKey                   ctermfg=75      guifg=#00EEFF
-	   hi jsFuncBraces                  ctermfg=2       guifg=#800000
-	   hi jsBrackets                    ctermfg=2       guifg=#800000
-	   hi jsParens                      ctermfg=9       guifg=#ff0000
-       hi javaScriptBraces              ctermfg=3       guifg=#808000
-       hi javaScriptParens              ctermfg=45	    guifg=#00d7ff cterm=bold 
+	   hi jsObjectKey                   ctermfg=45      guifg=#00d7d7 cterm=bold
+	   hi jsFuncBraces                  ctermfg=10      guifg=#af0000
+	   hi jsBrackets                    ctermfg=124     guifg=#af0000
+	   hi jsParens                      ctermfg=124     guifg=#af0000
+       hi javaScriptBraces              ctermfg=124     guifg=#af0000
+       hi javaScriptParens              ctermfg=45	    guifg=#00d7ff       cterm=bold 
 	   hi javaScriptStringD             ctermfg=228     guifg=#ffff87
 	   hi javaScriptStringS             ctermfg=228     guifg=#ffff87
        hi javaScriptFuncExp             ctermfg=114     guifg=#87d787
        hi javaScriptSpecial             ctermfg=254     guifg=#e4e4e4
 	   hi javaScriptOperator            ctermfg=10      guifg=#00ff00
-	   hi javaScriptIdentifier          ctermfg=4       guifg=#000080
+	   hi javaScriptIdentifier          ctermfg=18      guifg=#0000af
        hi javascriptFunctionFold        ctermfg=114     guifg=#87d787
-       hi javaScriptSpecialCharacter    ctermfg=45      guifg=#00d7ff
+       hi javaScriptSpecialCharacter    ctermfg=27      guifg=#005fff
 
     " ----------------------------------------
     " Jason specific configuration
@@ -313,12 +312,12 @@ if &t_Co > 255
        hi jsonKeyword	ctermfg=75      guifg=#5fafff
 	   hi jsonString	ctermfg=228     guifg=#ffff87
 	   hi jsonQuote     ctermfg=10      guifg=#00ff00
-	   hi jsonBraces    ctermfg=1       guifg=#800000 
+	   hi jsonBraces    ctermfg=88      guifg=#870000
 
     " ----------------------------------------
     " HTML specific configuration
     " ----------------------------------------
-       hi htmlTagName	    ctermfg=67      guifg=#5f87af
+       hi htmlTagName	    ctermfg=67      guifg=#00d7ff
        hi htmlTag	        ctermfg=154     guifg=#afff00
        hi htmlEndTag	    ctermfg=154     guifg=#afff00
        hi htmlArg           ctermfg=197     guifg=#ff0087
@@ -328,19 +327,19 @@ if &t_Co > 255
     " ----------------------------------------
     " Cascading stylesheet customisation
     " ----------------------------------------
-	   hi cssComment    ctermfg=114     guifg=#87d787
-	   hi cssTagName    ctermfg=118     guifg=#87ff00
-	   hi cssFontProp   ctermfg=226     guifg=#ffff00
-	   hi cssColorProp  ctermfg=226     guifg=#ffff00
-	   hi cssTextProp   ctermfg=226     guifg=#ffff00
-	   hi cssBoxProp	ctermfg=226     guifg=#ffff00
-	   hi cssRenderProp ctermfg=226     guifg=#ffff00
-	   hi cssAuralProp  ctermfg=226     guifg=#ffff00
-	   hi cssPagingProp ctermfg=226     guifg=#ffff00
-	   hi cssTableProp  ctermfg=226     guifg=#ffff00
-	   hi cssUIProp		ctermfg=226     guifg=#ffff00
-	   hi cssBraces     ctermfg=118     guifg=#87ff00
-	   hi cssGeneratedContentProp       guifg=#87ff00 ctermfg=118
+	   hi cssComment                   ctermfg=114     guifg=#87d787
+	   hi cssTagName                   ctermfg=118     guifg=#87ff00
+	   hi cssFontProp                  ctermfg=226     guifg=#ffff00
+	   hi cssColorProp                 ctermfg=226     guifg=#ffff00
+	   hi cssTextProp                  ctermfg=226     guifg=#ffff00
+	   hi cssBoxProp	               ctermfg=226     guifg=#ffff00
+	   hi cssRenderProp                ctermfg=226     guifg=#ffff00
+	   hi cssAuralProp                 ctermfg=226     guifg=#ffff00
+	   hi cssPagingProp                ctermfg=226     guifg=#ffff00
+	   hi cssTableProp                 ctermfg=226     guifg=#ffff00
+	   hi cssUIProp		               ctermfg=226     guifg=#ffff00
+	   hi cssBraces                    ctermfg=118     guifg=#87ff00
+	   hi cssGeneratedContentProp      ctermfg=118     guifg=#87ff00 
    endif
 end
 
