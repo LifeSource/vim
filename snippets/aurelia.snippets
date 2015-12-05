@@ -90,3 +90,23 @@ snippet r{
 		moduleId: ${4},
 		nav: ${5:true}
 	}
+# Value Converters
+snippet avc
+	import numeral from "numeral";
+
+	export class ${1}ValueConverter {
+
+		toView(value, format) {
+			return numeral(value).format(format);
+		}
+	}
+
+snippet datevc
+	import moment from "moment";
+
+	export class ${1}ValueConverter {
+
+		toView(value, format) {
+			return moment(value).format(format);
+		}
+	}
