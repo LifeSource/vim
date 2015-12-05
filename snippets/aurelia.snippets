@@ -78,6 +78,15 @@ snippet aurt
 	}
 # ES6 function
 snippet efn
-	${1}() {
+	${1}(${2}) {
 		${0}
+	}
+# Route
+snippet r{
+	{
+		route: "${1}",
+		name: "${2}",
+		title: "${3}",
+		moduleId: ${4},
+		nav: ${5:true}
 	}

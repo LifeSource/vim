@@ -43,11 +43,10 @@ snippet apu
 
 # Mongoose model creation
 snippet mgm
-	var mongoose = require("mongoose"),
-		Schema = mongoose.Schema;
+	var mongoose = require("mongoose");
 
-	var ${1:Schema} = new Schema({
+	var ${1:Schema} = new mongoose.Schema({
 		${0}
 	});
 
-	module.exports = mongoose.model("${2}", $1);
+	module.exports = mongoose.model("${2}", $1, "${3}");

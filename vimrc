@@ -11,6 +11,7 @@ highlight nonText ctermbg=NONE
 " ------------------------------------------------------------------------
 " Standard settings
 " ------------------------------------------------------------------------
+autocmd BufRead,BufNewFile *.styl,*.md,*.css setlocal spell
 
 set nocompatible
 set number
@@ -79,7 +80,6 @@ map , yss
 " Commenting
 map <c-k><c-c> \cc
 map <c-k><c-u> \cu
-
 
 " ------------------------------------------------------------------------
 " Emmet Settings

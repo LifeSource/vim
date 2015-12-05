@@ -283,7 +283,7 @@ if &t_Co > 255
 	   hi jsModules                     ctermfg=92      guifg=#8700d7
 	   hi jsBuiltins                    ctermfg=92      guifg=#8700d7
 	   hi jsFuncArgs                    ctermfg=214     guifg=#ffaf00
-	   hi jsFuncCall                    ctermfg=113     guifg=#87ff5f
+	   hi jsFuncCall                    ctermfg=73      guifg=#5fafaf
 	   hi jsFuncName                    ctermfg=113     guifg=#87ff5f
 	   hi jsFunction                    ctermfg=33      guifg=#005fd7
 	   hi jsFuncBraces                  ctermfg=10      guifg=#af0000
@@ -297,7 +297,8 @@ if &t_Co > 255
 	   hi jsLineComment                 ctermfg=114     guifg=#87d787
 	   hi jsComment                     ctermfg=114     guifg=#87d787
 	   hi jsObjectKey                   ctermfg=45      guifg=#00d7d7 cterm=bold
-	   hi jsBrackets                    ctermfg=124     guifg=#af0000
+	   "hi jsBrackets                    ctermfg=124     guifg=#af0000
+	   hi jsBrackets                    ctermfg=10      guifg=#00ff00
 	   hi jsParens                      ctermfg=124     guifg=#af0000
        hi javaScriptBraces              ctermfg=124     guifg=#af0000
        hi javaScriptParens              ctermfg=45	    guifg=#00d7ff       cterm=bold 
@@ -321,12 +322,16 @@ if &t_Co > 255
     " ----------------------------------------
     " HTML specific configuration
     " ----------------------------------------
-       hi htmlTagName	    ctermfg=67      guifg=#00d7ff
-       hi htmlTag	        ctermfg=154     guifg=#afff00
-       hi htmlEndTag	    ctermfg=154     guifg=#afff00
-       hi htmlArg           ctermfg=197     guifg=#ff0087
-       hi htmlComment       ctermfg=114     guifg=#87d787
-       hi htmlCommentPart   ctermfg=114     guifg=#87d787
+       hi htmlTagName	     ctermfg=67      guifg=#00d7ff
+       hi htmlTag	         ctermfg=154     guifg=#afff00
+       hi htmlEndTag	     ctermfg=154     guifg=#afff00
+       hi htmlArg            ctermfg=197     guifg=#ff0087
+       hi htmlComment        ctermfg=114     guifg=#87d787
+       hi htmlCommentPart    ctermfg=114     guifg=#87d787
+       "hi htmlScriptTag     ctermfg=67      guifg=#00d7ff
+       "hi htmlSpecialTagName ctermfg=67      guifg=#00d7ff
+       hi htmlSpecialTagName ctermfg=200     guifg=#ff00d7
+       "hi htmlSpecialTagName ctermfg=196     guifg=#ff0000
 
     " ----------------------------------------
     " Cascading stylesheet customisation
