@@ -349,6 +349,11 @@ if &t_Co > 255
 	   hi cssUIProp		               ctermfg=226     guifg=#ffff00
 	   hi cssBraces                    ctermfg=118     guifg=#87ff00
 	   hi cssGeneratedContentProp      ctermfg=118     guifg=#87ff00 
+    " ----------------------------------------
+    " Ident guides highlighting
+    " ----------------------------------------
+       "hi IndentGuidesOdd                ctermbg=black
+       "hi IndentGuidesEvent                ctermbg=darkgrey
    endif
 end
 
