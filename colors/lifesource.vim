@@ -123,7 +123,8 @@ else
    hi Normal          guifg=#F8F8F2 guibg=#1B1D1E
    hi Comment         guifg=#7E8E91
    hi CursorLine                    guibg=#293739
-   hi CursorLineNr    guifg=#FD971F               gui=none
+   hi CursorLineNr    ctermfg=118 guifg=#FD971F               gui=none
+   "hi CursorLineNr    guifg=#FD971F               gui=none
    hi CursorColumn                  guibg=#293739
    hi ColorColumn                   guibg=#232526
    hi LineNr          guifg=#465457 guibg=#232526
@@ -142,7 +143,8 @@ if &t_Co > 255
    else
       hi Normal       ctermfg=252 ctermbg=233
       hi CursorLine               ctermbg=234   cterm=none
-      hi CursorLineNr ctermfg=208               cterm=none
+      "hi CursorLineNr ctermfg=208               cterm=none
+      hi CursorLineNr ctermfg=118    guifg=#FD971F               gui=none
    endif
    hi Boolean         ctermfg=135
    hi Character       ctermfg=144
@@ -234,24 +236,24 @@ if &t_Co > 255
 
    if exists("g:rehash256") && g:rehash256 == 1
        hi Normal       ctermfg=252 ctermbg=234                      guifg=#d0d0d0
-       hi CursorLine               ctermbg=236      cterm=none
-       hi CursorLineNr ctermfg=208                  cterm=none
+       hi CursorLine               ctermbg=242      cterm=none      guifg=#303030
+       hi CursorLineNr ctermfg=118                  cterm=none      guifg=#87ff00
 
        hi Boolean           ctermfg=141                               guifg=#af87ff
        hi Character         ctermfg=222                               guifg=#ffdf87
        hi Number            ctermfg=141                               guifg=#af87ff
        hi String            ctermfg=228                               guifg=#ffffaf
-       hi Conditional       ctermfg=26			    cterm=bold      guifg=#005fd7
+       hi Conditional       ctermfg=26			    cterm=bold        guifg=#005fd7
        hi Constant          ctermfg=141             cterm=bold
 
        hi DiffDelete        ctermfg=125   ctermbg=233
 
-       hi Directory         ctermfg=26			    cterm=bold      guifg=#005fd7
-       hi Error             ctermfg=88    ctermbg=233                 guifg=#870000
+       hi Directory         ctermfg=26			    cterm=bold      guifg=#71bbd6
+       hi Error             ctermfg=88    ctermbg=233               guifg=#870000
        hi Exception         ctermfg=215			    cterm=bold      guifg=#ffaf5f
        hi Float             ctermfg=141
        hi Function          ctermfg=26			    cterm=bold      guifg=#005fd7
-       hi Identifier        ctermfg=26                                guifg=#005fdf
+       hi Identifier        ctermfg=26                              guifg=#005fdf
 
        hi Label				ctermfg=26                              guifg=#005fd7
        hi Keyword			ctermfg=26              cterm=bold      guifg=#005fd7

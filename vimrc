@@ -46,7 +46,9 @@ runtime bundles/tplugin_vim/macros/tplugin.vim
 " ------------------------------------------------------------------------
 
 inoremap jj <Esc>
-nnoremap <esc>^[ <esc>^[
+unmap! <esc>
+map <esc> <Nop>
+map <esc>^[ <esc>^[
 
 " Tagbar toggle
 nmap <C-b> :TagbarToggle<CR>
