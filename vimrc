@@ -35,15 +35,18 @@ set hlsearch
 set laststatus=2
 "set foldmethod=indent
 
-if has("mouse")
-	set mouse=a
-endif
+"if has("mouse")
+set mouse=a
+"endif
 
 runtime bundles/tplugin_vim/macros/tplugin.vim
 
 " ------------------------------------------------------------------------
 "  Keyboard mappings
 " ------------------------------------------------------------------------
+
+inoremap jj <Esc>
+nnoremap <esc>^[ <esc>^[
 
 " Tagbar toggle
 nmap <C-b> :TagbarToggle<CR>
@@ -154,7 +157,7 @@ let g:webdevicons_enable_airline_tabline = 1
 " ------------------------------------------------------------------------
 " Airline Configuration
 " ------------------------------------------------------------------------
-let g:airline#extensions#tabline#enabled = 1
+"let g:airline#extensions#tabline#enabled = 1
 set encoding=utf8
 let g:airline_powerline_fonts = 1
 
@@ -198,4 +201,3 @@ au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
 
 let g:gitgutter_realtime = 0
 let g:gitgutter_eager = 0
-
