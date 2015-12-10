@@ -237,21 +237,21 @@ if &t_Co > 255
        hi CursorLine               ctermbg=236      cterm=none
        hi CursorLineNr ctermfg=208                  cterm=none
 
-       hi Boolean         ctermfg=141                               guifg=#af87ff
-       hi Character       ctermfg=222                               guifg=#ffdf87
-       hi Number          ctermfg=141                               guifg=#af87ff
-       hi String          ctermfg=228                               guifg=#ffffaf
-       hi Conditional     ctermfg=26			    cterm=bold      guifg=#005fd7
-       hi Constant        ctermfg=141               cterm=bold
+       hi Boolean           ctermfg=141                               guifg=#af87ff
+       hi Character         ctermfg=222                               guifg=#ffdf87
+       hi Number            ctermfg=141                               guifg=#af87ff
+       hi String            ctermfg=228                               guifg=#ffffaf
+       hi Conditional       ctermfg=26			    cterm=bold      guifg=#005fd7
+       hi Constant          ctermfg=141             cterm=bold
 
-       hi DiffDelete      ctermfg=125   ctermbg=233
+       hi DiffDelete        ctermfg=125   ctermbg=233
 
-       hi Directory       ctermfg=26			    cterm=bold      guifg=#005fd7
-       hi Error           ctermfg=88    ctermbg=233                 guifg=#870000
-       hi Exception       ctermfg=215			    cterm=bold      guifg=#ffaf5f
-       hi Float           ctermfg=141
-       hi Function        ctermfg=26			    cterm=bold      guifg=#005fd7
-       hi Identifier      ctermfg=26                                guifg=#005fdf
+       hi Directory         ctermfg=26			    cterm=bold      guifg=#005fd7
+       hi Error             ctermfg=88    ctermbg=233                 guifg=#870000
+       hi Exception         ctermfg=215			    cterm=bold      guifg=#ffaf5f
+       hi Float             ctermfg=141
+       hi Function          ctermfg=26			    cterm=bold      guifg=#005fd7
+       hi Identifier        ctermfg=26                                guifg=#005fdf
 
        hi Label				ctermfg=26                              guifg=#005fd7
        hi Keyword			ctermfg=26              cterm=bold      guifg=#005fd7
@@ -296,8 +296,7 @@ if &t_Co > 255
 	   hi jsCommentTodo                 ctermfg=228     guifg=#ffff87
 	   hi jsLineComment                 ctermfg=114     guifg=#87d787
 	   hi jsComment                     ctermfg=114     guifg=#87d787
-	   hi jsObjectKey                   ctermfg=45      guifg=#00d7d7 cterm=bold
-	   "hi jsBrackets                    ctermfg=124     guifg=#af0000
+	   hi jsObjectKey                   ctermfg=45      guifg=#00d7d7       cterm=bold
 	   hi jsBrackets                    ctermfg=10      guifg=#00ff00
 	   hi jsParens                      ctermfg=124     guifg=#af0000
        hi javaScriptBraces              ctermfg=124     guifg=#af0000
@@ -307,7 +306,7 @@ if &t_Co > 255
        hi javaScriptFuncExp             ctermfg=114     guifg=#87d787
        hi javaScriptSpecial             ctermfg=254     guifg=#e4e4e4
 	   hi javaScriptOperator            ctermfg=10      guifg=#00ff00
-	   hi javaScriptIdentifier          ctermfg=18      guifg=#0000af
+	   hi javaScriptIdentifier          ctermfg=27      guifg=#005fff
        hi javascriptFunctionFold        ctermfg=114     guifg=#87d787
        hi javaScriptSpecialCharacter    ctermfg=27      guifg=#005fff
 

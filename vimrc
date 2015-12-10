@@ -81,6 +81,12 @@ map , yss
 map <c-k><c-c> \cc
 map <c-k><c-u> \cu
 
+" Snippets
+imap <C-j> <Plug>snipMateNextOrTrigger
+
+" Buffer movement
+nnoremap <C-]> :bnext<CR>
+nnoremap <C-[> :bprevious<CR>
 " ------------------------------------------------------------------------
 " Emmet Settings
 " ------------------------------------------------------------------------
@@ -148,7 +154,7 @@ let g:webdevicons_enable_airline_tabline = 1
 " ------------------------------------------------------------------------
 " Airline Configuration
 " ------------------------------------------------------------------------
-"let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#enabled = 1
 set encoding=utf8
 let g:airline_powerline_fonts = 1
 
