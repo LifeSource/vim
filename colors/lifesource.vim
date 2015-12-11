@@ -235,15 +235,16 @@ if &t_Co > 255
    hi SpecialKey      ctermfg=59
 
    if exists("g:rehash256") && g:rehash256 == 1
-       hi Normal       ctermfg=252 ctermbg=234                      guifg=#d0d0d0
-       hi CursorLine               ctermbg=242      cterm=none      guifg=#303030
-       hi CursorLineNr ctermfg=118                  cterm=none      guifg=#87ff00
+       hi Normal            ctermfg=252   ctermbg=234                    guifg=#d0d0d0
+       hi CursorLine                      ctermbg=136    cterm=none      guifg=#af8700
+       "hi CursorLine                      ctermbg=234    cterm=none      guifg=#1c1c1c
+       hi CursorLineNr      ctermfg=118                  cterm=none      guifg=#87ff00
 
-       hi Boolean           ctermfg=141                               guifg=#af87ff
-       hi Character         ctermfg=222                               guifg=#ffdf87
-       hi Number            ctermfg=141                               guifg=#af87ff
-       hi String            ctermfg=228                               guifg=#ffffaf
-       hi Conditional       ctermfg=26			    cterm=bold        guifg=#005fd7
+       hi Boolean           ctermfg=141                             guifg=#af87ff
+       hi Character         ctermfg=222                             guifg=#ffdf87
+       hi Number            ctermfg=141                             guifg=#af87ff
+       hi String            ctermfg=228                             guifg=#ffffaf
+       hi Conditional       ctermfg=26			    cterm=bold      guifg=#005fd7
        hi Constant          ctermfg=141             cterm=bold
 
        hi DiffDelete        ctermfg=125   ctermbg=233

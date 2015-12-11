@@ -46,7 +46,7 @@ runtime bundles/tplugin_vim/macros/tplugin.vim
 " ------------------------------------------------------------------------
 
 inoremap jj <Esc>
-unmap! <esc>
+nmap <esc> <Nop>
 map <esc> <Nop>
 map <esc>^[ <esc>^[
 
@@ -89,9 +89,9 @@ map <c-k><c-u> \cu
 " Snippets
 imap <C-j> <Plug>snipMateNextOrTrigger
 
-" Buffer movement
-nnoremap <C-]> :bnext<CR>
-nnoremap <C-[> :bprevious<CR>
+" Buffer movement (NOTE: those 2 keys are created using <ALT + ]> and <ALT + " [> they are NOT quotes but actual alt characters
+map ‘ :bnext<CR>  
+map “ :bprevious<CR>
 " ------------------------------------------------------------------------
 " Emmet Settings
 " ------------------------------------------------------------------------
@@ -159,7 +159,7 @@ let g:webdevicons_enable_airline_tabline = 1
 " ------------------------------------------------------------------------
 " Airline Configuration
 " ------------------------------------------------------------------------
-"let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#enabled = 1
 set encoding=utf8
 let g:airline_powerline_fonts = 1
 
