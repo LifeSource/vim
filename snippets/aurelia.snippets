@@ -92,9 +92,16 @@ snippet r{
 	}
 # Value Converters
 snippet avc
+	export class ${1}ValueConverter {
+
+		toView(${2})
+			${0}	
+		}
+	}
+snippet cvc
 	import numeral from "numeral";
 
-	export class ${1}ValueConverter {
+	export class CurrencyValueConverter {
 
 		toView(value, format) {
 			return numeral(value).format(format);
@@ -104,7 +111,7 @@ snippet avc
 snippet datevc
 	import moment from "moment";
 
-	export class ${1}ValueConverter {
+	export class DateValueConverter {
 
 		toView(value, format) {
 			return moment(value).format(format);

@@ -18,11 +18,11 @@ set number
 set showcmd
 set showmode
 set showmatch
-set tabstop=4
 set noswapfile
+"set tabstop=4
+set expandtab
 set softtabstop=4
 set shiftwidth=4
-set expandtab
 set smarttab
 set modeline
 set nohidden
@@ -45,7 +45,6 @@ runtime bundles/tplugin_vim/macros/tplugin.vim
 "  Keyboard mappings
 " ------------------------------------------------------------------------
 
-inoremap jj <Esc>
 nmap <esc> <Nop>
 map <esc> <Nop>
 map <esc>^[ <esc>^[
@@ -55,6 +54,7 @@ nmap <C-b> :TagbarToggle<CR>
 
 " Emmet expansion
 imap hh <C-y>,
+imap jj <C-y>,
 
 " File management
 map zz :w<CR>
@@ -89,9 +89,11 @@ map <c-k><c-u> \cu
 " Snippets
 imap <C-j> <Plug>snipMateNextOrTrigger
 
-" Buffer movement (NOTE: those 2 keys are created using <ALT + ]> and <ALT + " [> they are NOT quotes but actual alt characters
+" Buffer movement (NOTE: the characters map below are ALT + <key> combination)  
 map ‘ :bnext<CR>  
 map “ :bprevious<CR>
+map ∑ :bd<CR>
+
 " ------------------------------------------------------------------------
 " Emmet Settings
 " ------------------------------------------------------------------------
@@ -201,5 +203,14 @@ let g:nodejs_complete_config = {
 " automatically open and close the popup menu / preview window
 au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
 
+" ------------------------------------------------------------------------
+" Git Gutter
+" ------------------------------------------------------------------------
 let g:gitgutter_realtime = 0
 let g:gitgutter_eager = 0
+
+" ------------------------------------------------------------------------
+"  You Complete Me
+" ------------------------------------------------------------------------
+
+let g:ycm_auto_trigger = 1
