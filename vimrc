@@ -87,7 +87,7 @@ map <c-k><c-c> \cc
 map <c-k><c-u> \cu
 
 " Snippets
-imap <C-j> <Plug>snipMateNextOrTrigger
+imap <tab> <Plug>snipMateNextOrTrigger
 
 " Buffer movement (NOTE: the characters map below are ALT + <key> combination)  
 map ‘ :bnext<CR>  
