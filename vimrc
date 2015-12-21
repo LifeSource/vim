@@ -19,7 +19,7 @@ set showcmd
 set showmode
 set showmatch
 set noswapfile
-"set tabstop=4
+set tabstop=4
 set expandtab
 set softtabstop=4
 set shiftwidth=4
@@ -63,7 +63,7 @@ map <c-q> <esc>:q!<CR>
 map <c-c> yy
 map <c-x> dd
 map <c-d> yy p
-map <c-v> <esc>:set nopaste<CR> p :set nopaste<CR>A
+"map <c-v> <esc>:set nopaste<CR> p :set nopaste<CR>A
 
 " Vim buffer management
 nnoremap ,q <C-w>q
@@ -161,7 +161,7 @@ let g:webdevicons_enable_airline_tabline = 1
 " ------------------------------------------------------------------------
 " Airline Configuration
 " ------------------------------------------------------------------------
-let g:airline#extensions#tabline#enabled = 1
+"let g:airline#extensions#tabline#enabled = 1
 set encoding=utf8
 let g:airline_powerline_fonts = 1
 

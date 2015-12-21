@@ -19,10 +19,8 @@ snippet ecls
 	export class ${1} {
 
 		constructor() {
-			${2}
+			${0}
 		}
-		
-		${0}
 	}
 # Configuration function
 snippet econf
@@ -55,11 +53,9 @@ snippet ahttp
 		constructor(httpClient) {
 			this.http = httpClient;
 		}
-
-		${0}
 	}
 # Application Routing
-snippet aurt
+snippet aurouter
 	export class App {
 		configureRouter(config, router) {
 
