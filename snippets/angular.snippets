@@ -7,12 +7,12 @@ snippet actrl
 		"use strict";
 
 		angular
-			.module("$1")
+			.module("${1}")
 			.controller("$2", $2);
 
 		$2.inject = ["$3"];
 
-		function ${2:Controller} (${3}) {
+		function ${2:Controller}(${3}) {
 			var vm = this;
 			${0}
 		}
@@ -24,19 +24,63 @@ snippet aserv
 		"use strict";
 
 		angular
-			.module("$1")
+			.module("${1:}")
 			.factory("$2", $2);
 
-		$2.inject = ["$3"];
+		$2.inject = ["$http"];
 
-		function ${2}(${3}) {
+		function ${2:}($http) {
+
+			var apiUrl = "/api/${3:}/";
+
 			var service = {
-				${0}
+				get: get,
+				post: post,
+				update: update,
+				"delete": "delete",
+				query: query
 			};
 
 			return service;
-		}
 
+			function success(response) {
+				return repsonse.data;
+			}
+
+			function fail(reason) {
+				return reason;
+			}
+
+			function query() {
+				return $http.get(apiUrl)
+					.then(success)
+					.catch(fail);
+			}
+
+			function get(id) {
+				return $http.get(apiUrl + id)
+					.then(success)
+					.catch(fail);
+			}
+
+			function post(data) {
+				return $http.get(apiUrl)
+					.then(success)
+					.catch(fail);
+			}
+			
+			function update(data) {
+				return $http.get(apiUrl + data.id, data)
+					.then(success)
+					.catch(fail);
+			}
+
+			function delete(id) {
+				return $http.get(apiUrl)
+					.then(success)
+					.catch(fail);
+			}
+		}
 	})();
 # Directive 
 snippet adir
@@ -44,12 +88,12 @@ snippet adir
 		"use strict";
 
 		angular
-			.module("$1")
+			.module("${1:}")
 			.directive("$2", $2);
 
 		$2.inject = ["$3"];
 
-		function ${2}(${3}) {
+		function ${2:}(${3}) {
 
 			var directive = {
 				${0}
@@ -68,9 +112,12 @@ snippet ngrouter
 			.module("${1}")
 			.config($2);
 
-		$2.inject = ["$stateProvider", "$urlRouterProvider"];
+		$2.inject = ["$stateProvider", "$urlRouterProvider", "$locationProvider"];
 
-		function ${2:}($stateProvider, $urlRouterProvider) {
+		function ${2:}($stateProvider, $urlRouterProvider, $locationProvider) {
+
+			$locationProvider.html5Mode(true).hashPrefix("!");
+
 			$stateProvider
 				.state("${3}", {
 					url: "/${4}",

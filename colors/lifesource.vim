@@ -287,6 +287,7 @@ if &t_Co > 255
 	   hi jsBuiltins                    ctermfg=92      guifg=#8700d7
 	   hi jsFuncArgs                    ctermfg=214     guifg=#ffaf00
 	   hi jsFuncCall                    ctermfg=73      guifg=#5fafaf
+	   "hi jsFuncCall                    ctermfg=113     guifg=#87ff5f
 	   hi jsFuncName                    ctermfg=113     guifg=#87ff5f
 	   hi jsFunction                    ctermfg=33      guifg=#005fd7
 	   hi jsFuncBraces                  ctermfg=10      guifg=#af0000

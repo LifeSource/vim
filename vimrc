@@ -23,7 +23,7 @@ set tabstop=4
 set expandtab
 set softtabstop=4
 set shiftwidth=4
-set smarttab
+"set smarttab
 set modeline
 set nohidden
 set autoindent
@@ -88,6 +88,10 @@ map <c-k><c-u> \cu
 
 " Snippets
 imap <tab> <Plug>snipMateNextOrTrigger
+
+" Color Picker
+let g:vcoolor_map = 'ç'
+let g:vcoolor_lowercase = 1
 
 " Buffer movement (NOTE: the characters map below are ALT + <key> combination)  
 map ‘ :bnext<CR>  
