@@ -1,0 +1,8 @@
+{
+    "quotmark": false,       // Quotation mark consistency:
+
+    "esnext": true,
+
+    // Custom Globals
+    "globals": {}        // additional predefined global variables
+}
