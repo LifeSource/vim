@@ -54,7 +54,6 @@ nmap <C-b> :TagbarToggle<CR>
 
 " Emmet expansion
 imap hh <C-y>,
-imap jj <C-y>,
 
 " File management
 map zz :w<CR>
@@ -87,8 +86,7 @@ map <c-k><c-c> \cc
 map <c-k><c-u> \cu
 
 " Snippets
-imap <tab> <Plugin>snipMateNextOrTrigger
-imap <c-,> <Plugin>snipMateNextOrTrigger
+imap jj <Plug>snipMateNextOrTrigger
 
 " Color Picker
 let g:vcoolor_map = 'ç'
@@ -211,11 +209,17 @@ au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
 " ------------------------------------------------------------------------
 " Git Gutter
 " ------------------------------------------------------------------------
-let g:gitgutter_realtime = 0
-let g:gitgutter_eager = 0
+"let g:gitgutter_realtime = 0
+"let g:gitgutter_eager = 0
 
 " ------------------------------------------------------------------------
 "  You Complete Me
 " ------------------------------------------------------------------------
 
 let g:ycm_auto_trigger = 1
+
+if !exists("g:ycm_semantic_triggers")
+       let g:ycm_semantic_triggers = {}
+   endif
+let g:ycm_semantic_triggers['typescript'] = ['.']
+set completeopt-=preview

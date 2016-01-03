@@ -1,6 +1,10 @@
 # Module
 snippet amod
 	angular.module("${1}", []);${0} 
+
+snippet ng
+	angular${0}
+
 # Controller
 snippet actrl
 	(function () {
@@ -8,11 +12,11 @@ snippet actrl
 
 		angular
 			.module("${1}")
-			.controller("$2", $2);
+			.controller("$2Controller", $2Controller);
 
 		$2.inject = ["$3"];
 
-		function ${2:Controller}(${3}) {
+		function ${2:}Controller(${3:}) {
 			var vm = this;
 			${0}
 		}
@@ -93,7 +97,7 @@ snippet adir
 
 		$2.inject = ["$3"];
 
-		function ${2:}(${3}) {
+		function ${2:}(${3:}) {
 
 			var directive = {
 				${0}
