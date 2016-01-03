@@ -23,7 +23,7 @@ set tabstop=4
 set expandtab
 set softtabstop=4
 set shiftwidth=4
-"set smarttab
+set smarttab
 set modeline
 set nohidden
 set autoindent
@@ -66,7 +66,7 @@ map <c-d> yy p
 "map <c-v> <esc>:set nopaste<CR> p :set nopaste<CR>A
 
 " Vim buffer management
-nnoremap ,q <C-w>q
+nnoremap ,q :bd<CR>
 nnoremap ,w <C-w>v
 nnoremap ,v <C-w>s
 nnoremap ,, <C-w><C-w>
@@ -87,7 +87,8 @@ map <c-k><c-c> \cc
 map <c-k><c-u> \cu
 
 " Snippets
-imap <tab> <Plug>snipMateNextOrTrigger
+imap <tab> <Plugin>snipMateNextOrTrigger
+imap <c-,> <Plugin>snipMateNextOrTrigger
 
 " Color Picker
 let g:vcoolor_map = 'ç'
@@ -152,7 +153,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 " Supported formats: js css html
 " ------------------------------------------------------------------------
 noremap <C-f> :Autoformat<CR>
-"map <c-f> :call JsBeautify()<cr>
+let g:autoformat_autoindent = 0
 
 " stylus css pre-processor
 autocmd BufNewFile,BufReadPost *.styl set filetype=stylus
@@ -165,7 +166,7 @@ let g:webdevicons_enable_airline_tabline = 1
 " ------------------------------------------------------------------------
 " Airline Configuration
 " ------------------------------------------------------------------------
-"let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#enabled = 1
 set encoding=utf8
 let g:airline_powerline_fonts = 1
 

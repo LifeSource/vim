@@ -289,13 +289,13 @@ if &t_Co > 255
 	   hi jsFuncCall                    ctermfg=73      guifg=#5fafaf
 	   "hi jsFuncCall                    ctermfg=113     guifg=#87ff5f
 	   hi jsFuncName                    ctermfg=113     guifg=#87ff5f
-	   hi jsFunction                    ctermfg=33      guifg=#005fd7
+	   hi jsFunction                    ctermfg=39      guifg=#00afff
 	   hi jsFuncBraces                  ctermfg=10      guifg=#af0000
 	   hi jsFutureKeys                  ctermfg=35      guifg=#00af87
 	   hi jsFuncArgCommas               ctermfg=10      guifg=#00ff00
 	   hi jsArrowFunction               ctermfg=113     guifg=#87ff5f
 	   hi jsSpecial                     ctermfg=113     guifg=#87ff5f
-	   hi jsStorageClass                ctermfg=33      guifg=#005fd7
+	   hi jsStorageClass                ctermfg=32      guifg=#007dd7
 	   hi jsModuleWords                 ctermfg=129     guifg=#af00ff
 	   hi jsClass                       ctermfg=202     guifg=#ff5f00
 	   hi jsGlobalObjects               ctermfg=202     guifg=#ff5f00
@@ -313,6 +313,7 @@ if &t_Co > 255
        hi javaScriptSpecial             ctermfg=254     guifg=#e4e4e4
 	   hi javaScriptOperator            ctermfg=10      guifg=#00ff00
 	   hi javaScriptIdentifier          ctermfg=27      guifg=#005fff
+	   "hi javaScriptIdentifier          ctermfg=27      guifg=#ffdb25
        hi javascriptFunctionFold        ctermfg=114     guifg=#87d787
        hi javaScriptSpecialCharacter    ctermfg=27      guifg=#005fff
 
