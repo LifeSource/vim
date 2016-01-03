@@ -1,0 +1,19 @@
+# React Snippets
+
+# Rendering
+snippet rrender
+	React.render(<${1} />, ${2});${0}
+
+# Component creation
+snippet rcomp
+	var React = require("react");
+
+	var ${1:} = React.createClass({
+		render: function () {
+			return (
+				${0}
+			);
+		}
+	});
+
+	module.exports = $1;

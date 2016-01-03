@@ -1,4 +1,4 @@
-PROMPT='$fg[green][$fg[red]吳$fg[white]錦倫$fg[green]]♻  $fg[yellow]$(getPwd)$(getSpacing)$(gitPromptInfo) $(batteryCharge)
+PROMPT='$fg[green][$fg[red]吳$fg[white]錦倫$fg[green]]♻  $fg[yellow]$(getPwd)$(getSpacing)$(gitPromptInfo)
 $fg[green]~>$fg[cyan]> $reset_color'
 
 function getPwd() {
@@ -14,22 +14,14 @@ function getSpacing() {
 		git=0
 	fi
 
-	local bat=$(batteryCharge)
-	if [ ${#bat} != 0 ]; then
-	    ((bat = ${#bat} - 18))
-    else
-        bat=0
-    fi
-
 	local termwidth
-	(( termwidth = ${COLUMNS} - 2 - ${#HOST} - ${#$(getPwd)} - ${bat} - ${git} ))
+	(( termwidth = ${COLUMNS} - 2 - ${#HOST} - ${#$(getPwd)} -${git} ))
 
 	local spacing=""
 	for i in {1..$termwidth}; do
 		spacing="${spacing} "
 	done
 	echo $spacing
-
 }
 
 function gitPromptInfo() {
