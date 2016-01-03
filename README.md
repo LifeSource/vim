@@ -2,11 +2,13 @@
 
 This repository contains my VIM setup across various machines. It is not intended to be used by others as it has my own customised settings specific for me.
 
-Installation:
+### Installation:
 
+```
     git clone https://github.com/LifeSource/vim.git ~/.vim
+```
 
-### Create Symlinks:
+### Symlinks:
 
 ```
     ln -s ~/.vim/vimrc ~/.vimrc
@@ -22,7 +24,7 @@ Installation:
     ln -s ~/.vim/lifesource.zsh-theme ~/.oh-my-zsh/themes/lifesource.zsh-theme
 ```
 
-### JavaScript vim snippets
+#### JavaScript vim snippets
 
 ```
     ln -s ~/.vim/snippets/angular.snippets ~/.vim/bundle/snippets/snippets/javascript/angular.snippets    

@@ -95,7 +95,7 @@ source dnvm.sh
 export MONO_MANAGED_WATCHER=disabled
 
 VIMRUNTIME="/usr/local/share/vim/vim74/"
-
+alias vim="/usr/local/bin/vim"
 # NODE Configuration
 NPM_PACKAGES=/Users/kenrick/.npm-packages
 prefix=/Users/kenrick/.npm-packages
