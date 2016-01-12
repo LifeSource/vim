@@ -10,6 +10,7 @@
     "unused"          : true,         // Unused variables
     "strict"          : true,         // requires all functions to run in ES5 Strict Mode
 
+    "expr"            : true,
     // Environments
     "devel"           : true,
     "browser"         : true,

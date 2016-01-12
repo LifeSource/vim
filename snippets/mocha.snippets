@@ -27,13 +27,14 @@ snippet ashould
 # --------------------------------------
 
 # Expect
+snippet eex
+	expect(${1}).to.exist;
 snippet eeq
-	expect(${1}).equal(${0})
+	expect(${1}).to.equal(${0})
 snippet ebe
 	expect(${1}).to.be.a(${2});
 snippet elength
 	expect(${1}).to.have.length(${2});
-
 # Should
 snippet shouldexist
 	${1}.should.exist;

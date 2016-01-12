@@ -103,3 +103,9 @@
 [submodule "bundle/YouCompleteMe"]
 	path = bundle/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe.git
+[submodule "bundle/indentLine"]
+	path = bundle/indentLine
+	url = https://github.com/Yggdroot/indentLine.git
+[submodule "bundle/bundle/supertab"]
+	path = bundle/bundle/supertab
+	url = https://github.com/ervandew/supertab.git

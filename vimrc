@@ -20,14 +20,14 @@ set showmode
 set showmatch
 set noswapfile
 set tabstop=4
-set expandtab
 set softtabstop=4
 set shiftwidth=4
-set smarttab
+set expandtab
+"set smarttab
 set modeline
 set nohidden
 set autoindent
-set smartindent
+"set smartindent
 set copyindent
 set ignorecase
 set incsearch
@@ -35,24 +35,29 @@ set hlsearch
 set laststatus=2
 "set foldmethod=indent
 
+" ensure number formats are decimals regardless
+set nrformats=
+
 "if has("mouse")
 set mouse=a
 "endif
 
 runtime bundles/tplugin_vim/macros/tplugin.vim
 
+" clipboard setting for copy and paste
+set clipboard=unnamed
+
 " ------------------------------------------------------------------------
 "  Keyboard mappings
 " ------------------------------------------------------------------------
 
-nmap <esc> <Nop>
-map <esc> <Nop>
 map <esc>^[ <esc>^[
 
 " Tagbar toggle
 nmap <C-b> :TagbarToggle<CR>
 
 " Emmet expansion
+vmap hh <C-y>,
 imap hh <C-y>,
 
 " File management
@@ -60,7 +65,6 @@ map zz :w<CR>
 map zx :wq!<CR>
 map <c-q> <esc>:q!<CR>
 map <c-c> yy
-map <c-x> dd
 map <c-d> yy p
 "map <c-v> <esc>:set nopaste<CR> p :set nopaste<CR>A
 
@@ -80,6 +84,7 @@ map ,'' yss"
 map ,]] yss]
 map ,>> yss>
 map , yss
+map ,d ds"
 
 " Commenting
 map <c-k><c-c> \cc
@@ -216,10 +221,19 @@ au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
 "  You Complete Me
 " ------------------------------------------------------------------------
 
-let g:ycm_auto_trigger = 1
+let g:ycm_auto_trigger = 0
 
-if !exists("g:ycm_semantic_triggers")
-       let g:ycm_semantic_triggers = {}
-   endif
-let g:ycm_semantic_triggers['typescript'] = ['.']
-set completeopt-=preview
+"if !exists("g:ycm_semantic_triggers")
+       "let g:ycm_semantic_triggers = {}
+   "endif
+"let g:ycm_semantic_triggers['typescript'] = ['.']
+"set completeopt-=preview
+
+
+" ------------------------------------------------------------------------
+" IndentLine Plugin Settings
+" ------------------------------------------------------------------------
+let g:indentLine_color_term = 239
+let g:indentLine_enabled = 1
+
+nnoremap <c-j> :IndentLinesToggle<CR>

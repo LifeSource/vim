@@ -3,9 +3,10 @@
 # Rendering
 snippet rrender
 	React.render(<${1} />, ${2});${0}
-
+snippet rr
+	render(${1}, document.getElementById("${2}"));${0}
 # Component creation
-snippet rcomp
+snippet rcomp5
 	var React = require("react");
 
 	var ${1:} = React.createClass({
@@ -17,3 +18,34 @@ snippet rcomp
 	});
 
 	module.exports = $1;
+
+snippet rcomp
+	import React from "react";
+
+	export default class ${1:} extends React.Component {
+
+		constructor(pros) {
+			super(pros);
+		}
+
+		render() {
+
+			return (
+				${0}
+			);
+		}
+	}
+snippet pt
+	React.PropTypes.${1}
+
+snippet rpt
+	static propTypes = { ${1} };${0}
+
+snippet dpt
+	static defaultProps = { ${1} };${0}
+
+# return
+snippet rt
+	return (
+		${0}
+	);
