@@ -21,6 +21,9 @@ alias v="vim"
 alias vi="vim"
 alias npr="npm run"
 
+#alias tmux="tmux -2"
+export TERM="xterm-256color"
+
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
