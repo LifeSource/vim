@@ -172,7 +172,7 @@ if &t_Co > 255
    hi Function        ctermfg=45                                guifg=#00d7ff
    hi Identifier      ctermfg=208               cterm=none
    hi Ignore          ctermfg=244 ctermbg=232
-   hi IncSearch       ctermfg=193 ctermbg=16
+   hi IncSearch       ctermfg=193 ctermbg=16                    guifg=#d7ffaf
 
    hi keyword         ctermfg=161               cterm=bold      guifg=#d7005f
    hi Label           ctermfg=229               cterm=none
@@ -290,7 +290,7 @@ if &t_Co > 255
 	   "hi jsFuncCall                    ctermfg=113     guifg=#87ff5f
 	   hi jsFuncName                    ctermfg=113     guifg=#87ff5f
 	   hi jsFunction                    ctermfg=39      guifg=#00afff
-	   hi jsFuncBraces                  ctermfg=10      guifg=#af0000
+	   hi jsFuncBraces                  ctermfg=214     guifg=#ffaf00
 	   hi jsFutureKeys                  ctermfg=35      guifg=#00af87
 	   hi jsFuncArgCommas               ctermfg=10      guifg=#00ff00
 	   hi jsArrowFunction               ctermfg=113     guifg=#87ff5f
@@ -303,7 +303,8 @@ if &t_Co > 255
 	   hi jsLineComment                 ctermfg=114     guifg=#87d787
 	   hi jsComment                     ctermfg=114     guifg=#87d787
 	   hi jsObjectKey                   ctermfg=45      guifg=#00d7d7       cterm=bold
-	   hi jsBraces                      ctermfg=10      guifg=#00ff00
+	   "hi jsBraces                      ctermfg=10      guifg=#00ff00
+	   hi jsBraces                      ctermfg=214     guifg=#ffaf00
 	   hi jsBrackets                    ctermfg=10      guifg=#00ff00
 	   hi jsParens                      ctermfg=124     guifg=#af0000
        hi javaScriptBraces              ctermfg=124     guifg=#af0000
@@ -320,10 +321,10 @@ if &t_Co > 255
     " ----------------------------------------
     " Jason specific configuration
     " ----------------------------------------
-       hi jsonKeyword	ctermfg=75      guifg=#5fafff
+       hi jsonKeyword	ctermfg=45      guifg=#00d7ff
 	   hi jsonString	ctermfg=229     guifg=#ffffaf
-	   hi jsonQuote     ctermfg=10      guifg=#00ff00
-	   hi jsonBraces    ctermfg=88      guifg=#870000
+	   hi jsonQuote     ctermfg=154     guifg=#afff00
+	   hi jsonBraces    ctermfg=124     guifg=#af0000
 
     " ----------------------------------------
     " HTML specific configuration
