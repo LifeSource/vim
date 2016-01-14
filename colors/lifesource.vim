@@ -287,7 +287,6 @@ if &t_Co > 255
 	   hi jsBuiltins                    ctermfg=92      guifg=#8700d7
 	   hi jsFuncArgs                    ctermfg=214     guifg=#ffaf00
 	   hi jsFuncCall                    ctermfg=73      guifg=#5fafaf
-	   "hi jsFuncCall                    ctermfg=113     guifg=#87ff5f
 	   hi jsFuncName                    ctermfg=113     guifg=#87ff5f
 	   hi jsFunction                    ctermfg=39      guifg=#00afff
 	   hi jsFuncBraces                  ctermfg=214     guifg=#ffaf00
@@ -303,7 +302,6 @@ if &t_Co > 255
 	   hi jsLineComment                 ctermfg=114     guifg=#87d787
 	   hi jsComment                     ctermfg=114     guifg=#87d787
 	   hi jsObjectKey                   ctermfg=45      guifg=#00d7d7       cterm=bold
-	   "hi jsBraces                      ctermfg=10      guifg=#00ff00
 	   hi jsBraces                      ctermfg=214     guifg=#ffaf00
 	   hi jsBrackets                    ctermfg=10      guifg=#00ff00
 	   hi jsParens                      ctermfg=124     guifg=#af0000
