@@ -243,7 +243,7 @@ if &t_Co > 255
        hi Boolean           ctermfg=141                             guifg=#af87ff
        hi Character         ctermfg=222                             guifg=#ffdf87
        hi Number            ctermfg=141                             guifg=#af87ff
-       hi String            ctermfg=228                             guifg=#ffffaf
+       hi String            ctermfg=229                             guifg=#ffffaf
        hi Conditional       ctermfg=26			    cterm=bold      guifg=#005fd7
        hi Constant          ctermfg=141             cterm=bold
 
@@ -314,7 +314,6 @@ if &t_Co > 255
        hi javaScriptSpecial             ctermfg=254     guifg=#e4e4e4
 	   hi javaScriptOperator            ctermfg=10      guifg=#00ff00
 	   hi javaScriptIdentifier          ctermfg=27      guifg=#005fff
-	   "hi javaScriptIdentifier          ctermfg=27      guifg=#ffdb25
        hi javascriptFunctionFold        ctermfg=114     guifg=#87d787
        hi javaScriptSpecialCharacter    ctermfg=27      guifg=#005fff
 
@@ -322,23 +321,21 @@ if &t_Co > 255
     " Jason specific configuration
     " ----------------------------------------
        hi jsonKeyword	ctermfg=75      guifg=#5fafff
-	   hi jsonString	ctermfg=228     guifg=#ffff87
+	   hi jsonString	ctermfg=229     guifg=#ffffaf
 	   hi jsonQuote     ctermfg=10      guifg=#00ff00
 	   hi jsonBraces    ctermfg=88      guifg=#870000
 
     " ----------------------------------------
     " HTML specific configuration
     " ----------------------------------------
-       hi htmlTagName	     ctermfg=67      guifg=#00d7ff
+       hi htmlTagName	     ctermfg=33      guifg=#0087ff
        hi htmlTag	         ctermfg=154     guifg=#afff00
        hi htmlEndTag	     ctermfg=154     guifg=#afff00
-       hi htmlArg            ctermfg=197     guifg=#ff0087
+       hi htmlArg            ctermfg=197     guifg=#ff005f
        hi htmlComment        ctermfg=114     guifg=#87d787
        hi htmlCommentPart    ctermfg=114     guifg=#87d787
        "hi htmlScriptTag     ctermfg=67      guifg=#00d7ff
-       "hi htmlSpecialTagName ctermfg=67      guifg=#00d7ff
-       hi htmlSpecialTagName ctermfg=200     guifg=#ff00d7
-       "hi htmlSpecialTagName ctermfg=196     guifg=#ff0000
+       hi htmlSpecialTagName ctermfg=209     guifg=#ff875f
 
     " ----------------------------------------
     " Cascading stylesheet customisation

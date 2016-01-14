@@ -127,10 +127,6 @@ let g:syntastic_javascript_checkers = ["eslint"]
 "ActivateAddons vim-snippets snipmate
 let g:vim_json_syntax_conceal = 0
 
-"let JSHintUpdate=1
-"let JSHintUpdateWriteOnly=1
-"au FileType javascript call JavaScriptFold()
-
 " ------------------------------------------------------------------------
 " Control-P settings
 " ------------------------------------------------------------------------
@@ -214,26 +210,17 @@ au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
 " ------------------------------------------------------------------------
 " Git Gutter
 " ------------------------------------------------------------------------
-"let g:gitgutter_realtime = 0
-"let g:gitgutter_eager = 0
+let g:gitgutter_realtime = 1
+let g:gitgutter_eager = 1
 
 " ------------------------------------------------------------------------
 "  You Complete Me
 " ------------------------------------------------------------------------
-
 let g:ycm_auto_trigger = 0
-
-"if !exists("g:ycm_semantic_triggers")
-       "let g:ycm_semantic_triggers = {}
-   "endif
-"let g:ycm_semantic_triggers['typescript'] = ['.']
-"set completeopt-=preview
-
 
 " ------------------------------------------------------------------------
 " IndentLine Plugin Settings
 " ------------------------------------------------------------------------
 let g:indentLine_color_term = 239
 let g:indentLine_enabled = 1
-
 nnoremap <c-j> :IndentLinesToggle<CR>
