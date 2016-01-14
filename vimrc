@@ -121,8 +121,8 @@ let g:syntastic_always_poulate_loc_list = 1
 let g_syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-let g:syntastic_javascript_jshint_exec = "$HOME/.npm-packages/bin/jshint"
-let g:syntastic_javascript_checkers = ["jshint"]
+let g:syntastic_javascript_eslint_exec = "$HOME/.npm-packages/bin/eslint"
+let g:syntastic_javascript_checkers = ["eslint"]
 
 "ActivateAddons vim-snippets snipmate
 let g:vim_json_syntax_conceal = 0
