@@ -210,13 +210,14 @@ au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
 " ------------------------------------------------------------------------
 " Git Gutter
 " ------------------------------------------------------------------------
-let g:gitgutter_realtime = 1
-let g:gitgutter_eager = 1
+let g:gitgutter_realtime = 0
+let g:gitgutter_eager = 0
 
 " ------------------------------------------------------------------------
 "  You Complete Me
 " ------------------------------------------------------------------------
-let g:ycm_auto_trigger = 0
+let g:ycm_min_num_of_chars_for_completion=10
+let g:ycm_auto_trigger = 1
 
 " ------------------------------------------------------------------------
 " IndentLine Plugin Settings
