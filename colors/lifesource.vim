@@ -350,10 +350,10 @@ if &t_Co > 255
 	   hi cssPagingProp                ctermfg=226     guifg=#ffff00
 	   hi cssTableProp                 ctermfg=226     guifg=#ffff00
 	   hi cssUIProp		               ctermfg=226     guifg=#ffff00
-	   hi cssBraces                    ctermfg=118     guifg=#87ff00
+	   hi cssBraces                    ctermfg=124     guifg=#af0000
 	   hi cssGeneratedContentProp      ctermfg=118     guifg=#87ff00 
     " ----------------------------------------
-    " Ident guides highlighting
+    " Indent guides highlighting
     " ----------------------------------------
        "hi IndentGuidesOdd                ctermbg=black
        "hi IndentGuidesEvent                ctermbg=darkgrey
