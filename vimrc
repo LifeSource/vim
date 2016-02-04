@@ -84,7 +84,14 @@ map ,'' yss"
 map ,]] yss]
 map ,>> yss>
 map , yss
-map ,d ds"
+map ,d ds
+map ,d" ds"
+map ,d( ds(
+map ,d' ds'
+map ,d[ ds[
+
+map <c-l> <ESC>zfap
+
 
 " Commenting
 map <c-k><c-c> \cc
@@ -225,3 +232,13 @@ let g:ycm_auto_trigger = 1
 let g:indentLine_color_term = 239
 let g:indentLine_enabled = 1
 nnoremap <c-j> :IndentLinesToggle<CR>
+
+" ------------------------------------------------------------------------
+"  Abbreviation
+" ------------------------------------------------------------------------
+iabbr teh the
+iabbr wehn when
+iabbr myemail kenrick.wu@gmail.com
+iabbr myname Kenrick Wu
+iabbr phps <?php ?>
+
