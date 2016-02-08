@@ -105,3 +105,5 @@ NPM_PACKAGES=/Users/kenrick/.npm-packages
 prefix=/Users/kenrick/.npm-packages
 NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
 PATH="$NPM_PACKAGES/bin:$PATH"
+
+source /usr/local/lib/dnx/bin/dnvm.sh

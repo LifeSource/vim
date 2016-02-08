@@ -52,7 +52,14 @@
         "protractor": true,
         "qunit": false,
         "jquery": true,
+        "prototypejs": false,
+        "shelljs": false,
+        "meteor": false,
         "mongo": true,
+        "webextensions": false,
         "es6": true
+    },
+    "globals": {
+        "angular": true
     }
 }
