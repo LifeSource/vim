@@ -356,28 +356,30 @@ if &t_Co > 255
         " Indent guides highlighting
         " ----------------------------------------
         "hi IndentGuidesOdd                ctermbg=black
-        "hi IndentGuidesEvent                ctermbg=darkgrey
+        "hi IndentGuidesEvent              ctermbg=darkgrey
         
         " ----------------------------------------
         "  PHP Syntax Highlight
         " ----------------------------------------
-        hi phpIdentifier                ctermfg=33      guifg=#0087ff
+        hi phpIdentifier                ctermfg=7       guifg=#ffffff
         hi phpOperator                  ctermfg=118     guifg=#87ff00
+        hi phpComparison                ctermfg=118     guifg=#87ff00
         hi phpRelation                  ctermfg=118     guifg=#8fff00
         hi phpBrackets                  ctermfg=118     guifg=#8fff00
         hi phpParent                    ctermfg=124     guifg=#af0000
         "hi phpMemberSelector            ctermfg=209     guifg=#ff875f
         hi phpMemberSelector            ctermfg=124     guifg=#af0000
-        "hi phpVarSelector               ctermfg=124     guifg=#af0000
         hi phpVarSelector               ctermfg=118     guifg=#87ff00
         hi phpFunctions                 ctermfg=73      guifg=#5fafaf
-        "hi phpMethodsVar                 ctermfg=73      guifg=#5fafaf
+        hi phpMethodsVar                 ctermfg=45     guifg=#00d7ff
         hi phpKeyword                   ctermfg=33      guifg=#0087ff
-        hi phpStructure                 ctermfg=118     guifg=#87ff00
-        "hi phpDefine                 ctermfg=118     guifg=#87ff00
+        "hi phpStructure                 ctermfg=118     guifg=#87ff00
+        hi phpStructure                 ctermfg=209     guifg=#ff875f
+        hi phpDefine                    ctermfg=45      guifg=#00d7ff
         hi phpIdentifierComplex         ctermfg=124     guifg=#af0000
         hi phpConstant                  ctermfg=129     guifg=#af00ff
         hi phpInclude                   ctermfg=129     guifg=#af00ff
+        hi phpStorageClass              ctermfg=129     guifg=#af00ff
     endif
 end
 
