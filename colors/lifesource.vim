@@ -361,7 +361,10 @@ if &t_Co > 255
         " ----------------------------------------
         "  PHP Syntax Highlight
         " ----------------------------------------
-        hi phpIdentifier                ctermfg=7       guifg=#ffffff
+        hi phpIdentifier                ctermfg=231
+        "hi phpIdentifier                ctermfg=7       guifg=#ffffff
+        "hi phpStringDouble              ctermfg=118     guifg=#87ff00
+        "hi phpStringSingle              ctermfg=118     guifg=#87ff00
         hi phpOperator                  ctermfg=118     guifg=#87ff00
         hi phpComparison                ctermfg=118     guifg=#87ff00
         hi phpRelation                  ctermfg=118     guifg=#8fff00
@@ -370,6 +373,7 @@ if &t_Co > 255
         "hi phpMemberSelector            ctermfg=209     guifg=#ff875f
         hi phpMemberSelector            ctermfg=124     guifg=#af0000
         hi phpVarSelector               ctermfg=118     guifg=#87ff00
+        "hi phpVarSelector               ctermfg=209     guifg=#ff875f
         hi phpFunctions                 ctermfg=73      guifg=#5fafaf
         hi phpMethodsVar                 ctermfg=45     guifg=#00d7ff
         hi phpKeyword                   ctermfg=33      guifg=#0087ff
