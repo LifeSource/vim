@@ -19,16 +19,15 @@ set showcmd
 set showmode
 set showmatch
 set noswapfile
-set tabstop=4
+set noexpandtab
+set copyindent
+set preserveindent
 set softtabstop=4
 set shiftwidth=4
-set expandtab
-"set smarttab
+set tabstop=4
+set smarttab
 set modeline
 set nohidden
-set autoindent
-"set smartindent
-set copyindent
 set ignorecase
 set incsearch
 set hlsearch
@@ -223,7 +222,7 @@ let g:gitgutter_eager = 0
 " ------------------------------------------------------------------------
 "  You Complete Me
 " ------------------------------------------------------------------------
-let g:ycm_min_num_of_chars_for_completion=10
+let g:ycm_min_num_of_chars_for_completion=5
 let g:ycm_auto_trigger = 1
 
 " ------------------------------------------------------------------------

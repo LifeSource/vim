@@ -341,17 +341,28 @@ if &t_Co > 255
         " ----------------------------------------
         hi cssComment                   ctermfg=114     guifg=#87d787
         hi cssTagName                   ctermfg=118     guifg=#87ff00
+        hi cssClassName                 ctermfg=33      guifg=#0087ff
+        hi cssIdentifier                ctermfg=33      guifg=#0087ff
         hi cssFontProp                  ctermfg=226     guifg=#ffff00
         hi cssColorProp                 ctermfg=226     guifg=#ffff00
         hi cssTextProp                  ctermfg=226     guifg=#ffff00
-        hi cssBoxProp	                ctermfg=226     guifg=#ffff00
+        hi cssBoxProp	                ctermfg=45      guifg=#00d7ff
+        hi cssBorderProp	            ctermfg=45      guifg=#00d7ff
+        hi cssBackgroundProp	        ctermfg=45      guifg=#00d7ff
+        hi cssFunctionComma				ctermfg=45      guifg=#00d7ff
+        hi cssValueInteger				ctermfg=45      guifg=#00d7ff
+        hi cssValueNumber				ctermfg=45      guifg=#00d7ff
+        hi cssValueLength				ctermfg=45      guifg=#00d7ff
         hi cssRenderProp                ctermfg=226     guifg=#ffff00
         hi cssAuralProp                 ctermfg=226     guifg=#ffff00
         hi cssPagingProp                ctermfg=226     guifg=#ffff00
         hi cssTableProp                 ctermfg=226     guifg=#ffff00
         hi cssUIProp		            ctermfg=226     guifg=#ffff00
         hi cssBraces                    ctermfg=124     guifg=#af0000
+        hi cssAttrComma					ctermfg=124     guifg=#af0000
+        hi cssNoise						ctermfg=118		guifg=#87ff00
         hi cssGeneratedContentProp      ctermfg=118     guifg=#87ff00 
+        hi cssUnitDecorators			ctermfg=209		guifg=#ff875f
         " ----------------------------------------
         " Indent guides highlighting
         " ----------------------------------------
