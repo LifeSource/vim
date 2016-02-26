@@ -350,9 +350,9 @@ if &t_Co > 255
         hi cssBorderProp	            ctermfg=45      guifg=#00d7ff
         hi cssBackgroundProp	        ctermfg=45      guifg=#00d7ff
         hi cssFunctionComma				ctermfg=45      guifg=#00d7ff
-        hi cssValueInteger				ctermfg=45      guifg=#00d7ff
-        hi cssValueNumber				ctermfg=45      guifg=#00d7ff
-        hi cssValueLength				ctermfg=45      guifg=#00d7ff
+        hi cssValueInteger				ctermfg=118     guifg=#87ff00
+        hi cssValueNumber				ctermfg=118     guifg=#87ff00
+        hi cssValueLength				ctermfg=118     guifg=#87ff00
         hi cssRenderProp                ctermfg=226     guifg=#ffff00
         hi cssAuralProp                 ctermfg=226     guifg=#ffff00
         hi cssPagingProp                ctermfg=226     guifg=#ffff00
@@ -360,9 +360,11 @@ if &t_Co > 255
         hi cssUIProp		            ctermfg=226     guifg=#ffff00
         hi cssBraces                    ctermfg=124     guifg=#af0000
         hi cssAttrComma					ctermfg=124     guifg=#af0000
-        hi cssNoise						ctermfg=118		guifg=#87ff00
+        hi cssNoise						ctermfg=124		guifg=#af0000
         hi cssGeneratedContentProp      ctermfg=118     guifg=#87ff00 
-        hi cssUnitDecorators			ctermfg=209		guifg=#ff875f
+        hi cssUnitDecorators			ctermfg=45		guifg=#00d7ff
+        hi cssPseudoClass				ctermfg=45		guifg=#00d7ff
+        hi cssPseudoClassId				ctermfg=45		guifg=#00d7ff
         " ----------------------------------------
         " Indent guides highlighting
         " ----------------------------------------
