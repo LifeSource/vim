@@ -337,6 +337,15 @@ if &t_Co > 255
         hi htmlSpecialTagName ctermfg=209     guifg=#ff875f
 
         " ----------------------------------------
+        " XML specific configuration
+        " ----------------------------------------
+        hi xmlTag	         ctermfg=154     guifg=#afff00
+        hi xmlTagName	     ctermfg=33      guifg=#0087ff
+        hi xmlEndTag	     ctermfg=33      guifg=#0087ff
+        hi xmlAttrib		 ctermfg=209     guifg=#ff875f
+
+
+        " ----------------------------------------
         " Cascading stylesheet customisation
         " ----------------------------------------
         hi cssComment                   ctermfg=114     guifg=#87d787
@@ -365,6 +374,9 @@ if &t_Co > 255
         hi cssUnitDecorators			ctermfg=45		guifg=#00d7ff
         hi cssPseudoClass				ctermfg=45		guifg=#00d7ff
         hi cssPseudoClassId				ctermfg=45		guifg=#00d7ff
+        hi cssFlexibleBoxProp			ctermfg=45		guifg=#00d7ff
+        hi cssFlexibleBoxAttr			ctermfg=92		guifg=#8700d7
+        hi cssMultiColumnProp			ctermfg=45		guifg=#00d7ff
         " ----------------------------------------
         " Indent guides highlighting
         " ----------------------------------------

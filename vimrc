@@ -13,24 +13,27 @@ highlight nonText ctermbg=NONE
 " ------------------------------------------------------------------------
 autocmd BufRead,BufNewFile *.styl,*.md,*.css setlocal spell
 
+set autoread
+au CursorHold * checktime
+
 set nocompatible
-set number
-set showcmd
+set number " shows number on the side
+set showcmd 
 set showmode
 set showmatch
-set noswapfile
+set noswapfile " don't create swap files ~.swp
 set noexpandtab
-set copyindent
-set preserveindent
+"set copyindent
+"set preserveindent
 set softtabstop=4
 set shiftwidth=4
 set tabstop=4
-set smarttab
+"set smarttab
 set modeline
 set nohidden
 set ignorecase
-set incsearch
-set hlsearch
+set incsearch	" incremental search
+set hlsearch	" highlight search result
 set laststatus=2
 "set foldmethod=indent
 
@@ -49,7 +52,6 @@ set clipboard=unnamed
 " ------------------------------------------------------------------------
 "  Keyboard mappings
 " ------------------------------------------------------------------------
-
 map <esc>^[ <esc>^[
 
 " Tagbar toggle
@@ -59,12 +61,13 @@ nmap <C-b> :TagbarToggle<CR>
 vmap hh <C-y>,
 imap hh <C-y>,
 
+" Search
+nnoremap <F3> :set hlsearch!<CR>
+
 " File management
 map zz :w<CR>
 map zx :wq!<CR>
 map <c-q> <esc>:q!<CR>
-map <c-c> yy
-map <c-d> yy p
 "map <c-v> <esc>:set nopaste<CR> p :set nopaste<CR>A
 
 " Vim buffer management
@@ -90,7 +93,6 @@ map ,d' ds'
 map ,d[ ds[
 
 map <c-l> <ESC>zfap
-
 
 " Commenting
 map <c-k><c-c> \cc
@@ -138,7 +140,7 @@ let g:vim_json_syntax_conceal = 0
 " ------------------------------------------------------------------------
 
 " ignore the directories and files with the following extensions
-set wildignore+=*/node_modules/*,/*bower_components/*,/*jspm_packages/*,*/lib/*,*/vendor/*,*/dist/**,*.so,*.swp,*.zip,*~
+set wildignore+=*/node_modules/*,/*bower_components/*,/*jspm_packages/*,*/lib/*,*/vendor/*,*.so,*.swp,*.zip,*~
 set runtimepath^=~/vim/bundle/ctrlp.vim
 let g:ctrlp_working_path_mode = "ra"
 let g:ctrlp_show_hidden = 1
@@ -222,7 +224,7 @@ let g:gitgutter_eager = 0
 " ------------------------------------------------------------------------
 "  You Complete Me
 " ------------------------------------------------------------------------
-let g:ycm_min_num_of_chars_for_completion=5
+let g:ycm_min_num_of_chars_for_completion=10
 let g:ycm_auto_trigger = 1
 
 " ------------------------------------------------------------------------

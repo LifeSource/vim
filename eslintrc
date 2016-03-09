@@ -13,14 +13,13 @@
         "jsx": true
     },
     "rules": {
-        "strict": [2, "function"],
+        "strict": [2, "safe"],
         "semi": 2,
         "eqeqeq": 2,
         "curly": 2,
         "default-case": 2,
         "no-caller": 2,
         "no-else-return": 2,
-        "no-empty-label": 2,
         "no-eval": 2,
         "no-extra-bind": 2,
         "no-fallthrough": 2,
@@ -34,6 +33,7 @@
         "no-delete-var": 2,
         "no-label-var": 2,
         "no-undef": 2,
+        "no-undefined": 2,
         "no-undef-init": 2,
         "no-use-before-define": [2, "nofunc"],
         "quotes": [2, "double"],

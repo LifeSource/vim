@@ -107,3 +107,9 @@ NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
 PATH="$NPM_PACKAGES/bin:$PATH"
 
 source /usr/local/lib/dnx/bin/dnvm.sh
+
+###-tns-completion-start-###
+if [ -f /Users/kenrick/.tnsrc ]; then 
+    source /Users/kenrick/.tnsrc 
+fi
+###-tns-completion-end-###
