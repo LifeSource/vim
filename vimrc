@@ -13,8 +13,8 @@ highlight nonText ctermbg=NONE
 " ------------------------------------------------------------------------
 autocmd BufRead,BufNewFile *.styl,*.md,*.css setlocal spell
 
-set autoread
-au CursorHold * checktime
+"set autoread
+"au CursorHold * checktime
 
 set nocompatible
 set number " shows number on the side
@@ -140,7 +140,7 @@ let g:vim_json_syntax_conceal = 0
 " ------------------------------------------------------------------------
 
 " ignore the directories and files with the following extensions
-set wildignore+=*/node_modules/*,/*bower_components/*,/*jspm_packages/*,*/lib/*,*/vendor/*,*.so,*.swp,*.zip,*~
+set wildignore+=*/node_modules/*,/*bower_components/*,/*jspm_packages/*,/*platforms/*,*/lib/*,*/vendor/*,*.so,*.swp,*.zip,*~ 
 set runtimepath^=~/vim/bundle/ctrlp.vim
 let g:ctrlp_working_path_mode = "ra"
 let g:ctrlp_show_hidden = 1
