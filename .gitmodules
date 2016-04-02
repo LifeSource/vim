@@ -106,3 +106,6 @@
 [submodule "bundle/bundle/supertab"]
 	path = bundle/bundle/supertab
 	url = https://github.com/ervandew/supertab.git
+[submodule "bundle/haml"]
+	path = bundle/haml
+	url = https://github.com/tpope/vim-haml.git
