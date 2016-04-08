@@ -106,3 +106,6 @@
 [submodule "bundle/haml"]
 	path = bundle/haml
 	url = https://github.com/tpope/vim-haml.git
+[submodule "bundle/editorconfig"]
+	path = bundle/editorconfig
+	url = https://github.com/editorconfig/editorconfig-vim.git

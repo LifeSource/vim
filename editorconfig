@@ -1,35 +1,53 @@
-; .editorconfig
-
+# http://editorconfig.org
 root = true
 
 [*]
-charset=utf-8
-
-[**.js]
-;path=~/.vim/bundle/js-beautify/js/lib/beautify.js
-indent_style = space 
-indent_size = 4
-
-[**.jsx]
-e4x = true
 indent_style = space
 indent_size = 4
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
 
-[**.css]
-;path=~/.vim/bundle/js-beautify/js/lib/beautify-css.js
-indent_style = tab 
-indent_size = 4
+[*.md]
+trim_trailing_whitespace = false
 
-[**.html]
-indent_style = tab 
+[*.js]
+indent_style = space
 indent_size = 4
-max_char = 78
-brace_style = expand
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
 
-[**.styl]
-indent_style = tab
-indent_size = 4
+[*.styl]
+indent_style = space
+indent_size = 2
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
 
-[**.jade]
-indent_style = tab
-indent_size = 4
+[*.css]
+indent_style = space
+indent_size = 2
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.styl]
+indent_style = space
+indent_size = 2
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.scss]
+indent_style = space
+indent_size = 2
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.html]
+indent_style = space
+indent_size = 2
+charset = utf-8
+trim_trailing_whitespace = true

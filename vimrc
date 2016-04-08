@@ -6,7 +6,7 @@ let g:molokai_original = 1
 let g:rehash256 = 1
 colorscheme lifesource
 "set background=dark
-highlight Normal ctermbg=NONE 
+highlight Normal ctermbg=NONE
 highlight nonText ctermbg=NONE
 
 " ------------------------------------------------------------------------
@@ -19,7 +19,7 @@ autocmd BufRead,BufNewFile *.styl,*.md,*.css setlocal spell
 
 set nocompatible
 set number " shows number on the side
-set showcmd 
+set showcmd
 set showmode
 set showmatch
 set noswapfile " don't create swap files ~.swp
@@ -107,8 +107,8 @@ imap jj <Plug>snipMateNextOrTrigger
 let g:vcoolor_map = 'ç'
 let g:vcoolor_lowercase = 1
 
-" Buffer movement (NOTE: the characters map below are ALT + <key> combination)  
-map ‘ :bnext<CR>  
+" Buffer movement (NOTE: the characters map below are ALT + <key> combination)
+map ‘ :bnext<CR>
 map “ :bprevious<CR>
 map ∑ :bd<CR>
 
@@ -142,7 +142,7 @@ let g:vim_json_syntax_conceal = 0
 " ------------------------------------------------------------------------
 
 " ignore the directories and files with the following extensions
-set wildignore+=*/node_modules/*,/*bower_components/*,/*jspm_packages/*,/*platforms/*,*/lib/*,*/vendor/*,*.so,*.swp,*.zip,*~ 
+set wildignore+=*/node_modules/*,/*bower_components/*,/*jspm_packages/*,/*platforms/*,*/lib/*,*/vendor/*,*.so,*.swp,*.zip,*~
 set runtimepath^=~/vim/bundle/ctrlp.vim
 let g:ctrlp_working_path_mode = "ra"
 let g:ctrlp_show_hidden = 1
@@ -163,20 +163,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 " ------------------------------------------------------------------------
 noremap <C-f> :Autoformat<CR>
 let g:autoformat_autoindent = 0
-
-
-autocmd FileType javascript noremap <buffer>  <c-f> :call JsBeautify()<cr>
-" for json
-autocmd FileType json noremap <buffer> <c-f> :call JsonBeautify()<cr>
-" " for jsx
-autocmd FileType jsx noremap <buffer> <c-f> :call JsxBeautify()<cr>
-" " for html
-autocmd FileType html noremap <buffer> <c-f> :call HtmlBeautify()<cr>
-" " for css or scss
-autocmd FileType css noremap <buffer> <c-f> :call CSSBeautify()<cr>
-
-map <c-f> :call JsBeautify()<cr>
-
+let g:formatterpath = ["~/Users/kenrick/.npm-packages/lib/node_modules/js-beautify/js/lib"]
 
 " stylus css pre-processor
 autocmd BufNewFile,BufReadPost *.styl set filetype=stylus
@@ -259,3 +246,4 @@ iabbr myemail kenrick.wu@gmail.com
 iabbr myname Kenrick Wu
 iabbr phps <?php ?>
 
+let g:EditorConfig_exclude_patterns = ['fugitive://.*']
