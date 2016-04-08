@@ -9,7 +9,7 @@ function getSpacing() {
 
 	local git=$(gitPromptInfo)
 	if [ ${#git} != 0 ]; then
-		((git=${#git} - 10))
+		((git=${#git} - 1))
 	else
 		git=0
 	fi
