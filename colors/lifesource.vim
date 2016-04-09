@@ -60,7 +60,8 @@ hi Label           guifg=#E6DB74               gui=none
 hi Macro           guifg=#C4BE89               gui=italic
 hi SpecialKey      guifg=#66D9EF               gui=italic
 
-hi MatchParen      guifg=#000000 guibg=#FD971F gui=bold
+"hi MatchParen      guifg=#000000 guibg=#FD971F gui=bold
+hi MatchParen      guifg=#000000 guibg=#ffeacd        gui=bold
 hi ModeMsg         guifg=#E6DB74
 hi MoreMsg         guifg=#E6DB74
 hi Operator        guifg=#F92672
@@ -179,7 +180,9 @@ if &t_Co > 255
     hi Macro           ctermfg=193
     hi SpecialKey      ctermfg=81
 
-    hi MatchParen      ctermfg=233  ctermbg=208 cterm=bold
+    "hi MatchParen      ctermfg=233  ctermbg=208 cterm=bold
+    "hi MatchParen      ctermfg=233  ctermbg=208 cterm=bold
+    hi MatchParen      guifg=#000000 guibg=#ffeacd        gui=bold
     hi ModeMsg         ctermfg=229
     hi MoreMsg         ctermfg=229
     hi Operator        ctermfg=161
@@ -249,7 +252,8 @@ if &t_Co > 255
 
         hi DiffDelete        ctermfg=125   ctermbg=233
 
-        hi Directory         ctermfg=26			    cterm=bold      guifg=#71bbd6
+        "hi Directory         ctermfg=26			    cterm=bold      guifg=#71bbd6
+        hi Directory         ctermfg=32			    cterm=bold      guifg=#71bbd6
         hi Error             ctermfg=88    ctermbg=233              guifg=#870000
         hi Exception         ctermfg=215			    cterm=bold      guifg=#ffaf5f
         hi Float             ctermfg=141
@@ -295,6 +299,8 @@ if &t_Co > 255
         hi jsArrowFunction               ctermfg=113     guifg=#87ff5f
         hi jsSpecial                     ctermfg=113     guifg=#87ff5f
         hi jsStorageClass                ctermfg=32      guifg=#007dd7
+        hi jsOf                          ctermfg=129     guifg=#af00ff
+        hi jsModules                     ctermfg=129     guifg=#af00ff
         hi jsModuleWords                 ctermfg=129     guifg=#af00ff
         hi jsClass                       ctermfg=202     guifg=#ff5f00
         hi jsGlobalObjects               ctermfg=202     guifg=#ff5f00
@@ -339,10 +345,11 @@ if &t_Co > 255
         " ----------------------------------------
         " XML specific configuration
         " ----------------------------------------
-        hi xmlTag	         ctermfg=154     guifg=#afff00
+        hi xmlTag	         ctermfg=202     guifg=#ff875f
+        "hi xmlTag	         ctermfg=154     guifg=#afff00
         hi xmlTagName	     ctermfg=33      guifg=#0087ff
-        hi xmlEndTag	     ctermfg=33      guifg=#0087ff
-        hi xmlAttrib		 ctermfg=209     guifg=#ff875f
+        hi xmlEndTag	     ctermfg=154     guifg=#aff000
+        hi xmlAttrib		 ctermfg=214     guifg=#ffaf00
 
 
         " ----------------------------------------
