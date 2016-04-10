@@ -94,11 +94,11 @@ map ,d( ds(
 map ,d' ds'
 map ,d[ ds[
 
+" block foldiing
 map <c-l> <ESC>zfap
 
 " Commenting
-map <c-k><c-c> \cc
-map <c-k><c-u> \cu
+
 
 " Snippets
 imap jj <Plug>snipMateNextOrTrigger
@@ -108,6 +108,7 @@ let g:vcoolor_map = 'ç'
 let g:vcoolor_lowercase = 1
 
 " Buffer movement (NOTE: the characters map below are ALT + <key> combination)
+" ‘ => ALT + ] and “ => ALT + [
 map ‘ :bnext<CR>
 map “ :bprevious<CR>
 map ∑ :bd<CR>

@@ -16,6 +16,19 @@ snippet suite
 		${0}
 	});
 
+snippet suite6
+	describe("${1}", () => {
+
+		beforeEach(() => {
+
+		});
+
+		afterEach(() => {
+
+		});
+
+		${0}
+	});
 # --------------------------------------
 # Test setup describe, it, beforeEach, afterEach
 # --------------------------------------
@@ -23,16 +36,32 @@ snippet desc
 	describe("${1}", function() {
 		${0}
 	});
+snippet desc6
+	describe("${1}", () => {
+		${0}
+	});
 snippet it
 	it("${1}", function() {
+		${0}
+	});
+snippet it6
+	it("${1}", () => {
 		${0}
 	});
 snippet bef
 	beforeEach(function() {
 		${0}
 	});
+snippet bef6
+	beforeEach(() => {
+		${0}
+	});
 snippet aft
 	afterEach(function() {
+		${0}
+	});
+snippet aft6
+	afterEach(() => {
 		${0}
 	});
 # --------------------------------------
@@ -70,6 +99,6 @@ snippet seq
 	${1}.should.equal(${2});${0}
 snippet slen
 	${1}.should.have.length(${2});${0}
-snippet slab
+snippet slaba
 	${1}.should.have.length.above(${2});${0}
 

@@ -349,7 +349,9 @@ if &t_Co > 255
         "hi xmlTag	         ctermfg=154     guifg=#afff00
         hi xmlTagName	     ctermfg=33      guifg=#0087ff
         hi xmlEndTag	     ctermfg=154     guifg=#aff000
-        hi xmlAttrib		 ctermfg=214     guifg=#ffaf00
+        "hi xmlEndTag	     ctermfg=33      guifg=#0087ff
+        "hi xmlAttrib		 ctermfg=214     guifg=#ffaf00
+        hi xmlAttrib		 ctermfg=118     guifg=#87ff00
 
 
         " ----------------------------------------
