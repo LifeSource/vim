@@ -1,4 +1,4 @@
-PROMPT='$fg[green][$fg[red]吳$fg[white]錦倫$fg[green]]♻  $fg[yellow]$(getPwd)$(getSpacing)$(gitPromptInfo)
+PROMPT='$fg[red]吳$fg[white]錦倫 $fg[green]♻  $fg[yellow]$(getPwd)$(getSpacing)$(gitPromptInfo)
 $fg[green]~>$fg[cyan]> $reset_color'
 
 function getPwd() {

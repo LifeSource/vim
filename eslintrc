@@ -36,7 +36,7 @@
         "no-undefined": 2,
         "no-undef-init": 2,
         "no-use-before-define": [2, "nofunc"],
-        "quotes": [2, "double"],
+//        "quotes": [2, "double"],
         "yoda": 2
     },
     "env": {

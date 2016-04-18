@@ -246,7 +246,8 @@ if &t_Co > 255
         hi Boolean           ctermfg=141                             guifg=#af87ff
         hi Character         ctermfg=222                             guifg=#ffdf87
         hi Number            ctermfg=141                             guifg=#af87ff
-        hi String            ctermfg=229                             guifg=#ffffaf
+        "hi String            ctermfg=229                             guifg=#ffffaf
+        hi String            ctermfg=228
         hi Conditional       ctermfg=26			    cterm=bold       guifg=#005fd7
         hi Constant          ctermfg=141            cterm=bold
 
@@ -284,13 +285,17 @@ if &t_Co > 255
         " Javascript specific configuration
         " ---------------------------------------
 
-        hi jsOperator                    ctermfg=10      guifg=#00ff00
+        "hi jsOperator                    ctermfg=10      guifg=#00ff00
+        hi jsOperator                    ctermfg=83
         hi javaScriptReserved            ctermfg=166     guifg=#d75f00
         hi jsDotNotation                 ctermfg=92      guifg=#8700d7
+        hi jsIdentifier                  ctermfg=35      guifg=#00af87
         hi jsModules                     ctermfg=92      guifg=#8700d7
         hi jsBuiltins                    ctermfg=92      guifg=#8700d7
-        hi jsFuncArgs                    ctermfg=214     guifg=#ffaf00
-        hi jsFuncCall                    ctermfg=73      guifg=#5fafaf
+        "hi jsFuncArgs                    ctermfg=214     guifg=#ffaf00
+        hi jsFuncArgs                    ctermfg=221
+        "hi jsFuncCall                    ctermfg=73      guifg=#5fafaf
+        hi jsFuncCall                    ctermfg=30
         hi jsFuncName                    ctermfg=113     guifg=#87ff5f
         hi jsFunction                    ctermfg=39      guifg=#00afff
         hi jsFuncBraces                  ctermfg=214     guifg=#ffaf00
@@ -298,7 +303,8 @@ if &t_Co > 255
         hi jsFuncArgCommas               ctermfg=10      guifg=#00ff00
         hi jsArrowFunction               ctermfg=113     guifg=#87ff5f
         hi jsSpecial                     ctermfg=113     guifg=#87ff5f
-        hi jsStorageClass                ctermfg=32      guifg=#007dd7
+        "hi jsStorageClass                ctermfg=32      guifg=#007dd7
+        hi jsStorageClass                ctermfg=39
         hi jsOf                          ctermfg=129     guifg=#af00ff
         hi jsModules                     ctermfg=129     guifg=#af00ff
         hi jsModuleWords                 ctermfg=129     guifg=#af00ff
@@ -310,7 +316,8 @@ if &t_Co > 255
         hi jsObjectKey                   ctermfg=45      guifg=#00d7d7       cterm=bold
         hi jsBraces                      ctermfg=214     guifg=#ffaf00
         hi jsBrackets                    ctermfg=10      guifg=#00ff00
-        hi jsParens                      ctermfg=124     guifg=#af0000
+        "hi jsParens                      ctermfg=124     guifg=#af0000
+        hi jsParens                      ctermfg=160
         hi javaScriptBraces              ctermfg=124     guifg=#af0000
         hi javaScriptParens              ctermfg=45	     guifg=#00d7ff       cterm=bold 
         hi javaScriptStringD             ctermfg=228     guifg=#ffff87
@@ -333,14 +340,15 @@ if &t_Co > 255
         " ----------------------------------------
         " HTML specific configuration
         " ----------------------------------------
-        hi htmlTagName	     ctermfg=33      guifg=#0087ff
-        hi htmlTag	         ctermfg=154     guifg=#afff00
-        hi htmlEndTag	     ctermfg=154     guifg=#afff00
+        hi htmlTagName	      ctermfg=33      guifg=#0087ff
+        hi htmlTag	          ctermfg=154     guifg=#afff00
+        hi htmlEndTag	      ctermfg=154     guifg=#afff00
         hi htmlArg            ctermfg=197     guifg=#ff005f
         hi htmlComment        ctermfg=114     guifg=#87d787
         hi htmlCommentPart    ctermfg=114     guifg=#87d787
         "hi htmlScriptTag     ctermfg=67      guifg=#00d7ff
         hi htmlSpecialTagName ctermfg=209     guifg=#ff875f
+        hi htmlTagN           ctermfg=209     guifg=#ff875f
 
         " ----------------------------------------
         " XML specific configuration
@@ -348,10 +356,12 @@ if &t_Co > 255
         hi xmlTag	         ctermfg=202     guifg=#ff875f
         "hi xmlTag	         ctermfg=154     guifg=#afff00
         hi xmlTagName	     ctermfg=33      guifg=#0087ff
+        "hi xmlTagName       ctermfg=118     guifg=#87ff00
         hi xmlEndTag	     ctermfg=154     guifg=#aff000
         "hi xmlEndTag	     ctermfg=33      guifg=#0087ff
-        "hi xmlAttrib		 ctermfg=214     guifg=#ffaf00
-        hi xmlAttrib		 ctermfg=118     guifg=#87ff00
+        hi xmlAttrib		 ctermfg=202     
+        "hi javaScriptExpression     ctermfg=114
+        "hi xmlAttrib		 ctermfg=118     guifg=#87ff00
 
 
         " ----------------------------------------
