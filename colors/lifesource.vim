@@ -286,7 +286,7 @@ if &t_Co > 255
         " ---------------------------------------
 
         "hi jsOperator                    ctermfg=10      guifg=#00ff00
-        hi jsOperator                    ctermfg=83
+        hi jsOperator                    ctermfg=10
         hi javaScriptReserved            ctermfg=166     guifg=#d75f00
         hi jsDotNotation                 ctermfg=92      guifg=#8700d7
         hi jsIdentifier                  ctermfg=35      guifg=#00af87
@@ -304,7 +304,7 @@ if &t_Co > 255
         hi jsArrowFunction               ctermfg=113     guifg=#87ff5f
         hi jsSpecial                     ctermfg=113     guifg=#87ff5f
         "hi jsStorageClass                ctermfg=32      guifg=#007dd7
-        hi jsStorageClass                ctermfg=39
+        hi jsStorageClass                ctermfg=32
         hi jsOf                          ctermfg=129     guifg=#af00ff
         hi jsModules                     ctermfg=129     guifg=#af00ff
         hi jsModuleWords                 ctermfg=129     guifg=#af00ff
@@ -328,6 +328,9 @@ if &t_Co > 255
         hi javaScriptIdentifier          ctermfg=27      guifg=#005fff
         hi javascriptFunctionFold        ctermfg=114     guifg=#87d787
         hi javaScriptSpecialCharacter    ctermfg=27      guifg=#005fff
+        hi jsTemplateVar                 ctermfg=129      
+        hi jsFuncAssignObjChain          ctermfg=129      
+        hi jsFuncArgRest                 ctermfg=195
 
         " ----------------------------------------
         " Jason specific configuration
