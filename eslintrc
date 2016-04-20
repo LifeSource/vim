@@ -7,7 +7,7 @@
         "destructuring": true,
         "forOf": true,
         "generators": true,
-        "modules": true,
+        "modules": false,
         "spread": true,
         "templateStrings": true,
         "jsx": true
