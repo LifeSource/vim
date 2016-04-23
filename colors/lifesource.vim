@@ -218,7 +218,8 @@ if &t_Co > 255
     hi Structure       ctermfg=81
     hi Tag             ctermfg=161
     hi Title           ctermfg=166
-    hi Todo            ctermfg=231 ctermbg=232   cterm=bold
+    "hi Todo            ctermfg=231 ctermbg=232   cterm=bold
+    hi Todo            ctermfg=214 ctermbg=none cterm=bold
 
     hi Typedef         ctermfg=81
     hi Type            ctermfg=81                cterm=none
@@ -227,7 +228,8 @@ if &t_Co > 255
     hi VertSplit       ctermfg=244 ctermbg=232   cterm=bold
     hi VisualNOS                   ctermbg=238
     hi Visual                      ctermbg=235
-    hi WarningMsg      ctermfg=231 ctermbg=238   cterm=bold
+    "hi WarningMsg      ctermfg=231 ctermbg=238   cterm=bold
+    hi WarningMsg      ctermfg=208 ctermbg=238   cterm=bold
     hi WildMenu        ctermfg=81  ctermbg=16
 
     hi Comment         ctermfg=59
