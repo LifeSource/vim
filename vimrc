@@ -26,9 +26,9 @@ set noswapfile " don't create swap files ~.swp
 "set noexpandtab
 "set copyindent
 "set preserveindent
-set softtabstop=4
-set tabstop=4
-set shiftwidth=4
+set softtabstop=2
+set tabstop=2
+set shiftwidth=2
 set expandtab
 "set smarttab
 set modeline
@@ -133,13 +133,26 @@ let g_syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_javascript_eslint_exec = "$HOME/.npm-packages/bin/eslint"
-let g:syntastic_javascript_checkers = ["eslint", "scss_lint"]
+let g:syntastic_javascript_checkers = ["eslint"]
 let g:syntastic_scss_checkers = ["scss_lint"]
+
+let g:syntastic_error_symbol = "✗"
+let g:syntastic_warning_symbol = "⚠"
+
+function! ToggleErrors()
+    let old_last_winnr = winnr('$')
+    lclose
+    if old_last_winnr == winnr('$')
+        " Nothing was closed, open syntastic error location panel
+        Errors
+    endif
+endfunction
+
+nnoremap <silent> <C-e> :<C-u>call ToggleErrors()<CR>
+nnoremap <silent> <C-g> :lnext<CR>
 
 "ActivateAddons vim-snippets snipmate
 let g:vim_json_syntax_conceal = 0
-
-map <c-e> <esc>:Errors<cr>
 
 " ------------------------------------------------------------------------
 " Control-P settings

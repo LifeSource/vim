@@ -104,6 +104,7 @@ hi Underlined      guifg=#808080               gui=underline
 hi VertSplit       guifg=#808080 guibg=#080808 gui=bold
 hi VisualNOS                     guibg=#403D3D
 hi Visual                        guibg=#403D3D
+"hi WarningMsg      guifg=#FFFFFF guibg=#333333 gui=bold
 hi WarningMsg      guifg=#FFFFFF guibg=#333333 gui=bold
 hi WildMenu        guifg=#66D9EF guibg=#000000
 
@@ -249,14 +250,15 @@ if &t_Co > 255
         "hi String            ctermfg=229                             guifg=#ffffaf
         hi String            ctermfg=228
         hi Conditional       ctermfg=26			    cterm=bold       guifg=#005fd7
-        hi Constant          ctermfg=141            cterm=bold
+        hi Constant          ctermfg=141        cterm=bold
 
-        hi DiffDelete        ctermfg=125   ctermbg=233
+        hi DiffDelete        ctermfg=125        ctermbg=233
 
         "hi Directory         ctermfg=26			    cterm=bold      guifg=#71bbd6
         hi Directory         ctermfg=32			    cterm=bold      guifg=#71bbd6
-        hi Error             ctermfg=88    ctermbg=233              guifg=#870000
-        hi Exception         ctermfg=215			    cterm=bold      guifg=#ffaf5f
+        "hi Error             ctermfg=88    ctermbg=233              guifg=#870000
+        hi Error             ctermfg=196        ctermbg=none   
+        hi Exception         ctermfg=215			  cterm=bold      guifg=#ffaf5f
         hi Float             ctermfg=141
         hi Function          ctermfg=26			    cterm=bold      guifg=#005fd7
         hi Identifier        ctermfg=26                             guifg=#005fdf
@@ -264,21 +266,21 @@ if &t_Co > 255
         hi Label		    ctermfg=26                              guifg=#005fd7
         hi Keyword			ctermfg=26              cterm=bold      guifg=#005fd7
         hi Operator			ctermfg=125                             guifg=#af0000
-        hi PreCondit			ctermfg=154             cterm=bold
-        hi Repeat			ctermfg=197             cterm=bold
+        hi PreCondit	  ctermfg=154             cterm=bold
+        hi Repeat			  ctermfg=197             cterm=bold
 
-        hi Statement			ctermfg=197             cterm=bold
-        hi Tag				ctermfg=197
+        hi Statement	  ctermfg=197             cterm=bold
+        hi Tag				  ctermfg=197
         hi Title				ctermfg=203
         hi Typedef			ctermfg=37
         hi Visual									ctermbg=238
 
         hi Comment			ctermfg=114                             guifg=#87d787
 
-        hi LineNr			ctermfg=255             ctermbg=235     guifg=#ffffff 
+        hi LineNr			  ctermfg=255             ctermbg=235     guifg=#ffffff 
         hi NonText			ctermfg=239
         hi SpecialKey		ctermfg=239
-        hi Special          ctermfg=26              cterm=bold      guifg=##005fd7
+        hi Special      ctermfg=26              cterm=bold      guifg=##005fd7
         hi PreProc			ctermfg=26              cterm=bold      guifg=##005fd7
 
         " ---------------------------------------
