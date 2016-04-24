@@ -16,11 +16,13 @@ autocmd BufRead,BufNewFile *.scss,*.styl,*.md,*.css setlocal spell
 
 "set autoread
 "au CursorHold * checktime
+set list
+set listchars=eol:⏎,space:¬
 
 set nocompatible
-set number " shows number on the side
+set number " shows line number on the side
 set showcmd
-set showmode
+set showmode " show the VIM mode you are currently in
 set showmatch
 set noswapfile " don't create swap files ~.swp
 "set noexpandtab
@@ -95,7 +97,7 @@ map ,d' ds'
 map ,d[ ds[
 
 " block foldiing
-map <c-l> <ESC>zfap
+map <c-l> <ESC>:set list!<CR>
 
 " Commenting
 
