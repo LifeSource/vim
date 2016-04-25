@@ -16,7 +16,7 @@ autocmd BufRead,BufNewFile *.scss,*.styl,*.md,*.css setlocal spell
 
 "set autoread
 "au CursorHold * checktime
-set list
+"set list
 set listchars=eol:⏎,space:¬
 
 set nocompatible
@@ -231,7 +231,7 @@ let g:airline_symbols.linenr = ''
 let g:airline_theme="dark"
 
 let g:nodejs_complete_config = {
-\  'max_node_compl_len': 15
+\  'max_node_compl_len': 8
 \}
 
 " automatically open and close the popup menu / preview window
