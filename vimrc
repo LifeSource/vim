@@ -14,6 +14,7 @@ highlight nonText ctermbg=NONE
 " ------------------------------------------------------------------------
 autocmd BufRead,BufNewFile *.scss,*.styl,*.md,*.css setlocal spell
 
+set shell=/bin/zsh
 "set autoread
 "au CursorHold * checktime
 "set list
