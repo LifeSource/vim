@@ -93,11 +93,6 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-# Microsoft and .NET related
-code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
-source dnvm.sh
-export MONO_MANAGED_WATCHER=disabled
-
 VIMRUNTIME="/usr/local/share/vim/vim74/"
 alias vim="/usr/local/bin/vim"
 # NODE Configuration
