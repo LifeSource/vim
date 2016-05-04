@@ -1,8 +1,8 @@
-PROMPT='$fg[green]♻ $fg[yellow]$(getPwd)$fg[magenta] $(gitPromptInfo) $fg[red]
+PROMPT='$fg[green]♻  $fg[yellow]$(getPwd)$fg[magenta] $(gitPromptInfo) $fg[red]
 $fg[green]~$fg[cyan]> $reset_color'
 
 function getPwd() {
-	echo "${PWD/$HOME/ }"
+	echo "${PWD/$HOME/~}"
 }
 
 function getSpacing() {
@@ -38,7 +38,7 @@ function batteryCharge() {
     fi
 }
 
-ZSH_THEME_GIT_PROMPT_PREFIX="["
-ZSH_THEME_GIT_PROMPT_SUFFIX="]$reset_color"
+ZSH_THEME_GIT_PROMPT_PREFIX="<"
+ZSH_THEME_GIT_PROMPT_SUFFIX=">$reset_color"
 ZSH_THEME_GIT_PROMPT_DIRTY="$fg[red]+"
 ZSH_THEME_GIT_PROMPT_CLEAN="$fg[green]"
