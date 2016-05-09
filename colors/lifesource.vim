@@ -282,8 +282,8 @@ if &t_Co > 255
         hi LineNr			  ctermfg=255             ctermbg=235     guifg=#ffffff 
         hi NonText			ctermfg=239
         hi SpecialKey		ctermfg=239
-        hi Special      ctermfg=26              cterm=bold      guifg=##005fd7
-        hi PreProc			ctermfg=26              cterm=bold      guifg=##005fd7
+        hi Special      ctermfg=26              cterm=bold      guifg=#005fd7
+        hi PreProc			ctermfg=26              cterm=bold      guifg=#005fd7
 
         " ---------------------------------------
         " Javascript specific configuration
