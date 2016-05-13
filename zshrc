@@ -108,3 +108,5 @@ if [ -f /Users/kenrick/.tnsrc ]; then
     source /Users/kenrick/.tnsrc 
 fi
 ###-tns-completion-end-###
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

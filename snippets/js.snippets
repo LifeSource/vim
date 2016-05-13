@@ -102,3 +102,12 @@ snippet prm{
 		.then(${2} => {
 			${3}
 		});${0}
+# modules (imports and exports)
+snippet imp
+	import ${1} from '${0}';
+
+snippet imp{
+	import { ${1} } from '${0}';
+
+snippet exp
+	export ${0}

@@ -250,7 +250,8 @@ if &t_Co > 255
         hi Character         ctermfg=222                             guifg=#ffdf87
         hi Number            ctermfg=141                             guifg=#af87ff
         "hi String            ctermfg=229                             guifg=#ffffaf
-        hi String            ctermfg=228
+        " hi String            ctermfg=228
+        hi String            ctermfg=229
         hi Conditional       ctermfg=26			    cterm=bold       guifg=#005fd7
         hi Constant          ctermfg=141        cterm=bold
 
@@ -328,8 +329,8 @@ if &t_Co > 255
         hi jsParens                      ctermfg=160     guifg=#d70000
         hi javaScriptBraces              ctermfg=124     guifg=#af0000
         hi javaScriptParens              ctermfg=45	     guifg=#00d7ff       cterm=bold 
-        hi javaScriptStringD             ctermfg=228     guifg=#ffff87
-        hi javaScriptStringS             ctermfg=228     guifg=#ffff87
+        " hi javaScriptStringD             ctermfg=228     guifg=#ffff87
+        " hi javaScriptStringS             ctermfg=228     guifg=#ffff87
         hi javaScriptFuncExp             ctermfg=114     guifg=#87d787
         hi javaScriptSpecial             ctermfg=254     guifg=#e4e4e4
         hi javaScriptOperator            ctermfg=10      guifg=#00ff00
@@ -354,9 +355,12 @@ if &t_Co > 255
         " ----------------------------------------
         "hi htmlTagName	      ctermfg=33      guifg=#0087ff
         hi htmlTagName	      ctermfg=39
-        hi htmlTag	          ctermfg=154     guifg=#afff00
-        hi htmlEndTag	       ctermfg=154     guifg=#afff00
-        hi htmlArg            ctermfg=197     guifg=#ff005f
+        " hi htmlTag	          ctermfg=154     guifg=#afff00
+        " hi htmlEndTag	       ctermfg=154     guifg=#afff00
+        hi htmlTag	          ctermfg=154
+        hi htmlEndTag	        ctermfg=154    
+        " hi htmlArg            ctermfg=197     guifg=#ff005f
+        hi htmlArg            ctermfg=197
         hi htmlComment        ctermfg=114     guifg=#87d787
         hi htmlCommentPart    ctermfg=114     guifg=#87d787
         "hi htmlScriptTag     ctermfg=67      guifg=#00d7ff
