@@ -105,6 +105,7 @@ map <c-l> <ESC>:set list!<CR>
 
 " Snippets
 imap jj <Plug>snipMateNextOrTrigger
+imap <tab> <Plug>snipMateNextOrTrigger
 
 " Color Picker
 let g:vcoolor_map = 'ç'
@@ -183,10 +184,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 " ------------------------------------------------------------------------
 noremap <C-f> :Autoformat<CR>
 let g:autoformat_autoindent = 0
-let g:formatterpath = ["~/Users/kenrick/.npm-packages/lib/node_modules/js-beautify/js/lib"]
-
-" stylus css pre-processor
-autocmd BufNewFile,BufReadPost *.styl set filetype=stylus
+let g:formatterpath = ["${HOME}/.npm-packages/lib/node_modules/js-beautify/js/lib"]
 
 " Nerd-fonts
 let g:webdevicons_enable = 1
@@ -249,7 +247,8 @@ let g:gitgutter_eager = 0
 " ------------------------------------------------------------------------
 let g:ycm_min_num_of_chars_for_completion=10
 let g:ycm_auto_trigger = 1
-
+let g:ycm_key_list_select_completion=[]
+let g:ycm_key_list_previous_completion=[]
 " ------------------------------------------------------------------------
 " IndentLine Plugin Settings
 " ------------------------------------------------------------------------

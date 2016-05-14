@@ -344,10 +344,11 @@ if &t_Co > 255
         " ----------------------------------------
         " Jason specific configuration
         " ----------------------------------------
-        hi jsonKeyword   ctermfg=32      guifg=#0087d7
+        "hi jsonKeyword   ctermfg=32      guifg=#0087d7
+        hi jsonKeyword   ctermfg=14      
         "hi jsonString	  ctermfg=229     guifg=#ffffaf
         hi jsonString	  ctermfg=254
-        hi jsonQuote     ctermfg=154     guifg=#afff00
+        hi jsonQuote     ctermfg=154 
         hi jsonBraces    ctermfg=214     guifg=#ffaf00
 
         " ----------------------------------------
