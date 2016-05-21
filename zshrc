@@ -110,3 +110,8 @@ fi
 ###-tns-completion-end-###
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+
+# tabtab source for yo package
+# uninstall by removing these lines or running `tabtab uninstall yo`
+[[ -f /Users/kenrick/.npm-packages/lib/node_modules/yo/node_modules/tabtab/.completions/yo.zsh ]] && . /Users/kenrick/.npm-packages/lib/node_modules/yo/node_modules/tabtab/.completions/yo.zsh
