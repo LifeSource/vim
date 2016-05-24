@@ -20,9 +20,9 @@ snippet rcomp5
 	module.exports = $1;
 
 snippet rcomp
-	import React from "react";
+	import React, {PropTypes} from "react";
 
-	export default class ${1:} extends React.Component {
+	class ${1:} extends React.Component {
 
 		constructor(props) {
 			super(props);
@@ -35,6 +35,12 @@ snippet rcomp
 			);
 		}
 	}
+
+	$1.PropTypes = {
+		
+	};
+
+	export default $1;
 
 snippet scomp
 	import React from 'react';
