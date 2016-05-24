@@ -24,8 +24,8 @@ snippet rcomp
 
 	export default class ${1:} extends React.Component {
 
-		constructor(pros) {
-			super(pros);
+		constructor(props) {
+			super(props);
 		}
 
 		render() {
@@ -35,6 +35,18 @@ snippet rcomp
 			);
 		}
 	}
+
+snippet scomp
+	import React from 'react';
+
+	const ${1:} = (${2}) => {
+		return (
+			${0}	
+		);
+	};
+
+	export default $1;
+
 snippet pt
 	React.PropTypes.${1}
 

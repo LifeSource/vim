@@ -56,6 +56,7 @@ set clipboard=unnamed
 " ------------------------------------------------------------------------
 "  Keyboard mappings
 " ------------------------------------------------------------------------
+
 map <esc>^[ <esc>^[
 
 " Tagbar toggle
@@ -72,6 +73,16 @@ nnoremap <F3> :set hlsearch!<CR>
 map zz :w<CR>
 map zx :wq!<CR>
 map <c-q> <esc>:q!<CR>
+
+
+" Line movement
+nnoremap <C-j> :m .+1<CR>==
+nnoremap <C-k> :m .-2<CR>==
+inoremap <C-j> <Esc>:m .+1<CR>==gi
+inoremap <C-k> <Esc>:m .-2<CR>==gi
+vnoremap <C-j> :m '>+1<CR>gv=gv
+vnoremap <C-k> :m '<-2<CR>gv=gv
+
 "map <c-v> <esc>:set nopaste<CR> p :set nopaste<CR>A
 
 " Vim buffer management
@@ -253,7 +264,7 @@ let g:ycm_key_list_previous_completion=[]
 " ------------------------------------------------------------------------
 let g:indentLine_color_term = 239
 let g:indentLine_enabled = 1
-nnoremap <c-j> :IndentLinesToggle<CR>
+"nnoremap <c-j> :IndentLinesToggle<CR>
 
 " ------------------------------------------------------------------------
 "  Abbreviation

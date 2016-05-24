@@ -63,15 +63,19 @@ snippet iife
 		"use strict";
 		${0}
 	})(${1});
+# ---------------------------------------------
+# JavaScript ES6
+# ---------------------------------------------
+
 # ES6 function
 snippet efn
 	${1}(${2}) {
 		${0}
 	}
-# ---------------------------------------------
-# JavaScript ES6
-# ---------------------------------------------
-
+snippet 6f
+	${1}(${2}) {
+		${0}
+	}
 # Constructor
 snippet ctr
 	constructor() {
@@ -84,30 +88,33 @@ snippet ctor
 # Class
 snippet cls
 	class ${1} {
-
 		constructor() {
 
 		}
+		${0}
 	}
-
 # Arrow Function
 snippet ->
 	(${1}) => ${0}
 # promise
 snippet prm
 	return ${1}
-		.then(${2} => ${3});${0}
+		.then((${2}) => {
+			${3}
+		})
+		.catch((${4}) => {
+			${5}	
+		});${0}
 snippet prm{
 	return ${1}
-		.then(${2} => {
-			${3}
-		});${0}
+		.then(${2} => ${3})
+		.catch((${4}) => ${5});${0}
 # modules (imports and exports)
 snippet imp
 	import ${1} from '${0}';
-
 snippet imp{
 	import { ${1} } from '${0}';
-
 snippet exp
 	export ${0}
+snippet obja
+	Object.assign({}, ${1}, ${0});
