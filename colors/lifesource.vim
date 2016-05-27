@@ -448,6 +448,27 @@ if &t_Co > 255
         hi phpConstant                  ctermfg=129     guifg=#af00ff
         hi phpInclude                   ctermfg=129     guifg=#af00ff
         hi phpStorageClass              ctermfg=129     guifg=#af00ff
+
+        " ----------------------------------------
+        " Markdown (.md) file
+        " ----------------------------------------
+        hi markdownHeadingRule          ctermfg=118
+        hi markdownH1                   ctermfg=118
+        hi markdownH2                   ctermfg=118
+        hi markdownH3                   ctermfg=118
+        hi markdownH4                   ctermfg=118
+        hi markdownH5                   ctermfg=118
+        hi markdownH6                   ctermfg=118
+        hi markdownRule                 ctermfg=214
+        hi markdownLinkText             ctermfg=45
+        hi markdownUrl                  ctermfg=45
+        hi markdownAutomaticLink        ctermfg=45
+        hi markdownEscape               ctermfg=124
+        hi markdownValid                ctermfg=124
+        hi markdownBlockquote           ctermfg=73
+        hi markdownCodeBlock            ctermfg=214
+        hi markdownCode                 ctermfg=214
+        hi markdownCodeDelimiter        ctermfg=129
     endif
 end
 
