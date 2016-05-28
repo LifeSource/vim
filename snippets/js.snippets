@@ -111,10 +111,12 @@ snippet prm{
 		.catch((${4}) => ${5});${0}
 # modules (imports and exports)
 snippet imp
-	import ${1} from '${0}';
+	import ${1} from '${2}';${0}
 snippet imp{
-	import { ${1} } from '${0}';
+	import { ${1} } from '${2}';${0}
 snippet exp
 	export ${0}
+snippet xd 
+	export default ${1};${0}
 snippet obja
 	Object.assign({}, ${1}, ${0});
