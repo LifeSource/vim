@@ -294,7 +294,7 @@ if &t_Co > 255
         hi jsOperator                    ctermfg=10      guifg=#00ff00
         hi javaScriptReserved            ctermfg=166     guifg=#d75f00
         hi jsDotNotation                 ctermfg=92      guifg=#8700d7
-        hi jsIdentifier                  ctermfg=35      guifg=#00af87
+        hi jsIdentifier                  ctermfg=39      guifg=#00afff
         hi jsModules                     ctermfg=92      guifg=#8700d7
         hi jsBuiltins                    ctermfg=92      guifg=#8700d7
         "hi jsFuncArgs                    ctermfg=214     guifg=#ffaf00
@@ -312,7 +312,9 @@ if &t_Co > 255
         hi jsKeyword                     ctermfg=113     guifg=#87ff5f
         hi jsStatement                   ctermfg=113     guifg=#87ff5f
         "hi jsStorageClass                ctermfg=32      guifg=#007dd7
-        hi jsStorageClass                ctermfg=32      guifg=#0087d7
+        hi jsStorageClass                ctermfg=39      guifg=#00afff
+        hi jsLabel                       ctermfg=39      guifg=#00afff
+        hi jsConditional                 ctermfg=39      guifg=#00afff
         hi jsOf                          ctermfg=129     guifg=#af00ff
         hi jsModules                     ctermfg=129     guifg=#af00ff
         hi jsModuleWords                 ctermfg=129     guifg=#af00ff
@@ -334,9 +336,9 @@ if &t_Co > 255
         hi javaScriptFuncExp             ctermfg=114     guifg=#87d787
         hi javaScriptSpecial             ctermfg=254     guifg=#e4e4e4
         hi javaScriptOperator            ctermfg=10      guifg=#00ff00
-        hi javaScriptIdentifier          ctermfg=27      guifg=#005fff
+        hi javaScriptIdentifier          ctermfg=39      guifg=#00afff
         hi javascriptFunctionFold        ctermfg=114     guifg=#87d787
-        hi javaScriptSpecialCharacter    ctermfg=27      guifg=#005fff
+        " hi javaScriptSpecialCharacter    ctermfg=27      guifg=#005fff
         hi jsTemplateVar                 ctermfg=129     guifg=#af00ff 
         hi jsFuncAssignObjChain          ctermfg=129     guifg=#af00ff 
         hi jsFuncArgRest                 ctermfg=195     guifg=#d7ffff
