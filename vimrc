@@ -182,6 +182,7 @@ let g:ctrlp_show_hidden = 1
 " NERDTree related settings
 " ------------------------------------------------------------------------
 let NERDTreeShowHidden=1
+let g:NERDTreeWinPos="right"
 map <C-n> :NERDTreeToggle<CR>
 "autocmd vimenter * NERDTree
 autocmd StdinReadPre * let s:std_in=1
@@ -255,7 +256,7 @@ let g:gitgutter_eager = 0
 " ------------------------------------------------------------------------
 "  You Complete Me
 " ------------------------------------------------------------------------
-let g:ycm_min_num_of_chars_for_completion=10
+"let g:ycm_min_num_of_chars_for_completion=5
 let g:ycm_auto_trigger = 1
 let g:ycm_key_list_select_completion=[]
 let g:ycm_key_list_previous_completion=[]
