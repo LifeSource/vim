@@ -304,7 +304,7 @@ if &t_Co > 255
         hi jsFuncName                    ctermfg=113     guifg=#87ff5f
         hi jsFunction                    ctermfg=39      guifg=#00afff
         hi jsFuncBraces                  ctermfg=214     guifg=#ffaf00
-        hi jsFutureKeys                  ctermfg=35      guifg=#00af87
+        hi jsFutureKeys                  ctermfg=213
         hi jsFuncArgCommas               ctermfg=10      guifg=#00ff00
         hi jsArrowFunction               ctermfg=113     guifg=#87ff5f
         hi jsSpecial                     ctermfg=113     guifg=#87ff5f
@@ -312,8 +312,9 @@ if &t_Co > 255
         hi jsKeyword                     ctermfg=113     guifg=#87ff5f
         hi jsStatement                   ctermfg=113     guifg=#87ff5f
         "hi jsStorageClass                ctermfg=32      guifg=#007dd7
-        hi jsStorageClass                ctermfg=39      guifg=#00afff
-        hi jsLabel                       ctermfg=39      guifg=#00afff
+        "hi jsStorageClass                ctermfg=39      guifg=#00afff
+        hi jsStorageClass                ctermfg=80
+        hi jsLabel                       ctermfg=80
         hi jsConditional                 ctermfg=39      guifg=#00afff
         hi jsOf                          ctermfg=129     guifg=#af00ff
         hi jsModules                     ctermfg=129     guifg=#af00ff
@@ -323,7 +324,7 @@ if &t_Co > 255
         hi jsCommentToDo                 ctermfg=214     guifg=#ffaf00
         hi jsLineComment                 ctermfg=114     guifg=#87d787
         hi jsComment                     ctermfg=114     guifg=#87d787
-        hi jsObjectKey                   ctermfg=45      guifg=#00d7d7       cterm=bold
+        hi jsObjectKey                   ctermfg=45
         hi jsBraces                      ctermfg=214     guifg=#ffaf00
         hi jsBrackets                    ctermfg=10      guifg=#00ff00
         hi jsReturn                      ctermfg=10      guifg=#00ff00
@@ -342,6 +343,10 @@ if &t_Co > 255
         hi jsTemplateVar                 ctermfg=129     guifg=#af00ff 
         hi jsFuncAssignObjChain          ctermfg=129     guifg=#af00ff 
         hi jsFuncArgRest                 ctermfg=195     guifg=#d7ffff
+        hi jsAssignmentExpr              ctermfg=213
+        hi jsAssignExpIdent              ctermfg=213
+        hi jsThis                        ctermfg=80
+        hi jsSuper                       ctermfg=39
 
         " ----------------------------------------
         " Jason specific configuration
