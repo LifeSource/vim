@@ -297,9 +297,8 @@ if &t_Co > 255
         hi jsIdentifier                  ctermfg=39      guifg=#00afff
         hi jsModules                     ctermfg=92      guifg=#8700d7
         hi jsBuiltins                    ctermfg=92      guifg=#8700d7
-        "hi jsFuncArgs                    ctermfg=214     guifg=#ffaf00
-        hi jsFuncArgs                    ctermfg=221     guifg=#ffd75f
-        "hi jsFuncCall                    ctermfg=73      guifg=#5fafaf
+        hi jsFuncArgs                    ctermfg=214     guifg=#ffaf00
+        "hi jsFuncArgs                    ctermfg=221     guifg=#ffd75f
         hi jsFuncCall                    ctermfg=30      guifg=#008787
         hi jsFuncName                    ctermfg=113     guifg=#87ff5f
         hi jsFunction                    ctermfg=39      guifg=#00afff
@@ -313,9 +312,11 @@ if &t_Co > 255
         hi jsStatement                   ctermfg=113     guifg=#87ff5f
         "hi jsStorageClass                ctermfg=32      guifg=#007dd7
         "hi jsStorageClass                ctermfg=39      guifg=#00afff
-        hi jsStorageClass                ctermfg=80
-        hi jsLabel                       ctermfg=80
-        hi jsSuper                       ctermfg=80
+        hi jsStorageClass                ctermfg=129
+        hi jsPrototype                   ctermfg=129
+        hi jsLabel                       ctermfg=80      guifg=#5fd7d7       
+        hi jsSuper                       ctermfg=80      guifg=#5fd7d7
+        hi jsReturn                      ctermfg=10
         hi jsThis                        ctermfg=129     guifg=#af00ff
         hi jsConditional                 ctermfg=39      guifg=#00afff
         hi jsOf                          ctermfg=129     guifg=#af00ff
@@ -329,7 +330,6 @@ if &t_Co > 255
         hi jsObjectKey                   ctermfg=45
         hi jsBraces                      ctermfg=214     guifg=#ffaf00
         hi jsBrackets                    ctermfg=10      guifg=#00ff00
-        hi jsReturn                      ctermfg=10      guifg=#00ff00
         "hi jsParens                      ctermfg=124     guifg=#af0000
         hi jsParens                      ctermfg=160     guifg=#d70000
         hi javaScriptBraces              ctermfg=124     guifg=#af0000
