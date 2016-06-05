@@ -182,7 +182,7 @@ let g:ctrlp_show_hidden = 1
 " NERDTree related settings
 " ------------------------------------------------------------------------
 let NERDTreeShowHidden=1
-let g:NERDTreeWinPos="right"
+let g:NERDTreeWinPos="left"
 map <C-n> :NERDTreeToggle<CR>
 "autocmd vimenter * NERDTree
 autocmd StdinReadPre * let s:std_in=1

@@ -248,7 +248,7 @@ if &t_Co > 255
 
         hi Boolean           ctermfg=141                             guifg=#af87ff
         hi Character         ctermfg=222                             guifg=#ffdf87
-        hi Number            ctermfg=141                             guifg=#af87ff
+        hi Number            ctermfg=212
         "hi String            ctermfg=229                             guifg=#ffffaf
         " hi String            ctermfg=228
         hi String            ctermfg=229
@@ -262,7 +262,7 @@ if &t_Co > 255
         "hi Error             ctermfg=88    ctermbg=233              guifg=#870000
         hi Error             ctermfg=196        ctermbg=none   
         hi Exception         ctermfg=215			  cterm=bold      guifg=#ffaf5f
-        hi Float             ctermfg=141
+        hi Float             ctermfg=212
         hi Function          ctermfg=26			    cterm=bold      guifg=#005fd7
         hi Identifier        ctermfg=26                             guifg=#005fdf
 
@@ -315,6 +315,8 @@ if &t_Co > 255
         "hi jsStorageClass                ctermfg=39      guifg=#00afff
         hi jsStorageClass                ctermfg=80
         hi jsLabel                       ctermfg=80
+        hi jsSuper                       ctermfg=80
+        hi jsThis                        ctermfg=129     guifg=#af00ff
         hi jsConditional                 ctermfg=39      guifg=#00afff
         hi jsOf                          ctermfg=129     guifg=#af00ff
         hi jsModules                     ctermfg=129     guifg=#af00ff
@@ -345,8 +347,6 @@ if &t_Co > 255
         hi jsFuncArgRest                 ctermfg=195     guifg=#d7ffff
         hi jsAssignmentExpr              ctermfg=213
         hi jsAssignExpIdent              ctermfg=213
-        hi jsThis                        ctermfg=80
-        hi jsSuper                       ctermfg=39
 
         " ----------------------------------------
         " Jason specific configuration
