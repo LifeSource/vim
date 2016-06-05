@@ -394,7 +394,8 @@ if &t_Co > 255
         " ----------------------------------------
         hi cssComment              ctermfg=114     guifg=#87d787
         hi cssTagName              ctermfg=118     guifg=#87ff00
-        hi cssClassName            ctermfg=33      guifg=#0087ff
+        hi cssClassName            ctermfg=202
+        hi cssClassNameDot         ctermfg=129
         hi cssIdentifier           ctermfg=33      guifg=#0087ff
         hi cssFontProp             ctermfg=226     guifg=#ffff00
         hi cssColorProp            ctermfg=226     guifg=#ffff00
@@ -411,7 +412,7 @@ if &t_Co > 255
         hi cssPagingProp           ctermfg=226     guifg=#ffff00
         hi cssTableProp            ctermfg=226     guifg=#ffff00
         hi cssUIProp		           ctermfg=226     guifg=#ffff00
-        hi cssBraces               ctermfg=124     guifg=#af0000
+        hi cssBraces               ctermfg=202
         hi cssAttrComma					  ctermfg=124     guifg=#af0000
         hi cssNoise						    ctermfg=124		 guifg=#af0000
         hi cssGeneratedContentProp ctermfg=118     guifg=#87ff00 
