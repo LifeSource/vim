@@ -382,7 +382,7 @@ if &t_Co > 255
         "hi xmlTag	         ctermfg=154     guifg=#afff00
         hi xmlTagName	     ctermfg=33      guifg=#0087ff
         "hi xmlTagName       ctermfg=118     guifg=#87ff00
-        hi xmlEndTag	      ctermfg=154     guifg=#aff000
+        hi xmlEndTag	      ctermfg=154    guifg=#aff000
         "hi xmlEndTag	     ctermfg=33      guifg=#0087ff
         hi xmlAttrib		    ctermfg=202     
         "hi javaScriptExpression     ctermfg=114
@@ -394,36 +394,37 @@ if &t_Co > 255
         " ----------------------------------------
         hi cssComment              ctermfg=114     guifg=#87d787
         hi cssTagName              ctermfg=118     guifg=#87ff00
-        hi cssClassName            ctermfg=202
-        hi cssClassNameDot         ctermfg=129
-        hi cssIdentifier           ctermfg=33      guifg=#0087ff
+        hi cssClassName            ctermfg=202     guifg=#ff5f00
+        hi cssClassNameDot         ctermfg=129     guifg=#af00ff
+        hi cssIdentifier           ctermfg=129     guifg=#af00ff
         hi cssFontProp             ctermfg=226     guifg=#ffff00
         hi cssColorProp            ctermfg=226     guifg=#ffff00
         hi cssTextProp             ctermfg=226     guifg=#ffff00
-        hi cssBoxProp	            ctermfg=45      guifg=#00d7ff
-        hi cssBorderProp	         ctermfg=45      guifg=#00d7ff
-        hi cssBackgroundProp	     ctermfg=45      guifg=#00d7ff
-        hi cssFunctionComma			  ctermfg=45      guifg=#00d7ff
+        hi cssBoxProp	             ctermfg=80      guifg=#5fd7ff
+        hi cssBorderProp	         ctermfg=80      guifg=#5fd7ff
+        hi cssBackgroundProp	     ctermfg=80      guifg=#5fd7ff
+        hi cssFunctionComma			   ctermfg=80      guifg=#5fd7ff
         hi cssValueInteger			   ctermfg=118     guifg=#87ff00
-        hi cssValueNumber				  ctermfg=118     guifg=#87ff00
-        hi cssValueLength				  ctermfg=118     guifg=#87ff00
+        hi cssValueNumber				   ctermfg=118     guifg=#87ff00
+        hi cssValueLength				   ctermfg=118     guifg=#87ff00
         hi cssRenderProp           ctermfg=226     guifg=#ffff00
         hi cssAuralProp            ctermfg=226     guifg=#ffff00
         hi cssPagingProp           ctermfg=226     guifg=#ffff00
         hi cssTableProp            ctermfg=226     guifg=#ffff00
         hi cssUIProp		           ctermfg=226     guifg=#ffff00
-        hi cssBraces               ctermfg=202
-        hi cssAttrComma					  ctermfg=124     guifg=#af0000
-        hi cssNoise						    ctermfg=124		 guifg=#af0000
+        hi cssBraces               ctermfg=202     guifg=#ff5f00
+        hi cssAttrComma					   ctermfg=124     guifg=#af0000
+        hi cssNoise						     ctermfg=124		 guifg=#af0000
         hi cssGeneratedContentProp ctermfg=118     guifg=#87ff00 
+        hi cssFunctionName         ctermfg=212     guifg=#ff87d7
         hi cssInclude              ctermfg=10
-        hi cssIncludeKeyword       ctermfg=10
-        hi cssUnitDecorators			 ctermfg=45 	   guifg=#00d7ff
-        hi cssPseudoClass				  ctermfg=45 	   guifg=#00d7ff
-        hi cssPseudoClassId				ctermfg=45 	   guifg=#00d7ff
-        hi cssFlexibleBoxProp			ctermfg=45 	   guifg=#00d7ff
-        hi cssFlexibleBoxAttr			ctermfg=92 	   guifg=#8700d7
-        hi cssMultiColumnProp			ctermfg=45 	   guifg=#00d7ff
+        hi cssIncludeKeyword       ctermfg=10      
+        hi cssUnitDecorators			 ctermfg=212     guifg=#ff87d7
+        hi cssPseudoClass				   ctermfg=45 	   guifg=#00d7ff
+        hi cssPseudoClassId				 ctermfg=45 	   guifg=#00d7ff
+        hi cssFlexibleBoxProp			 ctermfg=45 	   guifg=#00d7ff
+        hi cssFlexibleBoxAttr			 ctermfg=92 	   guifg=#8700d7
+        hi cssMultiColumnProp			 ctermfg=45 	   guifg=#00d7ff
         " ----------------------------------------
         " Indent guides highlighting
         " ----------------------------------------
