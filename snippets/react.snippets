@@ -42,20 +42,46 @@ snippet rcomp
 
 	export default $1;
 
-snippet scomp
-	import React from 'react';
 
-	const ${1:} = (${2}) => {
-		return (
-			${0}	
-		);
-	};
+snippet scomp
+	import React, { PropTypes } from 'react';
+
+	const ${1:} = (${2}) => (
+		${0}
+	);
 
 	$1.propTypes = {
 		
 	};
 
 	export default $1;
+
+snippet xcomp
+	import React, { PropTypes } from 'react';
+	import { connect } from 'react-redux';
+
+	const ${1:} = (${2}) => (
+		${0}
+	);
+
+	$1.propTypes = {
+		
+	};
+
+	function mapStateToProps(state, ownProps) {
+
+	}
+
+	function mapDispatchToProps(dispatch) {
+		return {
+			
+		};
+	}
+
+	export default connect(
+		mapStateToProps,
+		mapDispatchToProps
+	)(${1});
 
 snippet pt
 	React.PropTypes.${1}
