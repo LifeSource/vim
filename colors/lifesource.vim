@@ -267,7 +267,8 @@ if &t_Co > 255
         hi Identifier        ctermfg=26                             guifg=#005fdf
 
         hi Label		    ctermfg=26                              guifg=#005fd7
-        hi Keyword			ctermfg=26              cterm=bold      guifg=#005fd7
+        "hi Keyword			ctermfg=26              cterm=bold      guifg=#005fd7
+        hi Keyword			ctermfg=39              cterm=bold      guifg=#00afff
         hi Operator			ctermfg=125                             guifg=#af0000
         hi PreCondit	  ctermfg=154             cterm=bold
         hi Repeat			  ctermfg=197             cterm=bold
@@ -283,8 +284,10 @@ if &t_Co > 255
         hi LineNr			  ctermfg=255             ctermbg=235     guifg=#ffffff 
         hi NonText			ctermfg=239
         hi SpecialKey		ctermfg=239
-        hi Special      ctermfg=26              cterm=bold      guifg=#005fd7
-        hi PreProc			ctermfg=26              cterm=bold      guifg=#005fd7
+        "hi Special      ctermfg=26              cterm=bold      guifg=#005fd7
+        hi Special      ctermfg=39
+        "hi Special      ctermfg=26              cterm=bold      guifg=#005fd7
+        hi PreProc			ctermfg=39
 
         " ---------------------------------------
         " Javascript specific configuration
@@ -310,7 +313,6 @@ if &t_Co > 255
         hi jsRepeat                      ctermfg=113     guifg=#87ff5f
         hi jsKeyword                     ctermfg=113     guifg=#87ff5f
         hi jsStatement                   ctermfg=113     guifg=#87ff5f
-        "hi jsStorageClass                ctermfg=32      guifg=#007dd7
         "hi jsStorageClass                ctermfg=39      guifg=#00afff
         hi jsStorageClass                ctermfg=129
         hi jsPrototype                   ctermfg=129
@@ -334,8 +336,8 @@ if &t_Co > 255
         hi jsParens                      ctermfg=160     guifg=#d70000
         hi javaScriptBraces              ctermfg=124     guifg=#af0000
         hi javaScriptParens              ctermfg=45	     guifg=#00d7ff       cterm=bold 
-        " hi javaScriptStringD             ctermfg=228     guifg=#ffff87
-        " hi javaScriptStringS             ctermfg=228     guifg=#ffff87
+        hi javaScriptStringD             ctermfg=212
+        hi javaScriptStringS             ctermfg=212
         hi javaScriptFuncExp             ctermfg=114     guifg=#87d787
         hi javaScriptSpecial             ctermfg=254     guifg=#e4e4e4
         hi javaScriptOperator            ctermfg=10      guifg=#00ff00
