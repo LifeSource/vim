@@ -260,6 +260,10 @@ let g:gitgutter_eager = 0
 let g:ycm_auto_trigger = 1
 let g:ycm_key_list_select_completion=[]
 let g:ycm_key_list_previous_completion=[]
+nnoremap <c-r> :TernRename <CR>
+nnoremap <c-t> :TernDef <CR>
+nnoremap <c-a> :TernRefs <CR>
+
 " ------------------------------------------------------------------------
 " IndentLine Plugin Settings
 " ------------------------------------------------------------------------
