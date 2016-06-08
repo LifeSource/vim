@@ -40,6 +40,8 @@ set incsearch	" incremental search
 set hlsearch	" highlight search result
 set laststatus=2
 "set foldmethod=indent
+set foldmethod=syntax
+set foldcolumn=2
 
 " ensure number formats are decimals regardless
 set nrformats=

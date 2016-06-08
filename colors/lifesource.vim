@@ -382,11 +382,11 @@ if &t_Co > 255
         " ----------------------------------------
         hi xmlTag	         ctermfg=202     guifg=#ff875f
         "hi xmlTag	         ctermfg=154     guifg=#afff00
-        hi xmlTagName	     ctermfg=33      guifg=#0087ff
+        hi xmlTagName	     ctermfg=39      guifg=#0087ff
         "hi xmlTagName       ctermfg=118     guifg=#87ff00
         hi xmlEndTag	      ctermfg=154    guifg=#aff000
         "hi xmlEndTag	     ctermfg=33      guifg=#0087ff
-        hi xmlAttrib		    ctermfg=202     
+        hi xmlAttrib		    ctermfg=202
         "hi javaScriptExpression     ctermfg=114
         "hi xmlAttrib		 ctermfg=118     guifg=#87ff00
 
