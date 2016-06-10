@@ -427,12 +427,21 @@ if &t_Co > 255
         hi cssFlexibleBoxProp			 ctermfg=45 	   guifg=#00d7ff
         hi cssFlexibleBoxAttr			 ctermfg=92 	   guifg=#8700d7
         hi cssMultiColumnProp			 ctermfg=45 	   guifg=#00d7ff
+
         " ----------------------------------------
-        " Indent guides highlighting
+        "  Sass Colour Highlight
         " ----------------------------------------
-        "hi IndentGuidesOdd                ctermbg=black
-        "hi IndentGuidesEvent              ctermbg=darkgrey
-        
+        hi sassVariable            ctermfg=92     guifg=#8700d7
+        hi sassClass               ctermfg=39     guifg=#0087ff
+        hi sassClassChar           ctermfg=124    guifg=#af0000
+        hi sassIdChar              ctermfg=118    guifg=#87ff00
+        hi IndentLine              ctermfg=118    guifg=#87ff00
+        hi sassMediaOperators      ctermfg=118    guifg=#87ff00
+        hi sassCssAttribute        ctermfg=80
+        hi sassMixinName           ctermfg=30
+        hi sassFunctionName        ctermfg=30     
+        hi sassFunctionDecl        ctermfg=30     
+
         " ----------------------------------------
         "  PHP Syntax Highlight
         " ----------------------------------------
