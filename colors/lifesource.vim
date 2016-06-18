@@ -302,8 +302,9 @@ if &t_Co > 255
         hi jsBuiltins                    ctermfg=92      guifg=#8700d7
         hi jsFuncArgs                    ctermfg=214     guifg=#ffaf00
         "hi jsFuncArgs                    ctermfg=221     guifg=#ffd75f
-        hi jsFuncCall                    ctermfg=30      guifg=#008787
-        hi jsFuncName                    ctermfg=113     guifg=#87ff5f
+        "hi jsFuncCall                    ctermfg=30      guifg=#008787
+        hi jsFuncCall                    ctermfg=31
+        hi jsFuncName                    ctermfg=154
         hi jsFunction                    ctermfg=39      guifg=#00afff
         hi jsFuncBraces                  ctermfg=214     guifg=#ffaf00
         hi jsFutureKeys                  ctermfg=213
@@ -325,7 +326,8 @@ if &t_Co > 255
         hi jsModules                     ctermfg=129     guifg=#af00ff
         hi jsModuleWords                 ctermfg=129     guifg=#af00ff
         hi jsClass                       ctermfg=202     guifg=#ff5f00
-        hi jsGlobalObjects               ctermfg=202     guifg=#ff5f00
+        "hi jsGlobalObjects               ctermfg=202     guifg=#ff5f00
+        hi jsGlobalObjects               ctermfg=221
         hi jsCommentToDo                 ctermfg=214     guifg=#ffaf00
         hi jsLineComment                 ctermfg=114     guifg=#87d787
         hi jsComment                     ctermfg=114     guifg=#87d787
