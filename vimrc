@@ -41,7 +41,8 @@ set hlsearch	" highlight search result
 set laststatus=2
 "set foldmethod=indent
 set foldmethod=syntax
-set foldcolumn=2
+set foldcolumn=3
+set foldlevelstart=20
 
 " ensure number formats are decimals regardless
 set nrformats=
@@ -175,7 +176,7 @@ let g:vim_json_syntax_conceal = 0
 " ------------------------------------------------------------------------
 
 " ignore the directories and files with the following extensions
-set wildignore+=*/node_modules/*,/*bower_components/*,/*jspm_packages/*,/*platforms/*,*/lib/*,*/vendor/*,*.so,*.swp,*.zip,*~
+set wildignore+=*/node_modules/*,/*bower_components/*,/*jspm_packages/*,/*platforms/*,*/vendor/*,*.so,*.swp,*.zip,*~
 set runtimepath^=~/vim/bundle/ctrlp.vim
 let g:ctrlp_working_path_mode = "ra"
 let g:ctrlp_show_hidden = 1
