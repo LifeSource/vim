@@ -331,7 +331,7 @@ if &t_Co > 255
         hi jsCommentToDo                 ctermfg=214     guifg=#ffaf00
         hi jsLineComment                 ctermfg=114     guifg=#87d787
         hi jsComment                     ctermfg=114     guifg=#87d787
-        hi jsObjectKey                   ctermfg=45
+        hi jsObjectKey                   ctermfg=80
         hi jsBraces                      ctermfg=214     guifg=#ffaf00
         hi jsBrackets                    ctermfg=10      guifg=#00ff00
         "hi jsParens                      ctermfg=124     guifg=#af0000
