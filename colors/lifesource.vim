@@ -321,7 +321,8 @@ if &t_Co > 255
         hi jsSuper                       ctermfg=80      guifg=#5fd7d7
         hi jsReturn                      ctermfg=10
         hi jsThis                        ctermfg=129     guifg=#af00ff
-        hi jsConditional                 ctermfg=39      guifg=#00afff
+        "hi jsConditional                 ctermfg=39      guifg=#00afff
+        hi jsConditional                 ctermfg=113
         hi jsOf                          ctermfg=129     guifg=#af00ff
         hi jsModules                     ctermfg=129     guifg=#af00ff
         hi jsModuleWords                 ctermfg=129     guifg=#af00ff
