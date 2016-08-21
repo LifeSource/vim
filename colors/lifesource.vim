@@ -248,23 +248,19 @@ if &t_Co > 255
 
         hi Boolean           ctermfg=141                             guifg=#af87ff
         hi Character         ctermfg=222                             guifg=#ffdf87
-        hi Number            ctermfg=212
-        "hi String            ctermfg=229                             guifg=#ffffaf
-        " hi String            ctermfg=228
-        hi String            ctermfg=229
-        hi Conditional       ctermfg=26			    cterm=bold       guifg=#005fd7
+        hi Number            ctermfg=171
+        hi String            ctermfg=193
+        hi Conditional       ctermfg=26			    cterm=bold     guifg=#005fd7
         hi Constant          ctermfg=141        cterm=bold
 
         hi DiffDelete        ctermfg=125        ctermbg=233
 
-        "hi Directory         ctermfg=26			    cterm=bold      guifg=#71bbd6
         hi Directory         ctermfg=32			    cterm=bold      guifg=#71bbd6
-        "hi Error             ctermfg=88    ctermbg=233              guifg=#870000
         hi Error             ctermfg=196        ctermbg=none   
         hi Exception         ctermfg=215			  cterm=bold      guifg=#ffaf5f
-        hi Float             ctermfg=212
+        hi Float             ctermfg=171
         hi Function          ctermfg=26			    cterm=bold      guifg=#005fd7
-        hi Identifier        ctermfg=26                             guifg=#005fdf
+        hi Identifier        ctermfg=26                         guifg=#005fdf
 
         hi Label		    ctermfg=26                              guifg=#005fd7
         "hi Keyword			ctermfg=26              cterm=bold      guifg=#005fd7
@@ -292,8 +288,6 @@ if &t_Co > 255
         " ---------------------------------------
         " Javascript specific configuration
         " ---------------------------------------
-
-        "hi jsOperator                    ctermfg=10      guifg=#00ff00
         hi jsOperator                    ctermfg=10      guifg=#00ff00
         hi javaScriptReserved            ctermfg=166     guifg=#d75f00
         hi jsDotNotation                 ctermfg=92      guifg=#8700d7
@@ -301,50 +295,44 @@ if &t_Co > 255
         hi jsModules                     ctermfg=92      guifg=#8700d7
         hi jsBuiltins                    ctermfg=92      guifg=#8700d7
         hi jsFuncArgs                    ctermfg=214     guifg=#ffaf00
-        "hi jsFuncArgs                    ctermfg=221     guifg=#ffd75f
-        "hi jsFuncCall                    ctermfg=30      guifg=#008787
-        hi jsFuncCall                    ctermfg=31
-        hi jsFuncName                    ctermfg=154
+        hi jsFuncCall                    ctermfg=31      guifg=#0087d7
+        hi jsFuncName                    ctermfg=154     guifg=#afff00
         hi jsFunction                    ctermfg=39      guifg=#00afff
         hi jsFuncBraces                  ctermfg=214     guifg=#ffaf00
         hi jsFutureKeys                  ctermfg=213
         hi jsFuncArgCommas               ctermfg=10      guifg=#00ff00
         hi jsArrowFunction               ctermfg=113     guifg=#87ff5f
         hi jsSpecial                     ctermfg=113     guifg=#87ff5f
-        hi jsRepeat                      ctermfg=113     guifg=#87ff5f
+        hi jsRepeat                      ctermfg=39     guifg=#87ff5f
         hi jsKeyword                     ctermfg=113     guifg=#87ff5f
         hi jsStatement                   ctermfg=113     guifg=#87ff5f
-        "hi jsStorageClass                ctermfg=39      guifg=#00afff
-        hi jsStorageClass                ctermfg=129
-        hi jsPrototype                   ctermfg=129
+        hi jsStorageClass                ctermfg=39      guifg=#00afff
+        hi jsPrototype                   ctermfg=129     guifg=#af00ff
         hi jsLabel                       ctermfg=80      guifg=#5fd7d7       
         hi jsSuper                       ctermfg=80      guifg=#5fd7d7
         hi jsReturn                      ctermfg=10
         hi jsThis                        ctermfg=129     guifg=#af00ff
-        "hi jsConditional                 ctermfg=39      guifg=#00afff
-        hi jsConditional                 ctermfg=113
+        hi jsConditional                 ctermfg=39
         hi jsOf                          ctermfg=129     guifg=#af00ff
         hi jsModules                     ctermfg=129     guifg=#af00ff
         hi jsModuleWords                 ctermfg=129     guifg=#af00ff
         hi jsClass                       ctermfg=202     guifg=#ff5f00
-        "hi jsGlobalObjects               ctermfg=202     guifg=#ff5f00
-        hi jsGlobalObjects               ctermfg=221
+        hi jsGlobalObjects               ctermfg=221     guifg=#ffd75f
         hi jsCommentToDo                 ctermfg=214     guifg=#ffaf00
         hi jsLineComment                 ctermfg=114     guifg=#87d787
         hi jsComment                     ctermfg=114     guifg=#87d787
         hi jsObjectKey                   ctermfg=80
-        hi jsBraces                      ctermfg=214     guifg=#ffaf00
+        hi jsBraces                      ctermfg=255
         hi jsBrackets                    ctermfg=10      guifg=#00ff00
-        "hi jsParens                      ctermfg=124     guifg=#af0000
         hi jsParens                      ctermfg=160     guifg=#d70000
-        hi javaScriptBraces              ctermfg=124     guifg=#af0000
-        hi javaScriptParens              ctermfg=45	     guifg=#00d7ff       cterm=bold 
-        hi javaScriptStringD             ctermfg=212
-        hi javaScriptStringS             ctermfg=212
+        hi javaScriptBraces              ctermfg=255
+        hi javaScriptParens              ctermfg=255
+        hi javaScriptStringD             ctermfg=212     guifg=#ff87d7
+        hi javaScriptStringS             ctermfg=212     guifg=#ff87d7
         hi javaScriptFuncExp             ctermfg=114     guifg=#87d787
         hi javaScriptSpecial             ctermfg=254     guifg=#e4e4e4
         hi javaScriptOperator            ctermfg=10      guifg=#00ff00
-        hi javaScriptIdentifier          ctermfg=39      guifg=#00afff
+        hi javaScriptIdentifier          ctermfg=255
         hi javascriptFunctionFold        ctermfg=114     guifg=#87d787
         " hi javaScriptSpecialCharacter    ctermfg=27      guifg=#005fff
         hi jsTemplateVar                 ctermfg=129     guifg=#af00ff 
@@ -354,7 +342,7 @@ if &t_Co > 255
         hi jsAssignExpIdent              ctermfg=213
 
         " ----------------------------------------
-        " Jason specific configuration
+        " Json specific configuration
         " ----------------------------------------
         "hi jsonKeyword   ctermfg=32      guifg=#0087d7
         hi jsonKeyword   ctermfg=14      
@@ -441,6 +429,7 @@ if &t_Co > 255
         hi IndentLine              ctermfg=118    guifg=#87ff00
         hi sassMediaOperators      ctermfg=118    guifg=#87ff00
         hi sassCssAttribute        ctermfg=80
+        hi sassProperty            ctermfg=80
         hi sassMixinName           ctermfg=30
         hi sassFunctionName        ctermfg=30     
         hi sassFunctionDecl        ctermfg=30     
