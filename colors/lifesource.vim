@@ -249,7 +249,8 @@ if &t_Co > 255
         hi Boolean           ctermfg=141                             guifg=#af87ff
         hi Character         ctermfg=222                             guifg=#ffdf87
         hi Number            ctermfg=171
-        hi String            ctermfg=193
+        "hi String            ctermfg=193
+        hi String            ctermfg=229
         hi Conditional       ctermfg=26			    cterm=bold     guifg=#005fd7
         hi Constant          ctermfg=141        cterm=bold
 
@@ -263,7 +264,6 @@ if &t_Co > 255
         hi Identifier        ctermfg=26                         guifg=#005fdf
 
         hi Label		    ctermfg=26                              guifg=#005fd7
-        "hi Keyword			ctermfg=26              cterm=bold      guifg=#005fd7
         hi Keyword			ctermfg=39              cterm=bold      guifg=#00afff
         hi Operator			ctermfg=125                             guifg=#af0000
         hi PreCondit	  ctermfg=154             cterm=bold
@@ -273,16 +273,15 @@ if &t_Co > 255
         hi Tag				  ctermfg=197
         hi Title				ctermfg=203
         hi Typedef			ctermfg=37
-        hi Visual									ctermbg=238
+"        hi Visual									ctermbg=238
+        hi Visual									ctermbg=15
 
         hi Comment			ctermfg=114                             guifg=#87d787
 
         hi LineNr			  ctermfg=255             ctermbg=235     guifg=#ffffff 
         hi NonText			ctermfg=239
         hi SpecialKey		ctermfg=239
-        "hi Special      ctermfg=26              cterm=bold      guifg=#005fd7
         hi Special      ctermfg=39
-        "hi Special      ctermfg=26              cterm=bold      guifg=#005fd7
         hi PreProc			ctermfg=39
 
         " ---------------------------------------
@@ -298,12 +297,13 @@ if &t_Co > 255
         hi jsFuncCall                    ctermfg=31      guifg=#0087d7
         hi jsFuncName                    ctermfg=154     guifg=#afff00
         hi jsFunction                    ctermfg=39      guifg=#00afff
-        hi jsFuncBraces                  ctermfg=214     guifg=#ffaf00
+        "hi jsFuncBraces                  ctermfg=214     guifg=#ffaf00
+        hi jsFuncBraces                  ctermfg=160
         hi jsFutureKeys                  ctermfg=213
         hi jsFuncArgCommas               ctermfg=10      guifg=#00ff00
         hi jsArrowFunction               ctermfg=113     guifg=#87ff5f
         hi jsSpecial                     ctermfg=113     guifg=#87ff5f
-        hi jsRepeat                      ctermfg=39     guifg=#87ff5f
+        hi jsRepeat                      ctermfg=39      
         hi jsKeyword                     ctermfg=113     guifg=#87ff5f
         hi jsStatement                   ctermfg=113     guifg=#87ff5f
         hi jsStorageClass                ctermfg=39      guifg=#00afff
@@ -324,7 +324,8 @@ if &t_Co > 255
         hi jsObjectKey                   ctermfg=80
         hi jsBraces                      ctermfg=255
         hi jsBrackets                    ctermfg=10      guifg=#00ff00
-        hi jsParens                      ctermfg=160     guifg=#d70000
+        "hi jsParens                      ctermfg=160     guifg=#d70000
+        hi jsParens                      ctermfg=154
         hi javaScriptBraces              ctermfg=255
         hi javaScriptParens              ctermfg=255
         hi javaScriptStringD             ctermfg=212     guifg=#ff87d7
@@ -334,7 +335,7 @@ if &t_Co > 255
         hi javaScriptOperator            ctermfg=10      guifg=#00ff00
         hi javaScriptIdentifier          ctermfg=255
         hi javascriptFunctionFold        ctermfg=114     guifg=#87d787
-        " hi javaScriptSpecialCharacter    ctermfg=27      guifg=#005fff
+        hi javaScriptSpecialCharacter    ctermfg=27      guifg=#005fff
         hi jsTemplateVar                 ctermfg=129     guifg=#af00ff 
         hi jsFuncAssignObjChain          ctermfg=129     guifg=#af00ff 
         hi jsFuncArgRest                 ctermfg=195     guifg=#d7ffff
@@ -344,23 +345,18 @@ if &t_Co > 255
         " ----------------------------------------
         " Json specific configuration
         " ----------------------------------------
-        "hi jsonKeyword   ctermfg=32      guifg=#0087d7
         hi jsonKeyword   ctermfg=14      
-        "hi jsonString	  ctermfg=229     guifg=#ffffaf
-        hi jsonString	  ctermfg=254
+        hi jsonString	   ctermfg=254
+        hi jsonNumber    ctermfg=129
         hi jsonQuote     ctermfg=154 
         hi jsonBraces    ctermfg=214     guifg=#ffaf00
 
         " ----------------------------------------
         " HTML specific configuration
         " ----------------------------------------
-        "hi htmlTagName	      ctermfg=33      guifg=#0087ff
         hi htmlTagName	      ctermfg=39
-        " hi htmlTag	          ctermfg=154     guifg=#afff00
-        " hi htmlEndTag	       ctermfg=154     guifg=#afff00
         hi htmlTag	          ctermfg=154
         hi htmlEndTag	        ctermfg=154    
-        " hi htmlArg            ctermfg=197     guifg=#ff005f
         hi htmlArg            ctermfg=197
         hi htmlComment        ctermfg=114     guifg=#87d787
         hi htmlCommentPart    ctermfg=114     guifg=#87d787
@@ -372,15 +368,9 @@ if &t_Co > 255
         " XML specific configuration
         " ----------------------------------------
         hi xmlTag	         ctermfg=202     guifg=#ff875f
-        "hi xmlTag	         ctermfg=154     guifg=#afff00
         hi xmlTagName	     ctermfg=39      guifg=#0087ff
-        "hi xmlTagName       ctermfg=118     guifg=#87ff00
         hi xmlEndTag	      ctermfg=154    guifg=#aff000
-        "hi xmlEndTag	     ctermfg=33      guifg=#0087ff
         hi xmlAttrib		    ctermfg=202
-        "hi javaScriptExpression     ctermfg=114
-        "hi xmlAttrib		 ctermfg=118     guifg=#87ff00
-
 
         " ----------------------------------------
         " Cascading stylesheet customisation

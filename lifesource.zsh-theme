@@ -1,8 +1,8 @@
 PROMPT='$fg[green]♻  $fg[yellow]$(getPwd)$fg[magenta] $(gitPromptInfo) $fg[red]
-$fg[green]~$fg[cyan]> $reset_color'
+$fg[green]~$fg[cyan]> $reset_color' 
 
 function getPwd() {
-	echo "${PWD/$HOME/~}"
+	echo "${PWD/$HOME/~} "
 }
 
 function getSpacing() {
