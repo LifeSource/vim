@@ -412,9 +412,9 @@ if &t_Co > 255
         " ----------------------------------------
         "  Sass Colour Highlight
         " ----------------------------------------
-        hi sassVariable            ctermfg=92     guifg=#8700d7
+        hi sassVariable            ctermfg=129
         hi sassClass               ctermfg=39     guifg=#0087ff
-        hi sassClassChar           ctermfg=124    guifg=#af0000
+        hi sassClassChar           ctermfg=202
         hi sassIdChar              ctermfg=118    guifg=#87ff00
         hi IndentLine              ctermfg=118    guifg=#87ff00
         hi sassMediaOperators      ctermfg=118    guifg=#87ff00
