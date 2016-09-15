@@ -294,15 +294,19 @@ if &t_Co > 255
         hi jsModules                     ctermfg=92      guifg=#8700d7
         hi jsBuiltins                    ctermfg=92      guifg=#8700d7
         hi jsFuncArgs                    ctermfg=214     guifg=#ffaf00
-        hi jsFuncCall                    ctermfg=31      guifg=#0087d7
+        "hi jsFuncCall                    ctermfg=31      guifg=#0087d7
+        hi jsFuncCall                    ctermfg=45
         hi jsFuncName                    ctermfg=154     guifg=#afff00
         hi jsFunction                    ctermfg=39      guifg=#00afff
+        hi jsFunctionKey                 ctermfg=154
+        hi jsFuncAssignObjChain             ctermfg=154
+        hi jsDecoratorFunction           ctermfg=154
         "hi jsFuncBraces                  ctermfg=214     guifg=#ffaf00
         hi jsFuncParens                  ctermfg=160     guifg=#d70000
         hi jsFuncBraces                  ctermfg=214
         hi jsFutureKeys                  ctermfg=213
-        hi jsFuncArgCommas               ctermfg=10      guifg=#00ff00
-        hi jsArrowFunction               ctermfg=113     guifg=#87ff5f
+        hi jsFuncArgCommas               ctermfg=154
+        hi jsArrowFunction               ctermfg=154
         hi jsSpecial                     ctermfg=113     guifg=#87ff5f
         hi jsRepeat                      ctermfg=39      
         hi jsKeyword                     ctermfg=113     guifg=#87ff5f
