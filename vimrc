@@ -157,6 +157,9 @@ let g:syntastic_scss_checkers = ["scss_lint"]
 let g:syntastic_error_symbol = "✗"
 let g:syntastic_warning_symbol = "⚠"
 
+" Typescript
+let g:syntastic_typescript_tsc_fname=''
+
 function! ToggleErrors()
     let old_last_winnr = winnr('$')
     lclose
