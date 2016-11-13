@@ -13,9 +13,10 @@ highlight nonText ctermbg=NONE
 " Standard settings
 " ------------------------------------------------------------------------
 autocmd BufRead,BufNewFile *.scss,*.styl,*.md,*.css setlocal spell
+autocmd FileType ts UltiSnipsAddFileTypes typescript
 
-"set autoread
-"au CursorHold * checktime
+set autoread
+au CursorHold * checktime
 "set list
 set listchars=eol:⏎,space:¬
 
@@ -114,7 +115,6 @@ map ,d[ ds[
 map <c-l> <ESC>:set list!<CR>
 
 " Commenting
-
 
 " Snippets
 imap jj <Plug>snipMateNextOrTrigger
@@ -265,7 +265,7 @@ let g:ycm_key_list_select_completion=[]
 let g:ycm_key_list_previous_completion=[]
 nnoremap <c-r> :TernRename <CR>
 nnoremap <c-t> :TernDef <CR>
-nnoremap <c-a> :TernRefs <CR>
+"nnoremap <c-a> :TernRefs <CR>
 
 " ------------------------------------------------------------------------
 " IndentLine Plugin Settings

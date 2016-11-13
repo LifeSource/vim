@@ -283,6 +283,23 @@ if &t_Co > 255
         hi SpecialKey		ctermfg=239
         hi Special      ctermfg=39
         hi PreProc			ctermfg=39
+        " ---------------------------------------
+        " Typescript specific configuration
+        " ---------------------------------------
+        hi typescriptBraces              ctermfg=10
+        hi typescriptParens              ctermfg=160
+        hi typescriptIdentifier          ctermfg=39
+        hi typescriptSource              ctermfg=192
+        hi typescriptConditional         ctermfg=10
+        hi typescriptRepeat              ctermfg=10
+        hi typescriptStatement           ctermfg=10
+        hi typescriptFuncKeyword         ctermfg=39
+        hi typescriptParameters          ctermfg=214
+        hi typescriptLabel               ctermfg=80
+        hi typescriptDotNotation         ctermfg=10
+        hi typescriptLogicSymbols        ctermfg=10
+        hi typescriptReserved            ctermfg=214
+        hi typescriptOperator            ctermfg=10
 
         " ---------------------------------------
         " Javascript specific configuration
@@ -400,8 +417,8 @@ if &t_Co > 255
         hi cssTableProp            ctermfg=226     guifg=#ffff00
         hi cssUIProp		           ctermfg=226     guifg=#ffff00
         hi cssBraces               ctermfg=202     guifg=#ff5f00
-        hi cssAttrComma					   ctermfg=124     guifg=#af0000
-        hi cssNoise						     ctermfg=124		 guifg=#af0000
+        "hi cssAttrComma					   ctermfg=124     guifg=#af0000
+        "hi cssNoise						     ctermfg=124		 guifg=#af0000
         hi cssGeneratedContentProp ctermfg=118     guifg=#87ff00 
         hi cssFunctionName         ctermfg=212     guifg=#ff87d7
         hi cssInclude              ctermfg=10

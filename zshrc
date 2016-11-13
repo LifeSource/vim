@@ -72,6 +72,7 @@ source dnvm.sh
 # User configuration
 
 export PATH=$HOME/bin:/usr/local/bin:$PATH
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -104,8 +105,8 @@ PATH="$NPM_PACKAGES/bin:$PATH"
 source /usr/local/lib/dnx/bin/dnvm.sh
 
 ###-tns-completion-start-###
-if [ -f /Users/kenrick/.tnsrc ]; then 
-    source /Users/kenrick/.tnsrc 
+if [ -f /Users/kenrick/.tnsrc ]; then
+    source /Users/kenrick/.tnsrc
 fi
 ###-tns-completion-end-###
 
