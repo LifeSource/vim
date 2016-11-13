@@ -60,8 +60,9 @@ set clipboard=unnamed
 " ------------------------------------------------------------------------
 "  Keyboard mappings
 " ------------------------------------------------------------------------
-
 map <esc>^[ <esc>^[
+" Copy and paste
+nnoremap <C-d> :put +<CR>
 
 " Tagbar toggle
 nmap <C-b> :TagbarToggle<CR>
