@@ -386,6 +386,13 @@ if &t_Co > 255
         hi htmlTagN           ctermfg=209     guifg=#ff875f
 
         " ----------------------------------------
+        " Pug/Jade specific configuration
+        " ----------------------------------------
+        hi pugTag             ctermfg=10  
+        hi pugClass           ctermfg=129 
+        
+
+        " ----------------------------------------
         " XML specific configuration
         " ----------------------------------------
         hi xmlTag	         ctermfg=202     guifg=#ff875f
