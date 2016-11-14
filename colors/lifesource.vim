@@ -366,10 +366,11 @@ if &t_Co > 255
         " ----------------------------------------
         " Json specific configuration
         " ----------------------------------------
-        hi jsonKeyword   ctermfg=14      
+        hi jsonKeyword   ctermfg=80
         hi jsonString	   ctermfg=254
         hi jsonNumber    ctermfg=129
-        hi jsonQuote     ctermfg=154 
+        hi jsonBoolean   ctermfg=129
+        hi jsonQuote     ctermfg=202
         hi jsonBraces    ctermfg=214     guifg=#ffaf00
 
         " ----------------------------------------
