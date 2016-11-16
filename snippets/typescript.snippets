@@ -87,7 +87,14 @@ snippet ctor
 	}
 # Class
 snippet cls
-	class ${1} {
+	export class ${1} {
+		constructor() {
+
+		}
+		${0}
+	}
+snippet clse
+	export class ${1} extends ${2} {
 		constructor() {
 
 		}
@@ -120,3 +127,54 @@ snippet xd
 	export default ${1};${0}
 snippet obja
 	Object.assign({}, ${1}, ${0});
+
+# ------------------------------
+# Typescript syntax snippets
+# ------------------------------
+snippet tprop
+	${1}: ${2}
+
+snippet tfunc
+	${1} (): ${2:void} {
+		${0}
+	}
+
+snippet tctor
+	constructor(${1}: ${2:_typeName}) {
+	}
+# ------------------------------
+# Angular 2 snippets
+# ------------------------------
+
+# Module
+snippet ngmod
+	import { NgModule } from '@angular/core'
+
+	@NgModule({
+		imports: [],
+		exports: [],
+		declarations: []
+	})
+	export class ${1}Module {
+	}$2
+
+# Component
+snippet ngcomp
+	import { Component } from '@angular/core'
+
+	@Component({
+		selector: '',
+		templateUrl: '',
+		styleUrls: []
+	})
+	export class ${1}Component {
+		${0}
+	}
+# Service
+snippet ngserv
+	import { Injectable} from '@angular/core'
+
+	@Injectable()
+	export class ${1}Service {
+		${0}
+	}

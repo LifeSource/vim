@@ -299,7 +299,13 @@ if &t_Co > 255
         hi typescriptDotNotation         ctermfg=10
         hi typescriptLogicSymbols        ctermfg=10
         hi typescriptReserved            ctermfg=214
+        "hi typescriptReserved            ctermfg=80
         hi typescriptOperator            ctermfg=10
+        hi typescriptCharacter           ctermfg=10
+        hi typescriptOpSymbols           ctermfg=226
+        hi typescriptGlobalObjects       ctermfg=221
+        hi typescriptInterpolationDelimiter ctermfg=92
+
 
         " ---------------------------------------
         " Javascript specific configuration
