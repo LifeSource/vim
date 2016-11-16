@@ -142,6 +142,10 @@ snippet tfunc
 snippet tctor
 	constructor(${1}: ${2:_typeName}) {
 	}
+
+snippet timp
+	import { ${1} } from '${2}'${0}
+
 # ------------------------------
 # Angular 2 snippets
 # ------------------------------
@@ -172,9 +176,11 @@ snippet ngcomp
 	}
 # Service
 snippet ngserv
-	import { Injectable} from '@angular/core'
+	import { Injectable } from '@angular/core'
+	import { Http } from '@angular/http'
 
 	@Injectable()
 	export class ${1}Service {
-		${0}
+		constructor(private http: Http) {
+		}
 	}
