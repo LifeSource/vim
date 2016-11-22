@@ -289,7 +289,7 @@ if &t_Co > 255
         hi typescriptBraces              ctermfg=10
         hi typescriptParens              ctermfg=160
         hi typescriptIdentifier          ctermfg=39
-        hi typescriptConditional         ctermfg=10
+        hi typescriptConditional         ctermfg=202
         hi typescriptRepeat              ctermfg=221
         hi typescriptBranch              ctermfg=202
         hi typescriptStatement           ctermfg=202
@@ -307,6 +307,7 @@ if &t_Co > 255
         hi typescriptOperator            ctermfg=10
         hi typescriptCharacter           ctermfg=10
         hi typescriptOpSymbols           ctermfg=226
+        hi typescriptEndColons           ctermfg=202
         hi typescriptGlobalObjects       ctermfg=221
         hi typescriptInterpolationDelimiter ctermfg=92
 

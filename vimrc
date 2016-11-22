@@ -77,8 +77,11 @@ nnoremap <F3> :set hlsearch!<CR>
 " File management
 map zz :w<CR>
 map zx :wq!<CR>
-map <c-q> <esc>:q!<CR>
 
+" Commenting
+imap <C-_> <Esc> gcc
+nmap <C-_> <Esc> gcc
+vmap <C-_> <Esc> gcc
 
 " Line movement
 nnoremap <C-j> :m .+1<CR>==
@@ -153,11 +156,14 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_javascript_eslint_exec = "$HOME/.npm-packages/bin/eslint"
 let g:syntastic_javascript_checkers = ["eslint"]
 let g:syntastic_scss_checkers = ["scss_lint"]
+let g:tsuquyomi_disable_quickfix = 1
+let g:syntastic_typescript_checkers = ['tsuquyomi'] " You shouldn't use 'tsc' checker.
 
 let g:syntastic_error_symbol = "✗"
 let g:syntastic_warning_symbol = "⚠"
 
 " Typescript
+let g:typescript_compiler_binary = 'tsc'
 let g:syntastic_typescript_tsc_fname=''
 
 function! ToggleErrors()
