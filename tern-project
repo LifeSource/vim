@@ -1,4 +1,9 @@
 {
+  "libs": [
+    "browser",
+    "jquery",
+    "node"
+  ],
   "plugins": {
     "node": {}
   }

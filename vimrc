@@ -12,7 +12,12 @@ highlight nonText ctermbg=NONE
 " ------------------------------------------------------------------------
 " Standard settings
 " ------------------------------------------------------------------------
+
 autocmd BufRead,BufNewFile *.scss,*.styl,*.md,*.css setlocal spell
+
+"  Typescript specific
+let g:tsuquyomi_completion_detail = 1
+autocmd FileType typescript nmap <buffer> <Leader>t : <C-u>echo tsuquyomi#hint()<CR>
 autocmd FileType ts UltiSnipsAddFileTypes typescript
 
 set autoread
