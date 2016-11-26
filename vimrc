@@ -15,10 +15,6 @@ highlight nonText ctermbg=NONE
 
 autocmd BufRead,BufNewFile *.scss,*.styl,*.md,*.css setlocal spell
 
-"  Typescript specific
-let g:tsuquyomi_completion_detail = 1
-autocmd FileType typescript nmap <buffer> <Leader>t : <C-u>echo tsuquyomi#hint()<CR>
-autocmd FileType ts UltiSnipsAddFileTypes typescript
 
 set autoread
 au CursorHold * checktime
@@ -154,6 +150,10 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
+" Typescript
+let g:typescript_compiler_binary = 'tsc'
+let g:syntastic_typescript_tsc_fname=''
+
 let g:syntastic_always_poulate_loc_list = 1
 let g_syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
@@ -167,17 +167,14 @@ let g:syntastic_typescript_checkers = ['tsuquyomi'] " You shouldn't use 'tsc' ch
 let g:syntastic_error_symbol = "✗"
 let g:syntastic_warning_symbol = "⚠"
 
-" Typescript
-let g:typescript_compiler_binary = 'tsc'
-let g:syntastic_typescript_tsc_fname=''
 
 function! ToggleErrors()
-    let old_last_winnr = winnr('$')
-    lclose
-    if old_last_winnr == winnr('$')
-        " Nothing was closed, open syntastic error location panel
-        Errors
-    endif
+  let old_last_winnr = winnr('$')
+  lclose
+  if old_last_winnr == winnr('$')
+    " Nothing was closed, open syntastic error location panel
+    Errors
+  endif
 endfunction
 
 nnoremap <silent> <C-e> :<C-u>call ToggleErrors()<CR>
@@ -228,7 +225,7 @@ set encoding=utf8
 let g:airline_powerline_fonts = 1
 
 if !exists('g:airline_symbols')
-	let g:airline_symbols = {}
+  let g:airline_symbols = {}
 endif
 
 let g:airline_detect_modified=1
@@ -259,8 +256,8 @@ let g:airline_symbols.linenr = ''
 let g:airline_theme="dark"
 
 let g:nodejs_complete_config = {
-\  'max_node_compl_len': 8
-\}
+      \  'max_node_compl_len': 5
+      \}
 
 " automatically open and close the popup menu / preview window
 au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
@@ -278,6 +275,7 @@ let g:gitgutter_eager = 0
 let g:ycm_auto_trigger = 1
 let g:ycm_key_list_select_completion=[]
 let g:ycm_key_list_previous_completion=[]
+
 nnoremap <c-r> :TernRename <CR>
 nnoremap <c-t> :TernDef <CR>
 "nnoremap <c-a> :TernRefs <CR>
@@ -299,3 +297,15 @@ iabbr myname Kenrick Wu
 iabbr phps <?php ?>
 
 let g:EditorConfig_exclude_patterns = ['fugitive://.*']
+
+"  Typescript specific
+autocmd FileType ts UltiSnipsAddFileTypes typescript
+
+" disable syntastic on the statusline
+let g:statline_syntastic = 0
+
+" Tsuquoyomi
+let g:tsuquyomi_completion_detail = 1
+let g:tsuquyomi_auto_open = 1
+let g:tsuquyomi_use_local_typescript = 0
+autocmd FileType typescript nmap <buffer> <Leader>t : <C-u>echo tsuquyomi#hint()<CR>
