@@ -186,7 +186,6 @@ let g:vim_json_syntax_conceal = 0
 " ------------------------------------------------------------------------
 " Control-P settings
 " ------------------------------------------------------------------------
-
 " ignore the directories and files with the following extensions
 set wildignore+=*/node_modules/*,/*bower_components/*,/*jspm_packages/*,/*platforms/*,*/vendor/*,*.so,*.swp,*.zip,*~
 set runtimepath^=~/vim/bundle/ctrlp.vim
@@ -220,15 +219,15 @@ let g:webdevicons_enable_airline_tabline = 1
 " ------------------------------------------------------------------------
 " Airline Configuration
 " ------------------------------------------------------------------------
-let g:airline#extensions#tabline#enabled = 1
 set encoding=utf8
+let g:airline_theme="dark"
+let g:airline_detect_modified=1
 let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
 
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}
 endif
-
-let g:airline_detect_modified=1
 
 " unicode symbols
 let g:airline_left_sep = '»'
@@ -244,7 +243,7 @@ let g:airline_symbols.paste = 'Þ'
 let g:airline_symbols.paste = '∥'
 let g:airline_symbols.whitespace = 'Ξ'
 
-"airline symbol
+" airline symbol
 let g:airline_left_sep = ''
 let g:airline_left_alt_sep = ''
 let g:airline_right_sep = ''
@@ -252,15 +251,6 @@ let g:airline_right_alt_sep = ''
 let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
-
-let g:airline_theme="dark"
-
-let g:nodejs_complete_config = {
-      \  'max_node_compl_len': 5
-      \}
-
-" automatically open and close the popup menu / preview window
-au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
 
 " ------------------------------------------------------------------------
 " Git Gutter
@@ -271,6 +261,13 @@ let g:gitgutter_eager = 0
 " ------------------------------------------------------------------------
 "  You Complete Me
 " ------------------------------------------------------------------------
+" automatically open and close the popup menu / preview window
+au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
+
+let g:nodejs_complete_config = {
+      \  'max_node_compl_len': 5
+      \}
+
 "let g:ycm_min_num_of_chars_for_completion=5
 let g:ycm_auto_trigger = 1
 let g:ycm_key_list_select_completion=[]
@@ -283,8 +280,8 @@ nnoremap <c-t> :TernDef <CR>
 " ------------------------------------------------------------------------
 " IndentLine Plugin Settings
 " ------------------------------------------------------------------------
-let g:indentLine_color_term = 239
-let g:indentLine_enabled = 1
+"let g:indentLine_color_term = 239
+"let g:indentLine_enabled = 1
 "nnoremap <c-j> :IndentLinesToggle<CR>
 
 " ------------------------------------------------------------------------
@@ -298,14 +295,16 @@ iabbr phps <?php ?>
 
 let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 
+" ------------------------------------------------------------------------
 "  Typescript specific
+" ------------------------------------------------------------------------
 autocmd FileType ts UltiSnipsAddFileTypes typescript
+autocmd FileType typescript nmap <buffer> <Leader>t : <C-u>echo tsuquyomi#hint()<CR>
 
 " disable syntastic on the statusline
 let g:statline_syntastic = 0
 
-" Tsuquoyomi
+" Tsuquoyomi plugin configuration
 let g:tsuquyomi_completion_detail = 1
 let g:tsuquyomi_auto_open = 1
 let g:tsuquyomi_use_local_typescript = 0
-autocmd FileType typescript nmap <buffer> <Leader>t : <C-u>echo tsuquyomi#hint()<CR>
