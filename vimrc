@@ -56,7 +56,7 @@ set mouse=a
 runtime bundles/tplugin_vim/macros/tplugin.vim
 
 " clipboard setting for copy and paste
-set clipboard=unnamed
+"set clipboard=unnamedplus
 
 " ------------------------------------------------------------------------
 "  Keyboard mappings
