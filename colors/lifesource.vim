@@ -286,94 +286,93 @@ if &t_Co > 255
         " ---------------------------------------
         " Typescript specific configuration
         " ---------------------------------------
-        hi typescriptBraces              ctermfg=10
-        hi typescriptParens              ctermfg=160
-        hi typescriptIdentifier          ctermfg=39
-        hi typescriptConditional         ctermfg=202
-        hi typescriptRepeat              ctermfg=221
-        hi typescriptBranch              ctermfg=202
-        hi typescriptStatement           ctermfg=202
-        hi typescriptSpecial             ctermfg=80
-        hi typescriptFuncKeyword         ctermfg=80
-        hi typescriptFunction            ctermfg=80
-        hi typescriptNumber              ctermfg=80
-        hi typescriptFuncArg             ctermfg=80
-        hi typescriptParameters          ctermfg=214
-        hi typescriptLabel               ctermfg=80
-        hi typescriptDotNotation         ctermfg=10
-        hi typescriptLogicSymbols        ctermfg=10
-        hi typescriptReserved            ctermfg=129
-        hi typescriptVars             ctermfg=80
-        hi typescriptSource              ctermfg=80
-        hi typescriptOperator            ctermfg=10
-        hi typescriptCharacter           ctermfg=10
-        hi typescriptOpSymbols           ctermfg=226
-        hi typescriptEndColons           ctermfg=202
-        hi typescriptGlobalObjects       ctermfg=221
-        hi typescriptInterpolationDelimiter ctermfg=92
+        hi typescriptBraces                  ctermfg=10
+        hi typescriptParens                  ctermfg=160
+        hi typescriptIdentifier              ctermfg=39
+        hi typescriptConditional             ctermfg=202
+        hi typescriptRepeat                  ctermfg=221
+        hi typescriptBranch                  ctermfg=202
+        hi typescriptStatement               ctermfg=202
+        hi typescriptSpecial                 ctermfg=80
+        hi typescriptFuncKeyword             ctermfg=80
+        hi typescriptFunction                ctermfg=80
+        hi typescriptNumber                  ctermfg=80
+        hi typescriptFuncArg                 ctermfg=80
+        hi typescriptParameters              ctermfg=214
+        hi typescriptLabel                   ctermfg=80
+        hi typescriptDotNotation             ctermfg=10
+        hi typescriptLogicSymbols            ctermfg=10
+        hi typescriptReserved                ctermfg=214
+        hi typescriptVars                    ctermfg=80
+        hi typescriptSource                  ctermfg=80
+        hi typescriptOperator                ctermfg=10
+        hi typescriptCharacter               ctermfg=10
+        hi typescriptOpSymbols               ctermfg=226
+        hi typescriptEndColons               ctermfg=202
+        hi typescriptGlobalObjects           ctermfg=221
+        hi typescriptInterpolationDelimiter  ctermfg=92
 
 
         " ---------------------------------------
         " Javascript specific configuration
         " ---------------------------------------
-        hi jsOperator                    ctermfg=10      guifg=#00ff00
-        hi javaScriptReserved            ctermfg=166     guifg=#d75f00
-        hi jsDotNotation                 ctermfg=92      guifg=#8700d7
-        hi jsIdentifier                  ctermfg=39      guifg=#00afff
-        hi jsModules                     ctermfg=92      guifg=#8700d7
-        hi jsBuiltins                    ctermfg=92      guifg=#8700d7
-        hi jsFuncArgs                    ctermfg=214     guifg=#ffaf00
-        "hi jsFuncCall                    ctermfg=31      guifg=#0087d7
-        hi jsFuncCall                    ctermfg=45
-        hi jsFuncName                    ctermfg=154     guifg=#afff00
-        hi jsFunction                    ctermfg=39      guifg=#00afff
-        hi jsFunctionKey                 ctermfg=154
-        hi jsFuncAssignObjChain             ctermfg=154
-        hi jsDecoratorFunction           ctermfg=154
-        "hi jsFuncBraces                  ctermfg=214     guifg=#ffaf00
-        hi jsFuncParens                  ctermfg=160     guifg=#d70000
-        hi jsFuncBraces                  ctermfg=214
-        hi jsFutureKeys                  ctermfg=213
-        hi jsFuncArgCommas               ctermfg=154
-        hi jsArrowFunction               ctermfg=154
-        hi jsSpecial                     ctermfg=113     guifg=#87ff5f
-        hi jsRepeat                      ctermfg=39      
-        hi jsKeyword                     ctermfg=113     guifg=#87ff5f
-        hi jsStatement                   ctermfg=113     guifg=#87ff5f
-        hi jsStorageClass                ctermfg=39      guifg=#00afff
-        hi jsPrototype                   ctermfg=129     guifg=#af00ff
-        hi jsLabel                       ctermfg=80      guifg=#5fd7d7       
-        hi jsSuper                       ctermfg=80      guifg=#5fd7d7
-        hi jsReturn                      ctermfg=10
-        hi jsThis                        ctermfg=129     guifg=#af00ff
-        hi jsConditional                 ctermfg=39
-        hi jsOf                          ctermfg=129     guifg=#af00ff
-        hi jsModules                     ctermfg=129     guifg=#af00ff
-        hi jsModuleWords                 ctermfg=129     guifg=#af00ff
-        hi jsClass                       ctermfg=202     guifg=#ff5f00
-        hi jsGlobalObjects               ctermfg=221     guifg=#ffd75f
-        hi jsCommentToDo                 ctermfg=214     guifg=#ffaf00
-        hi jsLineComment                 ctermfg=114     guifg=#87d787
-        hi jsComment                     ctermfg=114     guifg=#87d787
-        hi jsObjectKey                   ctermfg=80
-        hi jsBraces                      ctermfg=214
-        hi jsBrackets                    ctermfg=10      guifg=#00ff00
-        hi jsParens                      ctermfg=160     guifg=#d70000
-        hi javaScriptBraces              ctermfg=10
-        hi javaScriptParens              ctermfg=255
-        hi javaScriptStringD             ctermfg=212     guifg=#ff87d7
-        hi javaScriptStringS             ctermfg=212     guifg=#ff87d7
-        hi javaScriptFuncExp             ctermfg=114     guifg=#87d787
-        hi javaScriptSpecial             ctermfg=254     guifg=#e4e4e4
-        hi javaScriptOperator            ctermfg=10      guifg=#00ff00
-        hi javaScriptIdentifier          ctermfg=255
-        hi javascriptFunctionFold        ctermfg=114     guifg=#87d787
-        hi javaScriptSpecialCharacter    ctermfg=27      guifg=#005fff
-        hi jsTemplateVar                 ctermfg=129     guifg=#af00ff 
-        hi jsFuncAssignObjChain          ctermfg=129     guifg=#af00ff 
-        hi jsFuncArgRest                 ctermfg=195     guifg=#d7ffff
-        hi jsAssignmentExpr              ctermfg=213
-        hi jsAssignExpIdent              ctermfg=213
+        hi jsOperator                        ctermfg=10      guifg=#00ff00
+        hi javaScriptReserved                ctermfg=166     guifg=#d75f00
+        hi jsDotNotation                     ctermfg=92      guifg=#8700d7
+        hi jsIdentifier                      ctermfg=39      guifg=#00afff
+        hi jsModules                         ctermfg=92      guifg=#8700d7
+        hi jsBuiltins                        ctermfg=92      guifg=#8700d7
+        hi jsFuncArgs                        ctermfg=214     guifg=#ffaf00
+        "hi jsFuncCall                        ctermfg=31      guifg=#0087d7
+        hi jsFuncCall                        ctermfg=45
+        hi jsFuncName                        ctermfg=154     guifg=#afff00
+        hi jsFunction                        ctermfg=80
+        hi jsFunctionKey                     ctermfg=154
+        hi jsFuncAssignObjChain              ctermfg=154
+        hi jsDecoratorFunction               ctermfg=154
+        hi jsFuncBraces                      ctermfg=214     guifg=#ffaf00
+        hi jsFuncParens                      ctermfg=160     guifg=#d70000
+        hi jsFutureKeys                      ctermfg=213
+        hi jsFuncArgCommas                   ctermfg=154
+        hi jsArrowFunction                   ctermfg=154
+        hi jsSpecial                         ctermfg=113     guifg=#87ff5f
+        hi jsRepeat                          ctermfg=39      
+        hi jsKeyword                         ctermfg=113     guifg=#87ff5f
+        hi jsStatement                       ctermfg=113     guifg=#87ff5f
+        hi jsStorageClass                    ctermfg=39      guifg=#00afff
+        hi jsPrototype                       ctermfg=129     guifg=#af00ff
+        hi jsLabel                           ctermfg=80      guifg=#5fd7d7       
+        hi jsSuper                           ctermfg=80      guifg=#5fd7d7
+        hi jsReturn                          ctermfg=202
+        hi jsThis                            ctermfg=129     guifg=#af00ff
+        hi jsConditional                     ctermfg=39
+        hi jsOf                              ctermfg=129     guifg=#af00ff
+        hi jsModules                         ctermfg=129     guifg=#af00ff
+        hi jsModuleWords                     ctermfg=129     guifg=#af00ff
+        hi jsClass                           ctermfg=202     guifg=#ff5f00
+        hi jsGlobalObjects                   ctermfg=221     guifg=#ffd75f
+        hi jsCommentToDo                     ctermfg=214     guifg=#ffaf00
+        hi jsLineComment                     ctermfg=114     guifg=#87d787
+        hi jsComment                         ctermfg=114     guifg=#87d787
+        hi jsObjectKey                       ctermfg=80
+        hi jsBraces                          ctermfg=214
+        hi jsBrackets                        ctermfg=10      guifg=#00ff00
+        hi jsParens                          ctermfg=160     guifg=#d70000
+        hi javaScriptBraces                  ctermfg=10
+        hi javaScriptParens                  ctermfg=255
+        hi javaScriptStringD                 ctermfg=212     guifg=#ff87d7
+        hi javaScriptStringS                 ctermfg=212     guifg=#ff87d7
+        hi javaScriptFuncExp                 ctermfg=114     guifg=#87d787
+        hi javaScriptSpecial                 ctermfg=254     guifg=#e4e4e4
+        hi javaScriptOperator                ctermfg=10      guifg=#00ff00
+        hi javaScriptIdentifier              ctermfg=255
+        hi javascriptFunctionFold            ctermfg=114     guifg=#87d787
+        hi javaScriptSpecialCharacter        ctermfg=27      guifg=#005fff
+        hi jsTemplateVar                     ctermfg=129     guifg=#af00ff 
+        hi jsFuncAssignObjChain              ctermfg=129     guifg=#af00ff 
+        hi jsFuncArgRest                     ctermfg=195     guifg=#d7ffff
+        hi jsAssignmentExpr                  ctermfg=213
+        hi jsAssignExpIdent                  ctermfg=213
 
         " ----------------------------------------
         " Json specific configuration
@@ -404,7 +403,6 @@ if &t_Co > 255
         hi pugTag             ctermfg=10  
         hi pugClass           ctermfg=129 
         
-
         " ----------------------------------------
         " XML specific configuration
         " ----------------------------------------
@@ -468,29 +466,29 @@ if &t_Co > 255
         " ----------------------------------------
         "  PHP Syntax Highlight
         " ----------------------------------------
-        hi phpIdentifier                ctermfg=231
+        "hi phpIdentifier                ctermfg=231
         "hi phpIdentifier                ctermfg=7       guifg=#ffffff
         "hi phpStringDouble              ctermfg=118     guifg=#87ff00
         "hi phpStringSingle              ctermfg=118     guifg=#87ff00
-        hi phpOperator                  ctermfg=118     guifg=#87ff00
-        hi phpComparison                ctermfg=118     guifg=#87ff00
-        hi phpRelation                  ctermfg=118     guifg=#8fff00
-        hi phpBrackets                  ctermfg=118     guifg=#8fff00
-        hi phpParent                    ctermfg=124     guifg=#af0000
+        "hi phpOperator                  ctermfg=118     guifg=#87ff00
+        "hi phpComparison                ctermfg=118     guifg=#87ff00
+        "hi phpRelation                  ctermfg=118     guifg=#8fff00
+        "hi phpBrackets                  ctermfg=118     guifg=#8fff00
+        "hi phpParent                    ctermfg=124     guifg=#af0000
         "hi phpMemberSelector            ctermfg=209     guifg=#ff875f
-        hi phpMemberSelector            ctermfg=124     guifg=#af0000
-        hi phpVarSelector               ctermfg=118     guifg=#87ff00
+        "hi phpMemberSelector            ctermfg=124     guifg=#af0000
+        "hi phpVarSelector               ctermfg=118     guifg=#87ff00
         "hi phpVarSelector               ctermfg=209     guifg=#ff875f
-        hi phpFunctions                 ctermfg=73      guifg=#5fafaf
-        hi phpMethodsVar                 ctermfg=45     guifg=#00d7ff
-        hi phpKeyword                   ctermfg=33      guifg=#0087ff
+        "hi phpFunctions                 ctermfg=73      guifg=#5fafaf
+        "hi phpMethodsVar                 ctermfg=45     guifg=#00d7ff
+        "hi phpKeyword                   ctermfg=33      guifg=#0087ff
         "hi phpStructure                 ctermfg=118     guifg=#87ff00
-        hi phpStructure                 ctermfg=209     guifg=#ff875f
-        hi phpDefine                    ctermfg=45      guifg=#00d7ff
-        hi phpIdentifierComplex         ctermfg=124     guifg=#af0000
-        hi phpConstant                  ctermfg=129     guifg=#af00ff
-        hi phpInclude                   ctermfg=129     guifg=#af00ff
-        hi phpStorageClass              ctermfg=129     guifg=#af00ff
+        "hi phpStructure                 ctermfg=209     guifg=#ff875f
+        "hi phpDefine                    ctermfg=45      guifg=#00d7ff
+        "hi phpIdentifierComplex         ctermfg=124     guifg=#af0000
+        "hi phpConstant                  ctermfg=129     guifg=#af00ff
+        "hi phpInclude                   ctermfg=129     guifg=#af00ff
+        "hi phpStorageClass              ctermfg=129     guifg=#af00ff
 
         " ----------------------------------------
         " Markdown (.md) file

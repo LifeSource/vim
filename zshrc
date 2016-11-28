@@ -20,6 +20,10 @@ alias reactor="yo reactor"
 alias v="vim"
 alias vi="vim"
 alias npr="npm run"
+alias ya="yarn add"
+alias yad="yarn add --dev"
+alias yr="yarn remove"
+
 
 #alias tmux="tmux -2"
 export TERM="xterm-256color"
