@@ -298,7 +298,7 @@ let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 " ------------------------------------------------------------------------
 "  Typescript specific
 " ------------------------------------------------------------------------
-autocmd FileType ts UltiSnipsAddFileTypes typescript, mocha
+autocmd FileType ts UltiSnipsAddFileTypes typescript
 autocmd FileType typescript nmap <buffer> <Leader>t : <C-u>echo tsuquyomi#hint()<CR>
 
 " disable syntastic on the statusline
