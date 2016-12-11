@@ -63,7 +63,9 @@ runtime bundles/tplugin_vim/macros/tplugin.vim
 " ------------------------------------------------------------------------
 map <esc>^[ <esc>^[
 " Copy and paste
-nnoremap <C-d> :put +<CR>
+vmap <C-d> :put +<CR>
+imap <C-d> :put +<CR>
+nmap <C-d> :put +<CR>
 
 " Tagbar toggle
 nmap <C-b> :TagbarToggle<CR>
@@ -161,6 +163,8 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_javascript_eslint_exec = "$HOME/.npm-packages/bin/eslint"
 let g:syntastic_javascript_checkers = ["eslint"]
 let g:syntastic_scss_checkers = ["scss_lint"]
+
+
 let g:tsuquyomi_disable_quickfix = 1
 let g:syntastic_typescript_checkers = ['tsuquyomi'] " You shouldn't use 'tsc' checker.
 
@@ -300,7 +304,7 @@ let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 " ------------------------------------------------------------------------
 autocmd FileType ts UltiSnipsAddFileTypes typescript
 autocmd FileType typescript nmap <buffer> <Leader>t : <C-u>echo tsuquyomi#hint()<CR>
-
+autocmd FileType typescript setlocal completeopt+=menu,preview
 " disable syntastic on the statusline
 let g:statline_syntastic = 0
 

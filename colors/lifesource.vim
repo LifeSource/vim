@@ -339,7 +339,7 @@ if &t_Co > 255
         hi jsRepeat                          ctermfg=39      
         hi jsKeyword                         ctermfg=113     guifg=#87ff5f
         hi jsStatement                       ctermfg=113     guifg=#87ff5f
-        hi jsStorageClass                    ctermfg=39      guifg=#00afff
+        hi jsStorageClass                    ctermfg=80
         hi jsPrototype                       ctermfg=129     guifg=#af00ff
         hi jsLabel                           ctermfg=80      guifg=#5fd7d7       
         hi jsSuper                           ctermfg=80      guifg=#5fd7d7
